@@ -1,0 +1,17 @@
+; ImpExp.def : Declares the module parameters for the DLL.
+
+LIBRARY      "ImpExp"
+DESCRIPTION  'ImpExp Windows Dynamic Link Library'
+
+EXPORTS
+    ; Explicit exports can go here
+    Import			@1
+    Export			@2
+	BeginCopy2XL	@3
+	Copy2XL			@4
+	EndCopy2XL		@5
+	CreateDBF		@6
+	OnDBFRecord		@7
+	CloseDBF		@8
+	E2Excel			@9
+	E2OCalc         @10

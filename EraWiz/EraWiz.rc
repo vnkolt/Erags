@@ -1,0 +1,622 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Russian resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_RUS)
+#ifdef _WIN32
+LANGUAGE LANG_RUSSIAN, SUBLANG_DEFAULT
+#pragma code_page(1251)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_WIZARD, DIALOG
+    BEGIN
+        LEFTMARGIN, 1
+        RIGHTMARGIN, 490
+        TOPMARGIN, 4
+        BOTTOMMARGIN, 333
+    END
+
+    IDW_SETRAGS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        TOPMARGIN, 1
+    END
+
+    IDW_SETBIRTH, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        TOPMARGIN, 1
+    END
+
+    IDD_DBLOAD, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 339
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 62
+    END
+
+    IDW_SETGEOPLACE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        TOPMARGIN, 1
+    END
+
+    IDW_DIVORCE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        TOPMARGIN, 1
+    END
+
+    IDW_SETMEDICS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        TOPMARGIN, 1
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_WIZARD DIALOG DISCARDABLE  0, 0, 492, 338
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Майстер ПК ЕРАГС"
+FONT 8, "MS Sans Serif"
+BEGIN
+    PUSHBUTTON      "Далі >",ID_WIZNEXT,385,318,50,14
+    PUSHBUTTON      "< Повернутися",ID_WIZBACK,321,318,58,14
+    PUSHBUTTON      "Завершити",ID_WIZFINISH,440,318,50,14
+    CONTROL         "",IDC_SHEETRECT,"Static",SS_ETCHEDFRAME,1,4,489,329
+END
+
+IDW_SETRAGS DIALOGEX 0, 0, 485, 309
+STYLE WS_CHILD | WS_DISABLED
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "Tree1",IDC_RTREE,"SysTreeView32",TVS_HASBUTTONS | 
+                    TVS_HASLINES | TVS_SHOWSELALWAYS | WS_BORDER | 
+                    WS_TABSTOP,190,46,291,216
+    EDITTEXT        IDC_SHORTNAME,174,279,306,13,ES_AUTOHSCROLL
+    CONTROL         2025,IDC_MAP,"Static",SS_BITMAP | SS_NOTIFY | 
+                    SS_RIGHTJUST | SS_REALSIZEIMAGE | WS_GROUP,4,1,181,123
+    LTEXT           "Ласкаво просимо до Майстера ПК ЕРАГС",ST_CAPTION,214,0,
+                    198,12,0,WS_EX_TRANSPARENT
+    LTEXT           "Цей Майстер допоможе Вам почати роботу з ПК ЕРАГС. Уважно читайте інструкції Майстера.",
+                    IDC_STATIC,230,15,200,17,0,WS_EX_TRANSPARENT
+    ICON            IDI_LEFT_DOWN,IDC_STATIC,203,25,20,20,0,
+                    WS_EX_TRANSPARENT
+    LTEXT           "1. Оберіть зі списку Ваш відділ РАЦС або виконком.",
+                    IDC_STATIC,229,34,189,8,0,WS_EX_TRANSPARENT
+    ICON            IDI_LEFT_UP,IDC_STATIC,14,129,20,20
+    LTEXT           "2. Обирати можна також за допомогою карти України. Для цього потрібно навести курсор миші на відповідне місце карти і натиснути ліву кнопку миші.",
+                    IDC_STATIC,43,130,140,40
+    LTEXT           "3. Якщо Ваш відділ або виконком відсутній в цьому списку, оберіть відділ або виконком із Вашого регіону і виправте його скорочену назву тут",
+                    IDC_STATIC,10,256,135,35,0,WS_EX_TRANSPARENT
+    ICON            IDI_RIGHT,IDC_STATIC,150,275,20,20,0,WS_EX_TRANSPARENT
+    EDITTEXT        IDC_FULLNAME,174,265,306,13,ES_AUTOHSCROLL | ES_READONLY
+    CONTROL         "",IDC_EMBLEM,"Static",SS_BITMAP | SS_CENTERIMAGE,13,177,
+                    171,70
+    CONTROL         "Виконком",IDC_VYCONCOM,"Button",BS_AUTORADIOBUTTON | 
+                    WS_DISABLED,174,294,95,10
+    CONTROL         "Виконавчий орган",IDC_ORGAN,"Button",BS_AUTORADIOBUTTON | 
+                    WS_DISABLED,281,294,95,10
+END
+
+IDW_SETBIRTH DIALOGEX 0, 0, 485, 266
+STYLE WS_CHILD | WS_DISABLED
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    LTEXT           "Установи умовчення для реєстрації народження",
+                    IDC_TITLE1,75,9,313,21
+    ICON            IDI_BIRTH,IDC_STATIC,13,28,20,20,SS_REALSIZEIMAGE
+    ICON            IDI_LEFT_DOWN,IDC_STATIC,68,25,20,20,0,WS_EX_TRANSPARENT
+    LTEXT           "11. Визначне область, район та місто (смт, село. селище), які ПК ЕРАГС пропонуватиме як місце народження новонародженого під час реєстрації народження.",
+                    IDC_STATIC,94,30,330,19,0,WS_EX_TRANSPARENT
+    GROUPBOX        "",IDC_STATIC,64,50,390,82
+    EDITTEXT        IDC_COUNTRY2,87,59,102,12,ES_AUTOHSCROLL
+    LTEXT           "держава",IDC_STATIC,194,59,40,12,0,WS_EX_STATICEDGE
+    CONTROL         "Пропонувати назву держави",IDC_CHILD_BP_COUNTRY_CHECK,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,236,59,159,12
+    EDITTEXT        IDC_REGION2,87,77,102,12,ES_AUTOHSCROLL
+    LTEXT           "область",IDC_STATIC,194,77,40,12,0,WS_EX_STATICEDGE
+    CONTROL         "Пропонувати назву області",IDC_CHILD_BP_REGION_CHECK,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,236,77,159,12
+    EDITTEXT        IDC_DISTRICT2,87,95,102,12,ES_AUTOHSCROLL
+    LTEXT           "район",IDC_STATIC,194,95,40,12,0,WS_EX_STATICEDGE
+    CONTROL         "Пропонувати назву района",IDC_CHILD_BP_DISTRICT_CHECK,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,236,95,159,12
+    EDITTEXT        IDC_CITY2,87,114,102,12,ES_AUTOHSCROLL
+    COMBOBOX        IDC_CITYTYPE2,194,114,40,63,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    CONTROL         "Пропонувати назву міста (села, селища)",
+                    IDC_CHILD_BP_CITY_CHECK,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,236,114,159,12
+    LTEXT           "12. Визначне серію свідоцтва про НАРОДЖЕННЯ, яка зараз використовується у Вашому відділі",
+                    IDC_STATIC,65,143,338,12,0,WS_EX_TRANSPARENT
+    ICON            IDI_RIGHT,IDC_STATIC,398,135,20,20,0,WS_EX_TRANSPARENT
+    EDITTEXT        IDC_SERIA_BIRTH,424,141,27,12,ES_UPPERCASE | 
+                    ES_AUTOHSCROLL
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,10,163,474,1,
+                    WS_EX_STATICEDGE
+    ICON            IDI_MARRIAGE,IDC_STATIC,14,181,20,20,SS_REALSIZEIMAGE
+    LTEXT           "Установи умовчення для реєстрації шлюбу",IDC_TITLE2,75,
+                    172,313,21
+    LTEXT           "13. Визначне серію свідоцтва про ШЛЮБ, яка зараз використовується у Вашому відділі",
+                    IDC_STATIC,65,207,338,12,0,WS_EX_TRANSPARENT
+    ICON            IDI_RIGHT,IDC_STATIC,397,199,20,20,0,WS_EX_TRANSPARENT
+    EDITTEXT        IDC_SERIA_MARRIAGE,423,206,27,12,ES_UPPERCASE | 
+                    ES_AUTOHSCROLL
+END
+
+IDD_DBLOAD DIALOGEX 0, 0, 346, 69
+STYLE DS_MODALFRAME | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Завантажуеться база даних. Зачекайте, будь ласка."
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    PUSHBUTTON      "Cancel",IDCANCEL,289,48,50,14
+    CONTROL         "Progress1",IDC_PROGRESS,"msctls_progress32",WS_BORDER,7,
+                    30,332,14
+    LTEXT           "",IDC_WHAT,7,7,332,14,SS_CENTERIMAGE,WS_EX_CLIENTEDGE
+END
+
+IDW_SETGEOPLACE DIALOGEX 0, 0, 485, 269
+STYLE WS_CHILD | WS_DISABLED
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "",IDC_STATIC,7,30,156,62,0,WS_EX_TRANSPARENT
+    LTEXT           "4. Визначне область, район та місто (смт, село. селище), де знаходиться Ваш відділ реєстрації або виконком.",
+                    IDC_STATIC,37,4,131,26,0,WS_EX_TRANSPARENT
+    ICON            IDI_LEFT_DOWN,IDC_STATIC,11,1,20,20,0,WS_EX_TRANSPARENT
+    LTEXT           "область",IDC_STATIC,118,40,40,12,0,WS_EX_STATICEDGE
+    EDITTEXT        IDC_REGION,11,40,102,12,ES_AUTOHSCROLL
+    LTEXT           "район",IDC_STATIC,118,57,40,12,0,WS_EX_STATICEDGE
+    EDITTEXT        IDC_DISTRICT,11,57,102,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_CITY,11,75,102,12,ES_AUTOHSCROLL
+    COMBOBOX        IDC_CITYTYPE,118,75,40,63,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_PARENT,167,75,307,12,ES_AUTOHSCROLL
+    GROUPBOX        " Скорочена назва вищестоячого відділу РАЦС ",IDC_STATIC,
+                    164,65,315,27
+    LTEXT           "5. Визначне або виправте СКОРОЧЕНУ назву ВИЩЕСТОЮЧОГО відділу РАЦС.",
+                    IDC_STATIC,194,4,276,13,0,WS_EX_TRANSPARENT
+    ICON            IDI_LEFT_DOWN,IDC_STATIC,168,1,20,20,0,WS_EX_TRANSPARENT
+    LTEXT           "Використовуйте такі скорочення: ВРАЦС, ОУЮ (обласного управління юстиції), МУЮ (міського управління юстиції), РУЮ (районного управляння юстиції), МРУЮ (міськрайонного управління юстиції), о (області), р (району).",
+                    IDC_STATIC,194,15,283,27,0,WS_EX_TRANSPARENT
+    LTEXT           "Приклади: ВРАЦС Вінницького ОУЮ, ВРАЦС Київського МУЮ, ВРАЦС Володимирецького РУЮ Рівненської о, ВРАЦС по Бердянському р Бердянського МРУЮ Запорізької о.",
+                    IDC_STATIC,194,40,284,26,0,WS_EX_TRANSPARENT
+    LTEXT           "6. Визначне в ОРУДНОМУ та РОДОВОМУ відмінках назву органу МВС у Вашому місті або районі.",
+                    IDC_STATIC,47,105,430,11,0,WS_EX_TRANSPARENT
+    ICON            IDI_LEFT_DOWN,IDC_STATIC,21,102,20,20,0,
+                    WS_EX_TRANSPARENT
+    GROUPBOX        " Назви органу МВС в орудному та родовому відмінках ",
+                    IDC_STATIC,7,119,472,38,0,WS_EX_TRANSPARENT
+    LTEXT           "у орудному відмінку (Ким? Чим?)",IDC_STATIC,11,129,144,
+                    12,0,WS_EX_STATICEDGE
+    LTEXT           "у родовому відмінку (До кого? До чого?)",IDC_STATIC,11,
+                    143,144,12,0,WS_EX_TRANSPARENT | WS_EX_STATICEDGE
+    EDITTEXT        IDC_BYUMVS,162,129,313,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_TOUMVS,162,143,313,12,ES_AUTOHSCROLL
+    LTEXT           "7. Визначне в ОРУДНОМУ та РОДОВОМУ  відмінках назву військомату  у Вашому місті або районі.",
+                    IDC_STATIC,47,162,430,10,0,WS_EX_TRANSPARENT
+    ICON            IDI_LEFT_DOWN,IDC_STATIC,21,155,20,20,0,
+                    WS_EX_TRANSPARENT
+    GROUPBOX        " Назви військомату в орудному та родовому відмінках ",
+                    IDC_STATIC,7,173,472,41,0,WS_EX_TRANSPARENT
+    LTEXT           "у орудному відмінку (Ким? Чим?)",IDC_STATIC,11,184,144,
+                    12,0,WS_EX_STATICEDGE
+    LTEXT           "у родовому відмінку (До кого? До чого?)",IDC_STATIC,11,
+                    198,144,12,0,WS_EX_STATICEDGE
+    EDITTEXT        IDC_BYMIL,162,184,313,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_TOMIL,162,198,313,12,ES_AUTOHSCROLL
+    LTEXT           "8. Визначте назву суду Вашого міста або району у родовому відмінку (Кого? Чого?)",
+                    IDC_STATIC,8,214,191,19,0,WS_EX_TRANSPARENT
+    EDITTEXT        IDC_BYCOURT,221,217,257,12,ES_AUTOHSCROLL
+    LTEXT           "9. Визначте назву податкової служби Вашого міста або району у родовому відмінку (Кого? Чого?)",
+                    IDC_STATIC,8,231,187,19,0,WS_EX_TRANSPARENT
+    ICON            IDI_RIGHT,IDC_STATIC,198,214,20,20,0,WS_EX_TRANSPARENT
+    ICON            IDI_RIGHT,IDC_STATIC,198,230,20,20,0,WS_EX_TRANSPARENT
+    EDITTEXT        IDC_TOTAX,221,234,257,12,ES_AUTOHSCROLL
+    LTEXT           "10. Визначте прізвище та ініціали керівника Вашого відділу РАЦС або виконкому",
+                    IDC_STATIC,8,252,280,12,0,WS_EX_TRANSPARENT
+    ICON            IDI_RIGHT,IDC_STATIC,292,247,20,20,0,WS_EX_TRANSPARENT
+    EDITTEXT        IDC_BOSS,315,251,163,12,ES_AUTOHSCROLL
+END
+
+IDW_DIVORCE DIALOGEX 0, 0, 485, 266
+STYLE WS_CHILD | WS_DISABLED
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    LTEXT           "Установи умовчення для реєстрації розірвання шлюбу",
+                    IDC_TITLE1,75,9,313,21
+    ICON            IDI_DIVORCE,IDC_STATIC,13,28,20,20,SS_REALSIZEIMAGE
+    ICON            IDI_LEFT_DOWN,IDC_STATIC,68,25,20,20,0,WS_EX_TRANSPARENT
+    LTEXT           "14. Визначне, що треба писати у актовому записі про розірвання шлюбу, коли подружжя, що розриває шлюб, не має дітей.",
+                    IDC_STATIC,94,30,330,19,0,WS_EX_TRANSPARENT
+    GROUPBOX        "У разі, коли у подружжя дітей немає, в актовому записі писати",
+                    IDC_STATIC,64,50,390,24
+    EDITTEXT        IDC_NOCHILDREN,68,59,376,12,ES_AUTOHSCROLL
+    ICON            IDI_LEFT_DOWN,IDC_STATIC,68,78,20,20,0,WS_EX_TRANSPARENT
+    LTEXT           "15. Визначне, що треба писати у актовому записі про розірвання шлюбу, коли подружжя, що розриває шлюб, має одну спільну дитину.",
+                    IDC_STATIC,94,83,330,19,0,WS_EX_TRANSPARENT
+    GROUPBOX        "У разі, коли подружжя має одну спільну дитину в актовому записі писати",
+                    IDC_STATIC,64,102,390,24
+    EDITTEXT        IDC_SINGLECHILD,68,112,376,12,ES_AUTOHSCROLL
+    LTEXT           "16. Визначне серію свідоцтва про РОЗІРВАННЯ ШЛЮБУ, яка зараз використовується у Вашому відділі",
+                    IDC_STATIC,25,137,368,12,0,WS_EX_TRANSPARENT
+    ICON            IDI_RIGHT,IDC_STATIC,398,131,20,20,0,WS_EX_TRANSPARENT
+    EDITTEXT        IDC_SERIA_DIVORCE,424,135,27,12,ES_UPPERCASE | 
+                    ES_AUTOHSCROLL
+    LTEXT           "Установи умовчення для реєстрації зміни",IDC_TITLE2,75,
+                    161,313,21
+    ICON            IDI_CHANGE,IDC_STATIC,13,162,20,20,SS_REALSIZEIMAGE
+    LTEXT           "17. Визначне серію свідоцтва про ЗМІНУ, яка зараз використовується у Вашому відділі",
+                    IDC_STATIC,65,184,327,12,0,WS_EX_TRANSPARENT
+    ICON            IDI_RIGHT,IDC_STATIC,397,180,20,20,0,WS_EX_TRANSPARENT
+    EDITTEXT        IDC_SERIA_CHANGE,423,183,27,12,ES_UPPERCASE | 
+                    ES_AUTOHSCROLL
+    LTEXT           "Установи умовчення для реєстрації смерті",IDC_TITLE3,76,
+                    213,313,21
+    ICON            IDI_DEATH,IDC_STATIC,14,213,20,20,SS_REALSIZEIMAGE
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,10,153,474,1,
+                    WS_EX_STATICEDGE
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,10,205,474,1,
+                    WS_EX_STATICEDGE
+    LTEXT           "18. Визначне серію свідоцтва про СМЕРТЬ, яка зараз використовується у Вашому відділі",
+                    IDC_STATIC,65,235,327,12,0,WS_EX_TRANSPARENT
+    ICON            IDI_RIGHT,IDC_STATIC,397,229,20,20,0,WS_EX_TRANSPARENT
+    EDITTEXT        IDC_SERIA_DEATH,423,233,27,12,ES_UPPERCASE | 
+                    ES_AUTOHSCROLL
+END
+
+IDW_SETMEDICS DIALOGEX 0, 0, 485, 266
+STYLE WS_CHILD | WS_DISABLED
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    LTEXT           "Списки установ, що видають медичні свідоцтва про народження та смерть.",
+                    IDC_TITLE1,75,4,313,21,0,WS_EX_TRANSPARENT
+    ICON            IDI_LEFT_DOWN,IDC_STATIC,11,31,21,20,0,WS_EX_TRANSPARENT
+    LTEXT           "19. В лівому стовпці визначте декілька назв медичних установ, що видають медичні свідоцтва про народження та смерть.",
+                    IDC_STATIC,37,20,444,11,0,WS_EX_TRANSPARENT
+    GROUPBOX        "Назви установ, що видають медічні свідоцтва про народження та смерть та їх псевдоніми",
+                    IDC_STATIC,7,106,475,156
+    CONTROL         300,IDC_STATIC,"Static",SS_BITMAP | SS_REALSIZEIMAGE,16,
+                    4,31,25,WS_EX_TRANSPARENT
+    LTEXT           "Назва медичної установи в ОРУДНОМУ відмінку",IDC_STATIC,
+                    13,53,399,12,SS_CENTERIMAGE,WS_EX_STATICEDGE
+    LTEXT           "Псевдонім",IDC_STATIC,417,53,56,12,SS_CENTERIMAGE,
+                    WS_EX_STATICEDGE
+    LTEXT           "Міською лікарнею № 3 м. Львова",IDC_STATIC,13,67,399,12,
+                    SS_CENTERIMAGE | WS_BORDER,WS_EX_STATICEDGE
+    LTEXT           "3",IDC_STATIC,417,67,56,12,SS_CENTERIMAGE | WS_BORDER,
+                    WS_EX_STATICEDGE
+    LTEXT           "Мілітопольським відділенням облбюро СМЕ Запорізької області",
+                    IDC_STATIC,13,80,399,12,SS_CENTERIMAGE | WS_BORDER,
+                    WS_EX_STATICEDGE
+    LTEXT           "мсме",IDC_STATIC,417,80,56,12,SS_CENTERIMAGE | 
+                    WS_BORDER,WS_EX_STATICEDGE
+    LTEXT           "Пологовим відділенням Тельманівської ЦРЛ Донецької області",
+                    IDC_STATIC,13,93,399,12,SS_CENTERIMAGE | WS_BORDER,
+                    WS_EX_STATICEDGE
+    LTEXT           "пт",IDC_STATIC,417,93,56,12,SS_CENTERIMAGE | WS_BORDER,
+                    WS_EX_STATICEDGE
+    EDITTEXT        IDC_HOSPITAL1,13,117,399,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PSEUDO1,417,117,56,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_HOSPITAL2,13,130,399,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PSEUDO2,417,130,56,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_HOSPITAL3,13,143,399,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PSEUDO3,417,143,56,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_HOSPITAL4,13,155,399,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PSEUDO4,417,155,56,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_HOSPITAL5,13,168,399,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PSEUDO5,417,168,56,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_HOSPITAL6,13,181,399,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PSEUDO6,417,181,56,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_HOSPITAL7,13,194,399,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PSEUDO7,417,194,56,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_HOSPITAL8,13,207,399,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PSEUDO8,417,207,56,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_HOSPITAL9,13,220,399,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PSEUDO9,417,220,56,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_HOSPITAL10,13,233,399,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PSEUDO10,417,233,56,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_HOSPITAL11,13,246,399,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PSEUDO11,417,246,56,12,ES_AUTOHSCROLL
+    LTEXT           "В правому стовпці визначте псевдоніми цих медичних установ. Використання псевдонімів допоможе Вам скоротити час на реєстрацію народження та смерті. Приклади:",
+                    IDC_STATIC,37,30,426,16,0,WS_EX_TRANSPARENT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_UKRAINE_256         BITMAP  DISCARDABLE     "res\\Ukraine256.bmp"
+IDB_BIRTH               BITMAP  DISCARDABLE     "res\\birth.bmp"
+IDB_BTN_RED_CROSS       BITMAP  DISCARDABLE     "Res\\BtnRedCross.bmp"
+IDIL_RFOLDERS           BITMAP  DISCARDABLE     "res\\rfolders.bmp"
+IDB_Zhytomyrska_Oblast  BITMAP  DISCARDABLE     "res\\Zhytomyrska_Oblast.bmp"
+IDB_Cherkaska_Oblast    BITMAP  DISCARDABLE     "res\\Cherkaska_Oblast.bmp"
+IDB_Chernihivska_Oblast BITMAP  DISCARDABLE     "res\\Chernihivska_Oblast.bmp"
+IDB_Crimea              BITMAP  DISCARDABLE     "res\\Crimea.bmp"
+IDB_Dnipropetrovska_Oblast BITMAP  DISCARDABLE     "res\\Dnipropetrovska_Oblast.bmp"
+IDB_Donetska_Oblast     BITMAP  DISCARDABLE     "res\\Donetska_Oblast.bmp"
+IDB_Frankivska_Oblast   BITMAP  DISCARDABLE     "res\\Ivano-Frankivska_Oblast.bmp"
+IDB_Kharkivska_Oblast   BITMAP  DISCARDABLE     "res\\Kharkivska_Oblast.bmp"
+IDB_Khmelnytska_Oblast  BITMAP  DISCARDABLE     "res\\Khmelnytska_Oblast.bmp"
+IDB_Kiev                BITMAP  DISCARDABLE     "res\\Kiev.bmp"
+IDB_Kirovohradska_Oblast BITMAP  DISCARDABLE     "res\\Kirovohradska_Oblast.bmp"
+IDB_Zaporizhzhska_Oblast BITMAP  DISCARDABLE     "res\\Zaporizhzhska_Oblast.bmp"
+IDB_Zakarpakska_Oblast  BITMAP  DISCARDABLE     "res\\Zakarpakska_Oblast.bmp"
+IDB_Khersonska_Oblast   BITMAP  DISCARDABLE     "res\\Khersonska_Oblast.bmp"
+IDB_Mykolaivska_Oblast  BITMAP  DISCARDABLE     "res\\Mykolaivska_Oblast.bmp"
+IDB_Lvivska_Oblast      BITMAP  DISCARDABLE     "res\\Lvivska_Oblast.bmp"
+IDB_Luhanska_Oblast     BITMAP  DISCARDABLE     "res\\Luhanska_Oblast.bmp"
+IDB_Volynska_Oblast     BITMAP  DISCARDABLE     "res\\Volynska_Oblast.bmp"
+IDB_Poltavska_Oblast    BITMAP  DISCARDABLE     "res\\Poltavska_Oblast.bmp"
+IDB_Rivnenska_Oblast    BITMAP  DISCARDABLE     "res\\Rivnenska_Oblast.bmp"
+IDB_Odeska_Oblast       BITMAP  DISCARDABLE     "res\\Odeska_Oblast.bmp"
+IDB_Sevastopol          BITMAP  DISCARDABLE     "res\\Sevastopol.bmp"
+IDB_Sumska_Oblast       BITMAP  DISCARDABLE     "res\\Sumska_Oblast.bmp"
+IDB_Ternopilska_Oblast  BITMAP  DISCARDABLE     "res\\Ternopilska_Oblast.bmp"
+IDB_Vinnytska_Oblast    BITMAP  DISCARDABLE     "res\\Vinnytska_Oblast.bmp"
+IDB_Kyivska_Oblast      BITMAP  DISCARDABLE     "res\\Kyivska_oblast.bmp"
+IDB_Cherkasy            BITMAP  DISCARDABLE     "res\\Cherkasy.bmp"
+IDB_Chernihiv           BITMAP  DISCARDABLE     "res\\Chernihiv.bmp"
+IDB_Chernovtsy          BITMAP  DISCARDABLE     "res\\Chernovtsy.bmp"
+IDB_Dnipropetrovsk      BITMAP  DISCARDABLE     "res\\Dnipropetrovsk.bmp"
+IDB_Kharkiv             BITMAP  DISCARDABLE     "res\\Kharkiv.bmp"
+IDB_Donetsk             BITMAP  DISCARDABLE     "res\\Donetsk.bmp"
+IDB_Frankivsk           BITMAP  DISCARDABLE     "res\\Frankivsk.bmp"
+IDB_Khmelnitsky         BITMAP  DISCARDABLE     "res\\Khmelnitsky.bmp"
+IDB_Kherson             BITMAP  DISCARDABLE     "res\\Kherson.bmp"
+IDB_Chernivtska_Oblast  BITMAP  DISCARDABLE     "res\\Chernivtska_Oblast.bmp"
+IDB_Zaporizha           BITMAP  DISCARDABLE     "res\\Zaporizha.bmp"
+IDB_Zhytomyr            BITMAP  DISCARDABLE     "res\\Zhytomyr.bmp"
+IDB_Kirovohrad          BITMAP  DISCARDABLE     "res\\Kirovohrad.bmp"
+IDB_Simferopol          BITMAP  DISCARDABLE     "res\\Simferopol.bmp"
+IDB_Mykolaiv            BITMAP  DISCARDABLE     "res\\Mykolaiv.bmp"
+IDB_Lviv                BITMAP  DISCARDABLE     "res\\Lviv.bmp"
+IDB_Luhansk             BITMAP  DISCARDABLE     "res\\Luhansk.bmp"
+IDB_Lutsk               BITMAP  DISCARDABLE     "res\\Lutsk.bmp"
+IDB_Poltava             BITMAP  DISCARDABLE     "res\\Poltava.bmp"
+IDB_Rivne               BITMAP  DISCARDABLE     "res\\Rivne.bmp"
+IDB_Odessa              BITMAP  DISCARDABLE     "res\\Odessa.bmp"
+IDB_Sumy                BITMAP  DISCARDABLE     "res\\Sumy.bmp"
+IDB_Ternopil            BITMAP  DISCARDABLE     "res\\Ternopil.bmp"
+IDB_Vinnytsia           BITMAP  DISCARDABLE     "res\\Vinnytsia.bmp"
+IDB_Uzhgorod            BITMAP  DISCARDABLE     "res\\Uzhgorod.bmp"
+IDIL_RFOLDERS_TC        BITMAP  DISCARDABLE     "res\\rfolders_tc.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+IDC_HAND                CURSOR  DISCARDABLE     "res\\hand.cur"
+IDC_HTREE               CURSOR  DISCARDABLE     "res\\htree.cur"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_BIRTH               ICON    DISCARDABLE     "res\\Birth.ico"
+IDI_LEFT_UP             ICON    DISCARDABLE     "res\\leftup.ico"
+IDI_LEFT_DOWN           ICON    DISCARDABLE     "res\\leftdown.ico"
+IDI_RIGHT               ICON    DISCARDABLE     "res\\right.ico"
+IDI_RIGHT_DOWN          ICON    DISCARDABLE     "res\\rightdown.ico"
+IDI_DEATH               ICON    DISCARDABLE     "res\\Death.ico"
+IDI_DIVORCE             ICON    DISCARDABLE     "res\\Divorce.ico"
+IDI_MARRIAGE            ICON    DISCARDABLE     "res\\Marriage.ico"
+IDI_CHANGE              ICON    DISCARDABLE     "res\\Change.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDW_SETBIRTH DLGINIT
+BEGIN
+    IDC_CITYTYPE2, 0x403, 6, 0
+0xb3ec, 0xf2f1, 0x00ee, 
+    IDC_CITYTYPE2, 0x403, 4, 0
+0xecf1, 0x00f2, 
+    IDC_CITYTYPE2, 0x403, 7, 0
+0xe5f1, 0xe8eb, 0xe5f9, "\000" 
+    IDC_CITYTYPE2, 0x403, 5, 0
+0xe5f1, 0xeeeb, "\000" 
+    0
+END
+
+IDW_SETGEOPLACE DLGINIT
+BEGIN
+    IDC_CITYTYPE, 0x403, 6, 0
+0xb3ec, 0xf2f1, 0x00ee, 
+    IDC_CITYTYPE, 0x403, 4, 0
+0xecf1, 0x00f2, 
+    IDC_CITYTYPE, 0x403, 7, 0
+0xe5f1, 0xe8eb, 0xe5f9, "\000" 
+    IDC_CITYTYPE, 0x403, 5, 0
+0xe5f1, 0xeeeb, "\000" 
+    0
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 2012,3,0,29
+ PRODUCTVERSION 2012,3,0,29
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "Comments", "Майстер установки ПК ЕРАГС\0"
+            VALUE "CompanyName", "Vladimir Koltsov\0"
+            VALUE "FileDescription", "EraWiz DLL\0"
+            VALUE "FileVersion", "2012, 3, 0, 29\0"
+            VALUE "InternalName", "EraWiz\0"
+            VALUE "LegalCopyright", "Copyright (C) 2003-2012 Vladimir Koltsov\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "EraWiz.dll\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "EraWiz Dynamic Link Library\0"
+            VALUE "ProductVersion", "2012, 3, 0, 29\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+#endif    // Russian resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// Unknown language: 0x22, 0x1 resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_UKR)
+#ifdef _WIN32
+LANGUAGE 0x22, 0x1
+#pragma code_page(1251)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_WIZARD              ICON    DISCARDABLE     "res\\Wizard.ico"
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\EraWiz.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+#endif    // Unknown language: 0x22, 0x1 resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.K.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENG)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_UK
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_UKRAINE             BITMAP  DISCARDABLE     "res\\Ukraine.bmp"
+#endif    // English (U.K.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\EraWiz.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

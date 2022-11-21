@@ -1,0 +1,248 @@
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<title>Вбудована система допомоги ЕРАГС. Пошук</title>
+</head>
+
+<body>
+<li><a href="#NewSearch">Новий пошук</a></li>
+<li><a href="#SaveSearch">Записати результати пошуку</a></li>
+<li><a href="#SearchPath">Маршрут пошуку</a></li>
+<li><a href="#BeginSearch">Почати пошук</a></li>
+<li><a href="#EquMatching">Повний збіг</a></li>
+<li><a href="#PartialMatching">Частковий збіг</a></li>
+
+<li><a href="#Birthes">Пошук в АЗ про народження</a></li>
+<li><a href="#Marriages">Пошук в АЗ про шлюби</a></li>
+<li><a href="#Divorces">Пошук в АЗ про розірвання шлюбів</a></li>
+<li><a href="#Changes">Пошук в АЗ про зміни</a></li>
+<li><a href="#Deathes">Пошук в АЗ про смерті</a></li>
+<li><a href="#GotoFoundRec">Відкрити знайдений АЗ</a></li>
+<li><a href="#SearchList">Список пошуку</a></li>
+<li><a href="#FoundList">Список знайдених АЗ</a></li>
+
+</br></br></br>
+<a name="NewSearch"></a><NewSearch>
+<right><a msg="close"><icon idres=208 width=16 height=16 style="l" hotstyle></a></right>
+<table>
+<tr><td>
+<icon idres=209 width=48 height=48></td>
+<td><center><h2><font color=black>Кнопка "Новий Пошук"</font></h2></center><br>
+<hr color=blue><br>
+ Натисніть цю кнопку, щоб очистити
+ список результатів пошуку (вікно праворуч)
+ і почати пошук з іншими умовами.<br>
+</td></tr></table></NewSearch>
+<hr color=blue><br>
+
+
+</br></br></br>
+<a name="SaveSearch"></a><SaveSearch>
+<right><a msg="close"><icon idres=208 width=16 height=16 style="l" hotstyle></a></right>
+<table>
+<tr><td>
+<icon idres=209 width=48 height=48></td>
+<td><center><h2><font color=black>Кнопка "Записати результати Пошук"</font></h2></center><br>
+<hr color=blue><br>
+ Натисніть цю кнопку, щоб записати результат пошуку у .csv-файл
+ для подальшої роботи з ним програмою Exel.<br>
+</td></tr></table></SaveSearch>
+<hr color=blue><br>
+
+</br></br></br>
+<a name="SearchPath"></a><SearchPath>
+<right><a msg="close"><icon idres=208 width=16 height=16 style="l" hotstyle></a></right>
+<table>
+<tr><td>
+<icon idres=209 width=48 height=48></td>
+<td><center><h2><font color=black>Кнопка "Маршрут Пошуку"</font></h2></center><br>
+<hr color=blue><br>
+ Натисніть цю кнопку, щоб визначити маршрут (файлову папку) пошуку.
+ За умовчанням ЕРАГС шукатиме в тій папці, де знаходиться останній
+ файл БД ЕРАГС, що відкривася програмою ЕРАГС.
+</td></tr></table></SearchPath>
+<hr color=blue><br>
+
+</br></br></br>
+<a name="BeginSearch"></a><BeginSearch>
+<right><a msg="close"><icon idres=208 width=16 height=16 style="l" hotstyle></a></right>
+<table>
+<tr><td>
+<icon idres=209 width=48 height=48></td>
+<td><center><h2><font color=black>Кнопка "Почати Пошук"</font></h2></center><br>
+<hr color=blue><br>
+ Натисніть цю кнопку, щоб почату пошук.
+ Список умов (ліворуч) повинен мати хоча б одну умову
+ (прізвище, ім'я, або по батькові) для пошуку.
+</td></tr></table></BeginSearch>
+<hr color=blue><br>
+
+</br></br></br>
+<a name="EquMatching"></a><EquMatching>
+<right><a msg="close"><icon idres=208 width=16 height=16 style="l" hotstyle></a></right>
+<table>
+<tr><td>
+<icon idres=209 width=48 height=48></td>
+<td><center><h2><font color=black>Кнопка "Повний збіг"</font></h2></center><br>
+<hr color=blue><br>
+ Натисніть цю кнопку, щоб встановить режим <b>повного</b> збігу.
+ Якщо цей режим встановлено, до списку результатів попадуть
+ тількі ті актові записи, які цілком задовольняють якій-небудь
+ умові пошуку.
+  Приклад: у списку умов визначено прізвище "<b>Ткач</b>".
+ До списку результатів попадуть (якщо вони існують)
+ такі записи:
+  <b>Ткач</b> Іван Петрович
+  <b>Ткач</b> Ольга Леонідівна
+  <b>Ткач</b> Оксана Олександрівна
+ </td></tr></table></EquMatching>
+<hr color=blue><br>
+
+</br></br></br>
+<a name="PartialMatching"></a><PartialMatching>
+<right><a msg="close"><icon idres=208 width=16 height=16 style="l" hotstyle></a></right>
+<table>
+<tr><td>
+<icon idres=209 width=48 height=48></td>
+<td><center><h2><font color=black>Кнопка "Частковий збіг"</font></h2></center><br>
+<hr color=blue><br>
+Натисніть цю кнопку, щоб встановить режим <b>часткового</b> збігу.
+ Якщо цей режим встановлено, до списку результатів попадуть
+ тількі ті актові записи, які частково задовольняють якій-небудь
+ умові пошуку.
+  Приклад: у списку умов визначено прізвище "<b>Ткач</b>".
+ До списку результатів попадуть (якщо вони існують)
+ такі записи:
+  <b>Ткач</b> Іван Петрович
+  <b>Ткач</b>енко Ольга Леонідівна
+  <b>Ткач</b>ова</b> Оксана Олександрівна
+  Білогуров-<b>Ткач</b>ук</b> Володимир Павлович
+ </td></tr></table></PartialMatching>
+<hr color=blue><br>
+
+</br></br></br>
+<a name="Birthes"></a><Birthes>
+<right><a msg="close"><icon idres=208 width=16 height=16 style="l" hotstyle></a></right>
+<table>
+<tr><td>
+<icon idres=209 width=48 height=48></td>
+<td><center><h2><font color=black>Кнопка "Пошук в АЗ про народження"</font></h2></center><br>
+<hr color=blue><br>
+ Натисніть цю кнопку, щоб виключити з пошуку або
+ включити до пошуку актові записи про народження.
+</td></tr></table></Birthes>
+<hr color=blue><br>
+
+</br></br></br>
+<a name="Marriages"></a><Marriages>
+<right><a msg="close"><icon idres=208 width=16 height=16 style="l" hotstyle></a></right>
+<table>
+<tr><td>
+<icon idres=209 width=48 height=48></td>
+<td><center><h2><font color=black>Кнопка "Пошук в АЗ про шлюби"</font></h2></center><br>
+<hr color=blue><br>
+ Натисніть цю кнопку, щоб виключити з пошуку або
+ включити до пошуку актові записи про шлюб
+</td></tr></table></Marriages>
+<hr color=blue><br>
+
+</br></br></br>
+<a name="Divorces"></a><Divorces>
+<right><a msg="close"><icon idres=208 width=16 height=16 style="l" hotstyle></a></right>
+<table>
+<tr><td>
+<icon idres=209 width=48 height=48></td>
+<td><center><h2><font color=black>Кнопка "Пошук в АЗ про розірвання шлюбів"</font></h2></center><br>
+<hr color=blue><br>
+ Натисніть цю кнопку, щоб виключити з пошуку або
+ включити до пошуку актові записи про розірвання шлюбу.
+</td></tr></table></Divorces>
+<hr color=blue><br>
+
+</br></br></br>
+<a name="Changes"></a><Changes>
+<right><a msg="close"><icon idres=208 width=16 height=16 style="l" hotstyle></a></right>
+<table>
+<tr><td>
+<icon idres=209 width=48 height=48></td>
+<td><center><h2><font color=black>Кнопка "Пошук в АЗ про зміни"</font></h2></center><br>
+<hr color=blue><br>
+ Натисніть цю кнопку, щоб виключити з пошуку або
+ включити до пошуку актові записи про зміну імені.
+</td></tr></table></Changes>
+<hr color=blue><br>
+
+</br></br></br>
+<a name="Deathes"></a><Deathes>
+<right><a msg="close"><icon idres=208 width=16 height=16 style="l" hotstyle></a></right>
+<table>
+<tr><td>
+<icon idres=209 width=48 height=48></td>
+<td><center><h2><font color=black>Кнопка "Пошук в АЗ про смерті"</font></h2></center><br>
+<hr color=blue><br>
+ Натисніть цю кнопку, щоб виключити з пошуку або
+ включити до пошуку актові записи про смерть.
+</td></tr></table></Deathes>
+<hr color=blue><br>
+
+</br></br></br>
+<a name="GotoFoundRec"></a><GotoFoundRec>
+<right><a msg="close"><icon idres=208 width=16 height=16 style="l" hotstyle></a></right>
+<table>
+<tr><td>
+<icon idres=209 width=48 height=48></td>
+<td><center><h2><font color=black>Кнопка "Відкрити знайдений АЗ"</font></h2></center><br>
+<hr color=blue><br>
+ Натисніть цю кнопку, щоб відкрити знайдений
+ актовий запис. У списку результатів (вікно праворуч)
+ потрібно визначити актовий запис, який слід відкрити.
+</td></tr></table></GotoFoundRec>
+<hr color=blue><br>
+
+</br></br></br>
+<a name="SearchList"></a><SearchList>
+<right><a msg="close"><icon idres=208 width=16 height=16 style="l" hotstyle></a></right>
+<table>
+<tr><td>
+<icon idres=209 width=48 height=48></td>
+<td><center><h2><font color=black>Список умов пошуку</font></h2></center><br>
+<hr color=blue><br>
+ Перед пошуком потрібно визначити хоча б одну (але не більш 99) умову.
+ Кожна умова складається із трьох частин: прізвище, ім'я, по батькові.
+ ЕРАГС шукатиме за вказаною умовою, якщо хоча б одна (будь-яка)
+ частина умови визначена. Якщо визначени дві або три частини умови,
+ ЕРАГС шукатиме такі АЗ, які відповідають <u>усім</u> визначеним частинам умови.
+  Приклад:
+ У списку умов визначені три умови:
+ 1 <b>Волков<t><t>Олександр</b>
+ 2 <b><t><t><t>Ольга<t><t><t>Ген</b>
+ 3 <b><t><t><t>олек<t><t><t>трофан</b>
+ 
+ У режимі часткового збігу до списку результатів попадуть (якщо вони є):
+
+ <b>Волков Олександр</b> Віталійович
+ <b>Волков</b>а <b>Олександр</b>а Миколаївна
+ Кузьмук <b>Ольга <b>Ген</b>надіївна
+ Заблоцька <b>Ольга</b> Єв<b>ген</b>івна
+ Біла <b>Олек</b>сандра Ми<b>трофан</b>івна
+ Дядюк <b>Олек</b>сій Ми<b>трофан</b>ович
+ Максименко <b>Олек</b>сандр Ми<b>трофан</b>ович
+ 
+</td></tr></table></SearchList>
+<hr color=blue><br>
+
+</br></br></br>
+<a name="FoundList"></a><FoundList>
+<right><a msg="close"><icon idres=208 width=16 height=16 style="l" hotstyle></a></right>
+<table>
+<tr><td>
+<icon idres=209 width=48 height=48></td>
+<td><center><h2><font color=black>Список результатів пошуку</font></h2></center><br>
+<hr color=blue><br>
+ До цього списку попадуть знайдені АЗ - результат пошуку.<br>
+ Будь-який знайденний АЗ можна відкрити, якщо потрібно.<br><br>
+</td></tr></table></FoundList>
+<hr color=blue><br>
+
+</body>
+
+</html>

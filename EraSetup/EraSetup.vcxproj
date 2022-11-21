@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Template|Win32">
+      <Configuration>Template</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <SccProjectName />
+    <SccLocalPath />
+    <Keyword>MFCProj</Keyword>
+    <ProjectGuid>{B6E6A208-3619-4D81-BAFB-A2F3327B6657}</ProjectGuid>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Template|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+    <UseOfMfc>Static</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+    <UseOfMfc>Static</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Template|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>.\Release\</OutDir>
+    <IntDir>.\Release\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>.\Debug\</OutDir>
+    <IntDir>.\Debug\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <StringPooling>true</StringPooling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <Optimization>MaxSpeed</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>.\Release\</AssemblerListingLocation>
+      <PrecompiledHeaderOutputFile>.\Release\EraSetup.pch</PrecompiledHeaderOutputFile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <ObjectFileName>.\Release\</ObjectFileName>
+      <ProgramDataBaseFileName>.\Release\</ProgramDataBaseFileName>
+    </ClCompile>
+    <Midl>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <TypeLibraryName>.\Release\EraSetup.tlb</TypeLibraryName>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <TargetEnvironment>Win32</TargetEnvironment>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0422</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Release\EraSetup.bsc</OutputFile>
+    </Bscmake>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <SubSystem>Windows</SubSystem>
+      <OutputFile>C:\EraCD\Setup.exe</OutputFile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <Optimization>Disabled</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <MinimalRebuild>true</MinimalRebuild>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;ZLIB_WINAPI;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>.\Debug\</AssemblerListingLocation>
+      <BrowseInformation>true</BrowseInformation>
+      <PrecompiledHeaderOutputFile>.\Debug\EraSetup.pch</PrecompiledHeaderOutputFile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <ObjectFileName>.\Debug\</ObjectFileName>
+      <ProgramDataBaseFileName>.\Debug\</ProgramDataBaseFileName>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+    </ClCompile>
+    <Midl>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <TypeLibraryName>.\Debug\EraSetup.tlb</TypeLibraryName>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <TargetEnvironment>Win32</TargetEnvironment>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0422</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Debug\EraSetup.bsc</OutputFile>
+    </Bscmake>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OutputFile>C:\EraCD\Setup.exe</OutputFile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\Common\DAO36.cpp" />
+    <ClCompile Include="..\Common\FHelpers.cpp" />
+    <ClCompile Include="..\Common\IsAdmin.cpp" />
+    <ClCompile Include="..\Controls\ShellType.cpp" />
+    <ClCompile Include="..\ZipArchive\Options.cpp" />
+    <ClCompile Include="..\ZipArchive\RegistrySerialize.cpp" />
+    <ClCompile Include="..\ZipArchive\ZipArchive.cpp" />
+    <ClCompile Include="..\ZipArchive\ZipAutoBuffer.cpp" />
+    <ClCompile Include="..\ZipArchive\ZipBigFile.cpp" />
+    <ClCompile Include="..\ZipArchive\ZipCentralDir.cpp" />
+    <ClCompile Include="..\ZipArchive\ZipCompatibility.cpp" />
+    <ClCompile Include="..\ZipArchive\ZipException.cpp" />
+    <ClCompile Include="..\ZipArchive\ZipFile.cpp" />
+    <ClCompile Include="..\ZipArchive\ZipFileHeader.cpp" />
+    <ClCompile Include="..\ZipArchive\ZipInternalInfo.cpp" />
+    <ClCompile Include="..\ZipArchive\ZipMemFile.cpp" />
+    <ClCompile Include="..\ZipArchive\ZipPathComponent.cpp" />
+    <ClCompile Include="..\ZipArchive\ZipPlatform.cpp" />
+    <ClCompile Include="..\ZipArchive\ZipPlatformComm.cpp" />
+    <ClCompile Include="..\ZipArchive\ZipStorage.cpp" />
+    <ClCompile Include="..\ZipArchive\ZipString.cpp" />
+    <ClCompile Include="..\ZipArchive\ZLib\adler32.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\ZipArchive\ZLib\compress.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\ZipArchive\ZLib\crc32.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\ZipArchive\ZLib\deflate.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\ZipArchive\ZLib\gzclose.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\ZipArchive\ZLib\gzlib.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\ZipArchive\ZLib\gzread.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\ZipArchive\ZLib\gzwrite.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\ZipArchive\ZLib\infback.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\ZipArchive\ZLib\inffast.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\ZipArchive\ZLib\inflate.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\ZipArchive\ZLib\inftrees.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\ZipArchive\ZLib\trees.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\ZipArchive\ZLib\uncompr.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\ZipArchive\ZLib\zutil.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="AgreementPage.cpp" />
+    <ClCompile Include="AutoRichEditCtrl.cpp" />
+    <ClCompile Include="CDMenu.cpp" />
+    <ClCompile Include="EraPathPage.cpp" />
+    <ClCompile Include="EraSetup.cpp" />
+    <ClCompile Include="EraSetupDlg.cpp" />
+    <ClCompile Include="FinishPage.cpp" />
+    <ClCompile Include="MasterDlg.cpp" />
+    <ClCompile Include="NewWizDialog.cpp" />
+    <ClCompile Include="NewWizPage.cpp" />
+    <ClCompile Include="ProgressPage.cpp" />
+    <ClCompile Include="Registry.cpp" />
+    <ClCompile Include="Shell.cpp" />
+    <ClCompile Include="StdAfx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">stdafx.h</PrecompiledHeaderFile>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">stdafx.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="UnzipDlg.cpp" />
+    <ClCompile Include="WelcomePage.cpp" />
+    <ClCompile Include="WizButton.cpp" />
+    <ClCompile Include="WizComboBox.cpp" />
+    <ClCompile Include="WizEdit.cpp" />
+    <ClCompile Include="WizTreeCtrl.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="EraSetup.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Common\DAO36.h" />
+    <ClInclude Include="..\Common\FHelpers.h" />
+    <ClInclude Include="..\Common\IsAdmin.h" />
+    <ClInclude Include="..\ZipArchive\Options.h" />
+    <ClInclude Include="..\ZipArchive\RegistrySerialize.h" />
+    <ClInclude Include="..\ZipArchive\zconf.h" />
+    <ClInclude Include="..\ZipArchive\ZipAbstractFile.h" />
+    <ClInclude Include="..\ZipArchive\ZipArchive.h" />
+    <ClInclude Include="..\ZipArchive\ZipAutoBuffer.h" />
+    <ClInclude Include="..\ZipArchive\ZipBaseException.h" />
+    <ClInclude Include="..\ZipArchive\ZipBigFile.h" />
+    <ClInclude Include="..\ZipArchive\ZipCentralDir.h" />
+    <ClInclude Include="..\ZipArchive\ZipCollections.h" />
+    <ClInclude Include="..\ZipArchive\ZipCompatibility.h" />
+    <ClInclude Include="..\ZipArchive\ZipException.h" />
+    <ClInclude Include="..\ZipArchive\ZipExport.h" />
+    <ClInclude Include="..\ZipArchive\ZipFile.h" />
+    <ClInclude Include="..\ZipArchive\ZipFileHeader.h" />
+    <ClInclude Include="..\ZipArchive\ZipFileMapping.h" />
+    <ClInclude Include="..\ZipArchive\ZipInternalInfo.h" />
+    <ClInclude Include="..\ZipArchive\ZipMemFile.h" />
+    <ClInclude Include="..\ZipArchive\ZipPathComponent.h" />
+    <ClInclude Include="..\ZipArchive\ZipPlatform.h" />
+    <ClInclude Include="..\ZipArchive\ZipStorage.h" />
+    <ClInclude Include="..\ZipArchive\ZipString.h" />
+    <ClInclude Include="..\ZipArchive\zlib.h" />
+    <ClInclude Include="..\ZipArchive\ZLib\crc32.h" />
+    <ClInclude Include="..\ZipArchive\ZLib\deflate.h" />
+    <ClInclude Include="..\ZipArchive\ZLib\gzguts.h" />
+    <ClInclude Include="..\ZipArchive\ZLib\inffast.h" />
+    <ClInclude Include="..\ZipArchive\ZLib\inffixed.h" />
+    <ClInclude Include="..\ZipArchive\ZLib\inflate.h" />
+    <ClInclude Include="..\ZipArchive\ZLib\inftrees.h" />
+    <ClInclude Include="..\ZipArchive\ZLib\trees.h" />
+    <ClInclude Include="..\ZipArchive\ZLib\zconf.h" />
+    <ClInclude Include="..\ZipArchive\ZLib\zlib.h" />
+    <ClInclude Include="..\ZipArchive\ZLib\zutil.h" />
+    <ClInclude Include="AgreementPage.h" />
+    <ClInclude Include="AutoRichEditCtrl.h" />
+    <ClInclude Include="CDMenu.h" />
+    <ClInclude Include="EraPathPage.h" />
+    <ClInclude Include="EraSetup.h" />
+    <ClInclude Include="EraSetupDlg.h" />
+    <ClInclude Include="FinishPage.h" />
+    <ClInclude Include="MasterDlg.h" />
+    <ClInclude Include="NewWizDialog.h" />
+    <ClInclude Include="NewWizPage.h" />
+    <ClInclude Include="ProgressPage.h" />
+    <ClInclude Include="Registry.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="Shell.h" />
+    <ClInclude Include="StdAfx.h" />
+    <ClInclude Include="UnzipDlg.h" />
+    <ClInclude Include="WelcomePage.h" />
+    <ClInclude Include="WizButton.h" />
+    <ClInclude Include="WizComboBox.h" />
+    <ClInclude Include="WizEdit.h" />
+    <ClInclude Include="WizTreeCtrl.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\Erags.ico" />
+    <Image Include="res\EraSetup.ico" />
+    <Image Include="res\Russia.ico" />
+    <Image Include="res\Ukraine.ico" />
+    <Image Include="res\Welcome24.bmp" />
+    <Image Include="res\write.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="res\EraSetup.rc2" />
+    <CustomBuild Include="res\EULA.rtf" />
+    <CustomBuild Include="res\finish.rtf" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

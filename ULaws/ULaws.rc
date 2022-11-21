@@ -1,0 +1,504 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Russian resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_RUS)
+#ifdef _WIN32
+LANGUAGE LANG_RUSSIAN, SUBLANG_DEFAULT
+#pragma code_page(1251)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP  DISCARDABLE     "res\\toolbar.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR DISCARDABLE  24, 24
+BEGIN
+    BUTTON      ID_GO_BACK
+    BUTTON      ID_GO_FORWARD
+    BUTTON      ID_VIEW_STOP
+    BUTTON      ID_VIEW_REFRESH
+    BUTTON      ID_GO_START_PAGE
+    BUTTON      ID_SEARCH
+    BUTTON      ID_FAVORITES_DROPDOWN
+    BUTTON      ID_FILE_PRINT
+    BUTTON      ID_FONT_DROPDOWN
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU PRELOAD DISCARDABLE 
+BEGIN
+    POPUP "&Файл"
+    BEGIN
+        MENUITEM "&Відкрити...\tCtrl+O",        ID_FILE_OPEN
+        MENUITEM SEPARATOR
+        MENUITEM "&Друк...\tCtrl+P",            ID_FILE_PRINT
+        MENUITEM SEPARATOR
+        MENUITEM "&Віхид",                      ID_APP_EXIT
+    END
+    POPUP "&Огляд"
+    BEGIN
+        MENUITEM "&Панель інструментів",        ID_VIEW_TOOLBAR
+        MENUITEM "&Статусний рядок",            ID_VIEW_STATUS_BAR
+        MENUITEM SEPARATOR
+        POPUP "&Шрифти"
+        BEGIN
+            MENUITEM "Найбільший",                  ID_VIEW_FONTS_LARGEST
+            MENUITEM "Великий",                     ID_VIEW_FONTS_LARGE
+            MENUITEM "Середній",                    ID_VIEW_FONTS_MEDIUM
+            MENUITEM "Маленький",                   ID_VIEW_FONTS_SMALL
+            MENUITEM "Найменьший",                  ID_VIEW_FONTS_SMALLEST
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "&Зупинити\tEsc",              ID_VIEW_STOP
+        MENUITEM "&Відновити\tF5",              ID_VIEW_REFRESH
+    END
+    POPUP "&Перейти"
+    BEGIN
+        MENUITEM "До &стартової сторінки",      ID_GO_START_PAGE
+        MENUITEM "До &попередньої сторінки\tAlt+Left Arrow", ID_GO_BACK
+        MENUITEM "До &наступної сторінки\tAlt+Right Arrow", ID_GO_FORWARD
+        MENUITEM SEPARATOR
+        MENUITEM "Пошук",                       ID_SEARCH
+        MENUITEM "Пошук у Google",              ID_GO_GOOGLE_SEARCH
+        MENUITEM "Пошук у Яндекс",              ID_GO_YANDEX_SEARCH
+        MENUITEM "Пошук на Меті",               ID_GO_META_SEARCH
+    END
+    POPUP "&Закладки"
+    BEGIN
+        MENUITEM SEPARATOR
+    END
+    POPUP "?"
+    BEGIN
+        MENUITEM "Web &Tutorial",               ID_HELP_WEB_TUTORIAL
+        MENUITEM SEPARATOR
+        POPUP "Microsoft on the &Web"
+        BEGIN
+            MENUITEM "&Free Stuff",                 ID_HELP_MICROSOFT_ON_THE_WEB_FREE_STUFF
+
+            MENUITEM "&Get Faster Internet Access", ID_HELP_MICROSOFT_ON_THE_WEB_GET_FASTER_INTERNET_ACCESS
+
+            MENUITEM "Frequently Asked &Questions", ID_HELP_MICROSOFT_ON_THE_WEB_FREQUENTLY_ASKED_QUESTIONS
+
+            MENUITEM SEPARATOR
+            MENUITEM "&Internet Start Page",        ID_HELP_MICROSOFT_ON_THE_WEB_INTERNET_START_PAGE
+
+            MENUITEM "Send Feedbac&k...",           ID_HELP_MICROSOFT_ON_THE_WEB_SEND_FEEDBACK
+
+            MENUITEM "&Best of the Web",            ID_HELP_MICROSOFT_ON_THE_WEB_BEST_OF_THE_WEB
+
+            MENUITEM "Search the &Web",             ID_HELP_MICROSOFT_ON_THE_WEB_SEARCH_THE_WEB
+
+            MENUITEM SEPARATOR
+            MENUITEM "Microsoft &Home Page",        ID_HELP_MICROSOFT_ON_THE_WEB_MICROSOFT_HOME_PAGE
+
+        END
+        MENUITEM "Online &Support",             ID_HELP_ONLINE_SUPPORT
+        MENUITEM SEPARATOR
+        MENUITEM "&About ULaws...",             ID_APP_ABOUT
+    END
+END
+
+IDR_FONT_POPUP MENU DISCARDABLE 
+BEGIN
+    POPUP "Шрифти"
+    BEGIN
+        MENUITEM "Найбільший",                  ID_VIEW_FONTS_LARGEST
+        MENUITEM "Великий",                     ID_VIEW_FONTS_LARGE
+        MENUITEM "Середній",                    ID_VIEW_FONTS_MEDIUM
+        MENUITEM "Маленький",                   ID_VIEW_FONTS_SMALL
+        MENUITEM "Найменьший",                  ID_VIEW_FONTS_SMALLEST
+    END
+END
+
+IDR_FAVORITES_POPUP MENU DISCARDABLE 
+BEGIN
+    MENUITEM "Bogus",                       ID_BOGUS
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 217, 57
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About ULaws"
+FONT 8, "MS Sans Serif"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,19,20,20
+    LTEXT           "ULaws Version 1.0",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "Copyright © Microsoft Corp. 1997-1998",IDC_STATIC,40,26,
+                    119,8
+    DEFPUSHBUTTON   "OK",IDOK,178,7,32,14,WS_GROUP
+END
+
+IDD_SBAR DIALOG DISCARDABLE  0, 0, 273, 37
+STYLE WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_WORDS,92,7,177,13,ES_AUTOHSCROLL
+    CONTROL         "В тексті документа",IDC_IN_TEXT,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP,5,5,79,13
+    CONTROL         "В назві документа",IDC_IN_TITLE,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP,5,18,79,13
+    CONTROL         "Усі слова",IDC_ALL_WORDS,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,94,23,50,10
+    CONTROL         "Будь-яке слово",IDC_ANY_WORD,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP,153,23,66,10
+    PUSHBUTTON      "Пошук!",IDC_SEARCH,226,22,43,13
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 210
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 50
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\ULaws.ico"
+IDR_ULAWSTYPE           ICON    DISCARDABLE     "res\\ULawsDoc.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDP_SOCKETS_INIT_FAILED "Windows sockets initialization failed."
+END
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    IDR_MAINFRAME           "Юридичний довідник \n\nULaws\n\n\nULaws.Document\nULaws Document"
+END
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "Laws"
+    AFX_IDS_IDLEMESSAGE     "Ready"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "OVR"
+    ID_INDICATOR_REC        "REC"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_OPEN            "Opens a document in this window."
+    ID_FILE_CLOSE           "Closes the window."
+    ID_FILE_PRINT           "Prints this document.\nPrint"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_APP_ABOUT            "Display program information, version number and copyright\nAbout"
+    ID_APP_EXIT             "Closes the window."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_EDIT_COPY            "Copies the current selection onto the Clipboard."
+    ID_EDIT_CUT             "Removes the current selection and copies it onto the Clipboard."
+    ID_EDIT_FIND            "Searches the current window for text."
+    ID_EDIT_PASTE           "Inserts the items you have copied or cut into the selection location."
+    ID_EDIT_SELECT_ALL      "Selects all the text on this page."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_VIEW_TOOLBAR         "Show or hide the toolbar"
+    ID_VIEW_STATUS_BAR      "Show or hide the status bar"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCSIZE          "Change the window size"
+    AFX_IDS_SCMOVE          "Change the window position"
+    AFX_IDS_SCMINIMIZE      "Reduce the window to an icon"
+    AFX_IDS_SCMAXIMIZE      "Enlarge the window to full size"
+    AFX_IDS_SCNEXTWINDOW    "Switch to the next document window"
+    AFX_IDS_SCPREVWINDOW    "Switch to the previous document window"
+    AFX_IDS_SCCLOSE         "Close the active window and prompts to save the documents"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       "Restore the window to normal size"
+    AFX_IDS_SCTASKLIST      "Activate Task List"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_WEB_TUTORIAL        "http://www.microsoft.com/magazine/guides/internet/"
+    IDS_ONLINE_SUPPORT      "http://www.microsoft.com/iesupport/"
+    IDS_FREE_STUFF          "http://www.microsoft.com/ie/download/"
+    IDS_GET_FASTER_INTERNET_ACCESS "http://www.microsoft.com/windows/getisdn/"
+    IDS_FREQUENTLY_ASKED_QUESTIONS 
+                            "http://www.microsoft.com/iesupport/content/faq/"
+    IDS_INTERNET_START_PAGE "http://home.microsoft.com/"
+    IDS_SEND_FEEDBACK       "http://www.microsoft.com/regwiz/regwiz.asp?finishurl=/ie/"
+    IDS_BEST_OF_THE_WEB     "http://home.microsoft.com/exploring/exploring.asp"
+    IDS_SEARCH_THE_WEB      "http://home.microsoft.com/access/allinone.asp"
+    IDS_MICROSOFT_HOME_PAGE "http://www.microsoft.com/"
+    IDS_BACK                "Back"
+    IDS_FORWARD             "Forward"
+    IDS_STOP                "Stop"
+    IDS_REFRESH             "Відновити"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_FILETYPES           "HTML Files|*.htm;*.html|Text Files|*.txt|GIF Files|*.gif|JPEG Files|*.jpg;*.jpeg|AU Files|*.au|AIFF Files|*.aif;*.aiff|XBM Files|*.xbm|All Files|*.*||"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_VIEW_STOP            "Зупинити відкриття файлу.\nЗупинити"
+    ID_VIEW_REFRESH         "Відновити зміст поточної сторінки.\nВідновити"
+    ID_VIEW_FONTS_LARGEST   "Обрати найбільший розмір шрифту."
+    ID_VIEW_FONTS_LARGE     "Обрати великий розмір шрифту."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_VIEW_FONTS_MEDIUM    "Обрати середній розмір шрифту."
+    ID_VIEW_FONTS_SMALL     "Обрати маленький розмір шрифту."
+    ID_VIEW_FONTS_SMALLEST  "Обрати найменьший розмір шрифту."
+    ID_GO_BACK              "Повернутися назад.\nНазад"
+    ID_GO_FORWARD           "Перейти далі.\nДалі"
+    ID_GO_START_PAGE        "Відкрити стартову сторінку.\nСтартова сторінка"
+    ID_SEARCH               "Пошук документів.\nПошук документів"
+    ID_GO_BEST_OF_THE_WEB   "Opens the Best of the Web page."
+    ID_FAVORITES_DROPDOWN   "View list of your personal favorites.\nFavorites"
+    ID_FONT_DROPDOWN        "Змінити розмір шрифта.\nШрифти"
+    ID_HELP_WEB_TUTORIAL    "Opens the Web tutorial page (on the Internet)."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_HOME                "Home"
+    IDS_SEARCH              "Пошук"
+    IDS_FAVORITES           "Закладки"
+    IDS_PRINT               "Друк"
+    IDS_FONT                "Шрифт"
+    IDS_ADDRESS             "Адреса"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_GO_GOOGLE_SEARCH     "Пошук в Інтернеті у системі Google.\nПошук у Google"
+    ID_GO_YANDEX_SEARCH     "Пошук в Інтернеті у системі Яндекс.\nПошук у Яндекс"
+    ID_GO_META_SEARCH       "Пошук в Інтернеті у системі Мета.\nПошук на Меті"
+END
+
+#endif    // Russian resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_COLDTOOLBAR         BITMAP  FIXED IMPURE    "res\\coldtool.bmp"
+IDB_HOTTOOLBAR          BITMAP  FIXED IMPURE    "res\\hottoolb.bmp"
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif\r\n"
+    "#include ""res\\ULaws.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#include ""afxprint.rc""       // printing/print preview resources\r\n"
+    "#endif\0"
+    "1 24 ""Laws.exe.manifest""\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS PRELOAD MOVEABLE PURE 
+BEGIN
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL, NOINVERT
+    "P",            ID_FILE_PRINT,          VIRTKEY, CONTROL, NOINVERT
+    VK_ESCAPE,      ID_VIEW_STOP,           VIRTKEY, NOINVERT
+    VK_F5,          ID_VIEW_REFRESH,        VIRTKEY, NOINVERT
+    VK_LEFT,        ID_GO_BACK,             VIRTKEY, ALT, NOINVERT
+    VK_RIGHT,       ID_GO_FORWARD,          VIRTKEY, ALT, NOINVERT
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 2008,0,2,13
+ PRODUCTVERSION 2008,0,2,13
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "Comments", "\0"
+            VALUE "CompanyName", "Vladimir Koltsov\0"
+            VALUE "FileDescription", "Free ULaws Application\0"
+            VALUE "FileVersion", "2008, 0, 2, 13\0"
+            VALUE "InternalName", "ULaws\0"
+            VALUE "LegalCopyright", "Copyright (C) 1997-1998\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "Laws.exe\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "ULaws Application\0"
+            VALUE "ProductVersion", "2008, 0, 2, 13\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// AVI
+//
+
+IDR_FRONTPAGE           AVI     DISCARDABLE     "res\\FrontPage.avi"
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif
+#include "res\ULaws.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#include "afxprint.rc"       // printing/print preview resources
+#endif
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

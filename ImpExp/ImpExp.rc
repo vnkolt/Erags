@@ -1,0 +1,420 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Russian resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_RUS)
+#ifdef _WIN32
+LANGUAGE LANG_RUSSIAN, SUBLANG_DEFAULT
+#pragma code_page(1251)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\ImpExp.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_IMPORT, DIALOG
+    BEGIN
+        LEFTMARGIN, 5
+        RIGHTMARGIN, 346
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 169
+    END
+
+    IDD_IMPORT_PROGESS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 377
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 187
+    END
+
+    IDD_REPAIR, DIALOG
+    BEGIN
+        LEFTMARGIN, 2
+        RIGHTMARGIN, 416
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 102
+    END
+
+    IDD_DEFBIRTH, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 298
+        TOPMARGIN, 3
+        BOTTOMMARGIN, 154
+    END
+
+    IDD_EXPORT_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 16
+        RIGHTMARGIN, 481
+        TOPMARGIN, 4
+        BOTTOMMARGIN, 218
+    END
+
+    IDD_EXPORT_TYPES, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 350
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 171
+    END
+
+    IDD_EXP_BIRTH, DIALOG
+    BEGIN
+        RIGHTMARGIN, 462
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 182
+    END
+
+    IDD_EXPORT_PROGRESS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 350
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 171
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_IMPORT DIALOGEX 0, 0, 352, 175
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_CONTEXTHELP
+CAPTION "Імпорт даних"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    PUSHBUTTON      "...",IDC_OPEN_FILE_DLG,326,20,20,12
+    LTEXT           "Визначите, будь ласка, файл БД ЕРАГС, з якого потрібно імпортувати дані.",
+                    IDC_STATIC,5,8,341,10
+    EDITTEXT        IDC_SOURCE_FILE,5,20,314,12,ES_AUTOHSCROLL | ES_READONLY
+    CONTROL         "",IDC_FORYEAR,"Button",BS_AUTOCHECKBOX | WS_DISABLED | 
+                    WS_TABSTOP,5,35,314,13,WS_EX_STATICEDGE
+    CONTROL         "Не імпортувати пусті записи (перевіряється за прізвищем)",
+                    IDC_NOEMPY,"Button",BS_AUTOCHECKBOX | WS_DISABLED | 
+                    WS_TABSTOP,5,49,314,13,WS_EX_STATICEDGE
+    CONTROL         "Не імпортувати записи, які вже існують (перевіряється за номером і прізвищем)",
+                    IDC_NOEXIST,"Button",BS_AUTOCHECKBOX | WS_DISABLED | 
+                    WS_TABSTOP,5,63,314,12,WS_EX_STATICEDGE
+    DEFPUSHBUTTON   "Почати імпорт",IDOK,281,154,65,15,WS_DISABLED
+    CONTROL         "Імпортувати записи про народження",IDC_IMPORT_BIRTH,
+                    "Button",BS_AUTOCHECKBOX | WS_DISABLED | WS_TABSTOP,41,
+                    89,139,12,WS_EX_STATICEDGE
+    ICON            IDI_BIRTH,IDC_STATIC,8,79,20,20,SS_REALSIZEIMAGE
+    CONTROL         "Імпортувати записи про одруження",IDC_IMPORT_MARRIAGE,
+                    "Button",BS_AUTOCHECKBOX | WS_DISABLED | WS_TABSTOP,41,
+                    120,139,12,WS_EX_STATICEDGE
+    ICON            IDI_MARRIAGE,IDC_STATIC,8,113,20,20,SS_REALSIZEIMAGE
+    CONTROL         "Імпортувати записи про розірвання",IDC_IMPORT_DIVORCE,
+                    "Button",BS_AUTOCHECKBOX | WS_DISABLED | WS_TABSTOP,41,
+                    147,139,12,WS_EX_STATICEDGE
+    ICON            IDI_DIVORCE,IDC_STATIC,8,142,20,20,SS_REALSIZEIMAGE
+    CONTROL         "Імпортувати записи про смерть",IDC_IMPORT_DEATH,"Button",
+                    BS_AUTOCHECKBOX | WS_DISABLED | WS_TABSTOP,222,120,121,
+                    12,WS_EX_STATICEDGE
+    ICON            IDI_DEATH,IDC_STATIC,188,113,20,20,SS_REALSIZEIMAGE
+    CONTROL         "Імпортувати записи про зміну",IDC_IMPORT_CHANGE,"Button",
+                    BS_AUTOCHECKBOX | WS_DISABLED | WS_TABSTOP,222,89,121,12,
+                    WS_EX_STATICEDGE
+    ICON            IDI_CHANGE,IDC_STATIC,186,82,20,20,SS_REALSIZEIMAGE
+END
+
+IDD_IMPORT_PROGESS DIALOGEX 0, 0, 384, 194
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Імпорт"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,327,173,50,14,WS_DISABLED
+    CONTROL         "List1",IDC_MESSAGE_LIST,"SysListView32",LVS_REPORT | 
+                    WS_BORDER | WS_TABSTOP,7,51,370,120
+    CONTROL         "Progress1",IDC_TOTAL_PROGRESS,"msctls_progress32",
+                    PBS_SMOOTH,7,30,370,14
+    LTEXT           "",IDC_INFOBOX,7,7,370,16,SS_CENTERIMAGE,
+                    WS_EX_STATICEDGE
+END
+
+IDD_REPAIR DIALOGEX 0, 0, 421, 109
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Увага!"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Так",IDOK,299,88,41,14,WS_DISABLED
+    PUSHBUTTON      "Залишити пустим",IDCANCEL,347,88,69,14
+    EDITTEXT        IDC_RAPAIR,36,7,380,57,ES_MULTILINE | ES_AUTOVSCROLL | 
+                    ES_READONLY
+    LTEXT           "",IDC_LBL_WHAT,2,69,142,13,0,WS_EX_STATICEDGE
+    EDITTEXT        IDC_WHAT,149,69,267,12,ES_AUTOHSCROLL
+    ICON            IDI_ATTENTION,IDC_STATIC,2,7,20,20
+    CONTROL         "Більш не показувати це вікно, усі помилкові значення залишати пустими.",
+                    IDC_NOMORE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,2,90,
+                    283,10
+END
+
+IDD_DEFBIRTH DIALOGEX 0, 0, 305, 161
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Місце народження за умовченням"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Так",IDOK,214,140,42,14
+    PUSHBUTTON      "Ні",IDCANCEL,262,140,34,14
+    LTEXT           "Держава",IDC_STATIC,63,77,65,12,SS_CENTERIMAGE,
+                    WS_EX_STATICEDGE
+    LTEXT           "Область",IDC_STATIC,63,92,65,12,SS_CENTERIMAGE,
+                    WS_EX_STATICEDGE
+    LTEXT           "Місто",IDC_STATIC,63,108,65,12,SS_CENTERIMAGE,
+                    WS_EX_STATICEDGE
+    LTEXT           "Район",IDC_STATIC,63,124,65,12,SS_CENTERIMAGE,
+                    WS_EX_STATICEDGE
+    EDITTEXT        IDC_COUNTRY,132,76,164,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_REGION,132,92,164,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_CITY,132,108,164,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_DISTRICT,132,124,164,13,ES_AUTOHSCROLL
+    ICON            IDI_ATTENTION,IDC_STATIC,9,8,21,20
+    EDITTEXT        IDC_EDIT1,39,3,259,69,ES_MULTILINE | ES_READONLY
+END
+
+IDD_EXPORT_DIALOG DIALOG DISCARDABLE  0, 0, 495, 220
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Майстер ексорту даних"
+FONT 8, "MS Sans Serif"
+BEGIN
+    PUSHBUTTON      "Далі >",ID_WIZNEXT,235,204,50,14
+    PUSHBUTTON      "< Повернутися",ID_WIZBACK,171,204,58,14
+    PUSHBUTTON      "Експортувати!",ID_WIZFINISH,323,204,78,14,WS_DISABLED
+    CONTROL         "",IDC_SHEETRECT,"Static",SS_ETCHEDFRAME | NOT 
+                    WS_VISIBLE,4,2,477,198
+    CONTROL         "",IDC_SHEETRECT_VISIBLE,"Static",SS_ETCHEDFRAME,4,2,477,
+                    198
+    PUSHBUTTON      "Підказка",ID_HELP,16,204,58,14
+END
+
+IDD_EXPORT_TYPES DIALOG DISCARDABLE  0, 0, 357, 179
+STYLE WS_CHILD | WS_DISABLED
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "Експортувати дані у XLS-файл (Microsoft Excel, Open Office Calc)",
+                    IDC_CHECK_XLS,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,12,
+                    21,265,12
+    CONTROL         "Експортувати дані у RTF-файл (Microsoft Word, Open Office Write)",
+                    IDC_CHECK_RTF,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,12,
+                    36,264,12
+    CONTROL         "Експортувати дані у HTM-файл (Internet Explorer, Opera, Mozila)",
+                    IDC_CHECK_HTM,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,12,
+                    52,264,12
+    GROUPBOX        "Визначите, будь ласка, формати даних, до яких потрібно роботи експорт",
+                    IDC_STATIC,7,9,318,59
+    GROUPBOX        "Визначите, будь ласка,  по яких видах реєстрації потрібно роботи експорт",
+                    IDC_STATIC,7,74,318,80
+    CONTROL         "Експортувати актові записи про НАРОДЖЕННЯ",
+                    IDC_CHECK_BIRH,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,12,
+                    87,264,12
+    CONTROL         "Експортувати актові записи про ОДРУЖЕННЯ",
+                    IDC_CHECK_MARRIAGE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    12,100,264,12
+    CONTROL         "Експортувати актові записи про РОЗІРВАННЯ ШЛЮБУ",
+                    IDC_CHECK_DIVORCE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    12,114,264,12
+    CONTROL         "Експортувати актові записи про ЗМІНУ",IDC_CHECK_CHANGE,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,12,127,264,12
+    CONTROL         "Експортувати актові записи про СМЕРТЬ",IDC_CHECK_DEATH,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,12,140,264,12
+END
+
+IDD_EXP_BIRTH DIALOGEX 0, 0, 467, 189
+STYLE WS_CHILD | WS_DISABLED
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    CONTROL         "List1",IDC_NO_EXPORT,"SysListView32",LVS_REPORT | 
+                    WS_BORDER | WS_TABSTOP,0,39,195,130
+    CONTROL         "List1",IDC_DO_EXPORT,"SysListView32",LVS_REPORT | 
+                    WS_BORDER | WS_TABSTOP,245,39,196,129
+    LTEXT           "Визначте, будь ласка, поля актового запису про НАРОДЖЕННЯ, які потрібно експортувати",
+                    IDC_STATIC,1,7,334,11
+    LTEXT           "Поля, які не потрібно експортувати",IDC_STATIC,0,27,195,
+                    11,SS_CENTERIMAGE,WS_EX_STATICEDGE
+    LTEXT           "Поля, які потрібно експортувати",IDC_STATIC,245,27,195,
+                    11,SS_CENTERIMAGE,WS_EX_STATICEDGE
+    PUSHBUTTON      "Додати ->",IDC_ADD,198,67,45,12
+    PUSHBUTTON      "Всі ->>",IDC_ADD_ALL,198,81,45,12
+    PUSHBUTTON      "<<- Всі",IDC_SUB_ALL,198,118,45,12
+    PUSHBUTTON      "<- Вилучити",IDC_SUB,198,104,45,12
+    CONTROL         "Spin2",IDC_SORT_SPIN,"msctls_updown32",UDS_ARROWKEYS,
+                    443,54,13,25
+END
+
+IDD_EXPORT_PROGRESS DIALOG DISCARDABLE  0, 0, 357, 179
+STYLE WS_CHILD | WS_DISABLED
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Експортуються дані про",IDC_STATIC,7,22,343,15
+    CONTROL         "Progress1",IDC_PROGRESS,"msctls_progress32",WS_BORDER,7,
+                    49,343,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDIL_MESSAGES           BITMAP  DISCARDABLE     "res\\idil_mes.bmp"
+IDIL_CHECKBOXXP         BITMAP  DISCARDABLE     "Res\\CheckBoxIL.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_ATTENTION           ICON    DISCARDABLE     "res\\Attention.ico"
+IDI_MARRIAGE            ICON    DISCARDABLE     "res\\Marriage.ico"
+IDI_BIRTH               ICON    DISCARDABLE     "res\\Birth.ico"
+IDI_CHANGE              ICON    DISCARDABLE     "res\\Change.ico"
+IDI_DEATH               ICON    DISCARDABLE     "res\\Death.ico"
+IDI_DIVORCE             ICON    DISCARDABLE     "res\\Divorce.ico"
+#endif    // Russian resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 2011,5,0,31
+ PRODUCTVERSION 2011,5,0,31
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "Comments", "\0"
+            VALUE "CompanyName", "Vladimir Koltsov\0"
+            VALUE "FileDescription", "ImpExp DLL\0"
+            VALUE "FileVersion", "2011, 5, 0, 31\0"
+            VALUE "InternalName", "ImpExp\0"
+            VALUE "LegalCopyright", "Copyright (C) 2003-2011 Vladimir Koltsov\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "ImpExp.DLL\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "ImpExp Dynamic Link Library\0"
+            VALUE "ProductVersion", "2011, 5, 0, 31\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\ImpExp.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

@@ -1,0 +1,60 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2047
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "EraABC", "EraABC\EraABC.vcxproj", "{8B1DEF4E-2C3C-41EE-AD1C-53FF9EC8EE53}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "EraSetup", "EraSetup\EraSetup.vcxproj", "{B6E6A208-3619-4D81-BAFB-A2F3327B6657}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "EraWiz", "EraWiz\EraWiz.vcxproj", "{5E6E1721-F513-4FCF-9A8A-E80208F8346D}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Erags", "Erags\Erags.vcxproj", "{2DB658A1-F7CD-4C2D-B711-B91E936D3C46}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ImpExp", "ImpExp\ImpExp.vcxproj", "{E8329495-BDAA-4D34-9F0A-0C47FD4B4D52}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+		Template|x86 = Template|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8B1DEF4E-2C3C-41EE-AD1C-53FF9EC8EE53}.Debug|x86.ActiveCfg = Debug|Win32
+		{8B1DEF4E-2C3C-41EE-AD1C-53FF9EC8EE53}.Debug|x86.Build.0 = Debug|Win32
+		{8B1DEF4E-2C3C-41EE-AD1C-53FF9EC8EE53}.Release|x86.ActiveCfg = Release|Win32
+		{8B1DEF4E-2C3C-41EE-AD1C-53FF9EC8EE53}.Release|x86.Build.0 = Release|Win32
+		{8B1DEF4E-2C3C-41EE-AD1C-53FF9EC8EE53}.Template|x86.ActiveCfg = Release|Win32
+		{8B1DEF4E-2C3C-41EE-AD1C-53FF9EC8EE53}.Template|x86.Build.0 = Release|Win32
+		{B6E6A208-3619-4D81-BAFB-A2F3327B6657}.Debug|x86.ActiveCfg = Debug|Win32
+		{B6E6A208-3619-4D81-BAFB-A2F3327B6657}.Debug|x86.Build.0 = Debug|Win32
+		{B6E6A208-3619-4D81-BAFB-A2F3327B6657}.Release|x86.ActiveCfg = Release|Win32
+		{B6E6A208-3619-4D81-BAFB-A2F3327B6657}.Release|x86.Build.0 = Release|Win32
+		{B6E6A208-3619-4D81-BAFB-A2F3327B6657}.Template|x86.ActiveCfg = Template|Win32
+		{B6E6A208-3619-4D81-BAFB-A2F3327B6657}.Template|x86.Build.0 = Template|Win32
+		{5E6E1721-F513-4FCF-9A8A-E80208F8346D}.Debug|x86.ActiveCfg = Debug|Win32
+		{5E6E1721-F513-4FCF-9A8A-E80208F8346D}.Debug|x86.Build.0 = Debug|Win32
+		{5E6E1721-F513-4FCF-9A8A-E80208F8346D}.Release|x86.ActiveCfg = Release|Win32
+		{5E6E1721-F513-4FCF-9A8A-E80208F8346D}.Release|x86.Build.0 = Release|Win32
+		{5E6E1721-F513-4FCF-9A8A-E80208F8346D}.Template|x86.ActiveCfg = Template|Win32
+		{5E6E1721-F513-4FCF-9A8A-E80208F8346D}.Template|x86.Build.0 = Template|Win32
+		{2DB658A1-F7CD-4C2D-B711-B91E936D3C46}.Debug|x86.ActiveCfg = Debug|Win32
+		{2DB658A1-F7CD-4C2D-B711-B91E936D3C46}.Debug|x86.Build.0 = Debug|Win32
+		{2DB658A1-F7CD-4C2D-B711-B91E936D3C46}.Release|x86.ActiveCfg = Release|Win32
+		{2DB658A1-F7CD-4C2D-B711-B91E936D3C46}.Release|x86.Build.0 = Release|Win32
+		{2DB658A1-F7CD-4C2D-B711-B91E936D3C46}.Template|x86.ActiveCfg = Template|Win32
+		{2DB658A1-F7CD-4C2D-B711-B91E936D3C46}.Template|x86.Build.0 = Template|Win32
+		{E8329495-BDAA-4D34-9F0A-0C47FD4B4D52}.Debug|x86.ActiveCfg = Debug|Win32
+		{E8329495-BDAA-4D34-9F0A-0C47FD4B4D52}.Debug|x86.Build.0 = Debug|Win32
+		{E8329495-BDAA-4D34-9F0A-0C47FD4B4D52}.Release|x86.ActiveCfg = Release|Win32
+		{E8329495-BDAA-4D34-9F0A-0C47FD4B4D52}.Release|x86.Build.0 = Release|Win32
+		{E8329495-BDAA-4D34-9F0A-0C47FD4B4D52}.Template|x86.ActiveCfg = Template|Win32
+		{E8329495-BDAA-4D34-9F0A-0C47FD4B4D52}.Template|x86.Build.0 = Template|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {43DE4986-9646-4283-BDE9-AF7A29ACED74}
+	EndGlobalSection
+EndGlobal

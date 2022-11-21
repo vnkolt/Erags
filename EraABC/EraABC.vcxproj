@@ -1,0 +1,380 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <SccProjectName />
+    <SccLocalPath />
+    <Keyword>MFCProj</Keyword>
+    <ProjectGuid>{8B1DEF4E-2C3C-41EE-AD1C-53FF9EC8EE53}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.17134.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+    <UseOfMfc>Static</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>.\Release\</OutDir>
+    <IntDir>.\Release\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>.\Debug\</OutDir>
+    <IntDir>.\Debug\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <StringPooling>true</StringPooling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <Optimization>MaxSpeed</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>NDEBUG;WIN32;_WINDOWS;_ERAABC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>.\Release\</AssemblerListingLocation>
+      <PrecompiledHeaderOutputFile>.\Release\EraABC.pch</PrecompiledHeaderOutputFile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <ObjectFileName>.\Release\</ObjectFileName>
+      <ProgramDataBaseFileName>.\Release\</ProgramDataBaseFileName>
+    </ClCompile>
+    <Midl>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <TypeLibraryName>.\Release\EraABC.tlb</TypeLibraryName>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <TargetEnvironment>Win32</TargetEnvironment>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0422</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Release\EraABC.bsc</OutputFile>
+    </Bscmake>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <SubSystem>Windows</SubSystem>
+      <OutputFile>C:\Erags\EraABC.exe</OutputFile>
+      <AdditionalDependencies>SHLWAPI.LIB;VERSION.LIB;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <Optimization>Disabled</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <MinimalRebuild>true</MinimalRebuild>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <PreprocessorDefinitions>_DEBUG;WIN32;_WINDOWS;_ERAABC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>.\Debug\</AssemblerListingLocation>
+      <BrowseInformation>true</BrowseInformation>
+      <PrecompiledHeaderOutputFile>.\Debug\EraABC.pch</PrecompiledHeaderOutputFile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <ObjectFileName>.\Debug\</ObjectFileName>
+      <ProgramDataBaseFileName>.\Debug\</ProgramDataBaseFileName>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+    </ClCompile>
+    <Midl>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <TypeLibraryName>.\Debug\EraABC.tlb</TypeLibraryName>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <TargetEnvironment>Win32</TargetEnvironment>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0422</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Debug\EraABC.bsc</OutputFile>
+    </Bscmake>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OutputFile>R:\Erags\EraABC.exe</OutputFile>
+      <AdditionalDependencies>SHLWAPI.LIB;VERSION.LIB;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\Common\CyrString.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Use</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\Common\DAO36.cpp" />
+    <ClCompile Include="..\Common\DaoErr.cpp" />
+    <ClCompile Include="..\Common\DB.CPP" />
+    <ClCompile Include="..\Common\FHelpers.cpp" />
+    <ClCompile Include="..\Common\MDB.CPP" />
+    <ClCompile Include="..\Common\Monthes.cpp" />
+    <ClCompile Include="..\Common\Names.cpp" />
+    <ClCompile Include="..\Common\Version.cpp" />
+    <ClCompile Include="..\Controls\BaseTabCtrl.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\Controls\BkgndCtrl.cpp" />
+    <ClCompile Include="..\Controls\BtnST.cpp" />
+    <ClCompile Include="..\Controls\CPPTooltip\CeXDib.cpp" />
+    <ClCompile Include="..\Controls\CPPTooltip\PPDrawManager.cpp" />
+    <ClCompile Include="..\Controls\CPPTooltip\PPHtmlDrawer.cpp" />
+    <ClCompile Include="..\Controls\CPPTooltip\PPTooltip.cpp" />
+    <ClCompile Include="..\Controls\EnTabCtrl.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\Controls\EraButton.cpp" />
+    <ClCompile Include="..\Controls\EraComboBox.cpp" />
+    <ClCompile Include="..\Controls\EraControls.cpp" />
+    <ClCompile Include="..\Controls\EraDateTime.cpp" />
+    <ClCompile Include="..\Controls\EraEdit.cpp" />
+    <ClCompile Include="..\Controls\EraMonthCalCtrl.cpp" />
+    <ClCompile Include="..\Controls\ExtLabel.cpp" />
+    <ClCompile Include="..\Controls\ExtStatusBarComboBox.cpp" />
+    <ClCompile Include="..\Controls\ExtStatusControlBar.cpp" />
+    <ClCompile Include="..\Controls\FileTreeCtrl.cpp" />
+    <ClCompile Include="..\Controls\FlatHeaderCtrl.cpp" />
+    <ClCompile Include="..\Controls\FolderTreeBar.cpp" />
+    <ClCompile Include="..\Controls\ListViewCtrlEx.cpp" />
+    <ClCompile Include="..\Controls\MyFileDialog.cpp" />
+    <ClCompile Include="..\Controls\NewMenu.cpp" />
+    <ClCompile Include="..\Controls\NewMenuBar.cpp" />
+    <ClCompile Include="..\Controls\OddButton.cpp" />
+    <ClCompile Include="..\Controls\scbarcf.cpp" />
+    <ClCompile Include="..\Controls\scbarg.cpp" />
+    <ClCompile Include="..\Controls\ShellType.cpp" />
+    <ClCompile Include="..\Controls\sizecbar.cpp" />
+    <ClCompile Include="..\Controls\TabCtrlBG.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\Controls\TCToolBar\TCImageList.cpp" />
+    <ClCompile Include="..\Controls\TCToolBar\TCToolBar.cpp" />
+    <ClCompile Include="..\Controls\VisualStylesXP.cpp" />
+    <ClCompile Include="..\Controls\XButtonXP.cpp" />
+    <ClCompile Include="ABCList.cpp" />
+    <ClCompile Include="DateFunc.cpp" />
+    <ClCompile Include="DialogEx.cpp" />
+    <ClCompile Include="EraABC.cpp" />
+    <ClCompile Include="EraABCDoc.cpp" />
+    <ClCompile Include="EraABCView.cpp" />
+    <ClCompile Include="FormABC.cpp" />
+    <ClCompile Include="FormBirth.cpp" />
+    <ClCompile Include="FormChange.cpp" />
+    <ClCompile Include="FormDeath.cpp" />
+    <ClCompile Include="FormDivorce.cpp" />
+    <ClCompile Include="FormMarriage.cpp" />
+    <ClCompile Include="HelpMan.cpp" />
+    <ClCompile Include="IniCache.cpp" />
+    <ClCompile Include="MainFrm.cpp" />
+    <ClCompile Include="RSBirthes.cpp" />
+    <ClCompile Include="RSChanges.cpp" />
+    <ClCompile Include="RSDeathes.cpp" />
+    <ClCompile Include="RSDivorces.cpp" />
+    <ClCompile Include="RSMarriages.cpp" />
+    <ClCompile Include="SetDefDlg.cpp" />
+    <ClCompile Include="StdAfx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">stdafx.h</PrecompiledHeaderFile>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">stdafx.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="TabView.cpp" />
+    <ClCompile Include="YesNoDlg.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="EraABC.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Common\CyrString.h" />
+    <ClInclude Include="..\Common\DAO36.h" />
+    <ClInclude Include="..\Common\DaoErr.h" />
+    <ClInclude Include="..\Common\DB.H" />
+    <ClInclude Include="..\Common\EraMessages.h" />
+    <ClInclude Include="..\Common\MDB.H" />
+    <ClInclude Include="..\Common\Monthes.h" />
+    <ClInclude Include="..\Common\Names.h" />
+    <ClInclude Include="..\Common\Version.h" />
+    <ClInclude Include="..\Controls\BkgndCtrl.h" />
+    <ClInclude Include="..\Controls\BtnST.h" />
+    <ClInclude Include="..\Controls\erabutton.h" />
+    <ClInclude Include="..\Controls\EraComboBox.h" />
+    <ClInclude Include="..\Controls\EraControls.h" />
+    <ClInclude Include="..\Controls\EraDateTime.h" />
+    <ClInclude Include="..\Controls\EraEdit.h" />
+    <ClInclude Include="..\Controls\ExtLabel.h" />
+    <ClInclude Include="..\Controls\ExtStatusBarComboBox.h" />
+    <ClInclude Include="..\Controls\ExtStatusControlBar.h" />
+    <ClInclude Include="..\Controls\FileTreeCtrl.h" />
+    <ClInclude Include="..\Controls\FlatHeaderCtrl.h" />
+    <ClInclude Include="..\Controls\FolderTreeBar.h" />
+    <ClInclude Include="..\Controls\ListViewCtrlEx.h" />
+    <ClInclude Include="..\Controls\MemDC.h" />
+    <ClInclude Include="..\Controls\MyFileDialog.h" />
+    <ClInclude Include="..\Controls\NewMenu.h" />
+    <ClInclude Include="..\Controls\NewMenuBar.h" />
+    <ClInclude Include="..\Controls\scbarcf.h" />
+    <ClInclude Include="..\Controls\scbarg.h" />
+    <ClInclude Include="..\Controls\ShellType.h" />
+    <ClInclude Include="..\Controls\sizecbar.h" />
+    <ClInclude Include="..\Controls\TCToolBar\TCToolBar.h" />
+    <ClInclude Include="..\Controls\XButtonXP.h" />
+    <ClInclude Include="ABCList.h" />
+    <ClInclude Include="DateFunc.h" />
+    <ClInclude Include="DialogEx.h" />
+    <ClInclude Include="EraABC.h" />
+    <ClInclude Include="EraABCDoc.h" />
+    <ClInclude Include="EraABCView.h" />
+    <ClInclude Include="FormABC.h" />
+    <ClInclude Include="FormBirth.h" />
+    <ClInclude Include="FormChange.h" />
+    <ClInclude Include="FormDeath.h" />
+    <ClInclude Include="FormDivorce.h" />
+    <ClInclude Include="FormMarriage.h" />
+    <ClInclude Include="HelpMan.h" />
+    <ClInclude Include="IniCache.h" />
+    <ClInclude Include="MainFrm.h" />
+    <ClInclude Include="Names.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="RSBirthes.h" />
+    <ClInclude Include="RSChanges.h" />
+    <ClInclude Include="RSDeathes.h" />
+    <ClInclude Include="RSDivorces.h" />
+    <ClInclude Include="RSMarriages.h" />
+    <ClInclude Include="SetDefDlg.h" />
+    <ClInclude Include="StdAfx.h" />
+    <ClInclude Include="TabView.h" />
+    <ClInclude Include="Utils.h" />
+    <ClInclude Include="YesNoDlg.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\Attention.ICO" />
+    <Image Include="res\Birth.ico" />
+    <Image Include="res\Birth_Gray.ico" />
+    <Image Include="res\BntChange.bmp" />
+    <Image Include="res\BntChangeOut.bmp" />
+    <Image Include="res\Boy256.bmp" />
+    <Image Include="res\BtnBirth.bmp" />
+    <Image Include="res\BtnBirthOut.bmp" />
+    <Image Include="res\BtnDeathOut.bmp" />
+    <Image Include="res\BtnDivorce.bmp" />
+    <Image Include="res\BtnDivorceOut.bmp" />
+    <Image Include="res\BtnFileNew.bmp" />
+    <Image Include="res\BtnFirst.bmp" />
+    <Image Include="res\BtnFirstOut.bmp" />
+    <Image Include="res\BtnFolderTree.bmp" />
+    <Image Include="res\BtnHelp.bmp" />
+    <Image Include="res\BtnHelpOut.bmp" />
+    <Image Include="res\BtnLast.bmp" />
+    <Image Include="res\BtnLastOut.bmp" />
+    <Image Include="res\BtnMarriage.bmp" />
+    <Image Include="res\btnMarriageOut.bmp" />
+    <Image Include="res\BtnNext.bmp" />
+    <Image Include="res\BtnNextOut.bmp" />
+    <Image Include="res\BtnPrev.bmp" />
+    <Image Include="res\BtnPrevOut.bmp" />
+    <Image Include="res\BtnRecent.bmp" />
+    <Image Include="res\BtnRecordDelete.bmp" />
+    <Image Include="res\BtnRecordDeleteOut.bmp" />
+    <Image Include="res\BtnRecordNew.bmp" />
+    <Image Include="res\BtnRecordNewOut.bmp" />
+    <Image Include="res\btn_deat.bmp" />
+    <Image Include="res\calendar.bmp" />
+    <Image Include="res\Change.ico" />
+    <Image Include="res\Change_Gray.ico" />
+    <Image Include="res\close_app.ico" />
+    <Image Include="res\Death.ico" />
+    <Image Include="res\Death256.bmp" />
+    <Image Include="res\Death_Gray.ico" />
+    <Image Include="res\Divorce.ico" />
+    <Image Include="res\Divorce_Gray.ico" />
+    <Image Include="res\EraABC.ico" />
+    <Image Include="res\EraABCDoc.ico" />
+    <Image Include="res\Fiance256.bmp" />
+    <Image Include="res\Fiancee256.bmp" />
+    <Image Include="res\FileNew.ico" />
+    <Image Include="res\FileNewGray.ico" />
+    <Image Include="res\FileOpen.ico" />
+    <Image Include="res\FileOpenGray.ico" />
+    <Image Include="res\File_Open.bmp" />
+    <Image Include="res\File_Open_Out.bmp" />
+    <Image Include="res\FolderTree.ico" />
+    <Image Include="res\Girl256.bmp" />
+    <Image Include="res\hdrdown.bmp" />
+    <Image Include="res\hdrup.bmp" />
+    <Image Include="res\idil_abcsex.bmp" />
+    <Image Include="res\idil_hdr.bmp" />
+    <Image Include="res\idil_mes.bmp" />
+    <Image Include="res\idr_erag.ico" />
+    <Image Include="res\idr_main.ico" />
+    <Image Include="res\Information.ico" />
+    <Image Include="res\Man256.bmp" />
+    <Image Include="res\Marriage.ico" />
+    <Image Include="res\Marriage_Gray.ico" />
+    <Image Include="res\NewMenu256.bmp" />
+    <Image Include="res\No.ico" />
+    <Image Include="res\No256.bmp" />
+    <Image Include="res\No256Actived.bmp" />
+    <Image Include="res\StillbornBoy.bmp" />
+    <Image Include="res\StillbornGirl.bmp" />
+    <Image Include="res\TabImList.bmp" />
+    <Image Include="res\Toolbar.bmp" />
+    <Image Include="res\Toolbars.bmp" />
+    <Image Include="res\Toolbar_Disabled.bmp" />
+    <Image Include="res\Toolbar_Hot.bmp" />
+    <Image Include="res\Toolbar_Normal.bmp" />
+    <Image Include="res\Woman256.bmp" />
+    <Image Include="res\Yes.ico" />
+    <Image Include="res\Yes256.bmp" />
+    <Image Include="res\Yes256Actived.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="res\EraABC.rc2" />
+    <CustomBuild Include="res\tfdropcopy.cur" />
+    <CustomBuild Include="res\tfnodropcopy.cur" />
+    <CustomBuild Include="res\tfnodropmove.cur" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,18 @@
+[OPTIONS]
+Auto Index=Yes
+Compatibility=1.1 or later
+Compiled file=Erags_u.chm
+Contents file=Erags_u.hhc
+Default Font=MS Sans Serif,10,204
+Default topic=Default_u.htm
+Display compile progress=No
+Index file=Index_u.hhk
+Language=0x419 Ðóññêèé
+Title=ÏÊ ÅÐÀÃÑ
+
+
+[FILES]
+Default_u.htm
+
+[INFOTYPES]
+

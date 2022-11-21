@@ -1,0 +1,873 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Russian resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_RUS)
+#ifdef _WIN32
+LANGUAGE LANG_RUSSIAN, SUBLANG_DEFAULT
+#pragma code_page(1251)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BOY                 BITMAP  DISCARDABLE     "res\\Boy256.bmp"
+IDB_FIANCE256           BITMAP  DISCARDABLE     "Res\\Fiance256.bmp"
+IDB_FIANCEE256          BITMAP  DISCARDABLE     "Res\\Fiancee256.bmp"
+IDB_GIRL                BITMAP  DISCARDABLE     "res\\Girl256.bmp"
+IDB_MAN256              BITMAP  DISCARDABLE     "Res\\Man256.bmp"
+IDB_WOMAN256            BITMAP  DISCARDABLE     "Res\\Woman256.bmp"
+IDIL_HEADER             BITMAP  DISCARDABLE     "res\\idil_hdr.bmp"
+IDB_NO256               BITMAP  DISCARDABLE     "res\\No256.bmp"
+IDB_NO256ACTIVED        BITMAP  DISCARDABLE     "res\\No256Actived.bmp"
+IDB_YES256              BITMAP  DISCARDABLE     "res\\Yes256.bmp"
+IDB_YES256ACTIVED       BITMAP  DISCARDABLE     "res\\Yes256Actived.bmp"
+IDB_DEATH               BITMAP  DISCARDABLE     "res\\Death256.bmp"
+IDR_NEWMENU256          BITMAP  DISCARDABLE     "Res\\NewMenu256.bmp"
+IDB_HDRDOWN             BITMAP  DISCARDABLE     "Res\\hdrdown.bmp"
+IDB_HDRUP               BITMAP  DISCARDABLE     "Res\\hdrup.bmp"
+IDIL_ABCSEX             BITMAP  DISCARDABLE     "res\\idil_abcsex.bmp"
+IDIL_TABS               BITMAP  DISCARDABLE     "res\\TabImList.bmp"
+IDB_CALENDAR            BITMAP  DISCARDABLE     "res\\calendar.bmp"
+IDB_STILLBORN_BOY       BITMAP  DISCARDABLE     "res\\StillbornBoy.bmp"
+IDB_STILLBORN_GIRL      BITMAP  DISCARDABLE     "res\\StillbornGirl.bmp"
+IDR_MAINFRAME           BITMAP  MOVEABLE PURE   "res\\Toolbar.bmp"
+IDTB_TOOLBARS           BITMAP  DISCARDABLE     "res\\Toolbars.bmp"
+IDIL_MESSAGES           BITMAP  DISCARDABLE     "res\\idil_mes.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_FORM_BIRTH DIALOGEX 0, 0, 374, 73
+STYLE WS_CHILD
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    CONTROL         157,IDC_CHILDFACE,"Static",SS_BITMAP,1,6,67,62
+    CONTROL         "",IDC_SEX,"Button",BS_AUTOCHECKBOX | BS_CENTER | 
+                    BS_VCENTER | BS_PUSHLIKE | WS_GROUP | WS_TABSTOP,79,8,
+                    117,12
+    CTEXT           "№",IDC_STATIC,202,8,13,12,SS_CENTERIMAGE
+    EDITTEXT        IDC_NUMBER,219,8,29,12,ES_AUTOHSCROLL | ES_NUMBER | 
+                    WS_GROUP
+    CTEXT           "від",IDC_STATIC,256,8,16,12,SS_CENTERIMAGE
+    EDITTEXT        IDC_DATEREG,277,8,92,12,ES_AUTOHSCROLL | WS_GROUP
+    LTEXT           "Прізвище",IDC_STATIC,81,26,54,10,SS_CENTERIMAGE,
+                    WS_EX_TRANSPARENT
+    EDITTEXT        IDC_SURNAME,81,40,76,12,ES_AUTOHSCROLL | ES_NOHIDESEL
+    LTEXT           "Ім'я",IDC_STATIC,162,26,56,9,SS_CENTERIMAGE
+    COMBOBOX        IDC_NAME,162,40,85,117,CBS_DROPDOWN | CBS_AUTOHSCROLL | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "По батькові",IDC_STATIC,253,26,42,12,SS_CENTERIMAGE
+    COMBOBOX        IDC_PATRONYMIC,251,40,118,127,CBS_DROPDOWN | 
+                    CBS_AUTOHSCROLL | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "живонароджена",IDC_ALIVE_FLAG,81,54,69,12,BS_CENTER | 
+                    BS_VCENTER | BS_FLAT | NOT WS_VISIBLE
+END
+
+IDD_FORM_CHANGE DIALOGEX 0, 0, 333, 82
+STYLE WS_CHILD
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_SEX,"Button",BS_AUTOCHECKBOX | BS_CENTER | 
+                    BS_VCENTER | BS_PUSHLIKE | WS_GROUP | WS_TABSTOP,2,7,159,
+                    12
+    CTEXT           "№",IDC_STATIC,166,7,12,11,SS_CENTERIMAGE
+    EDITTEXT        IDC_NUMBER,183,7,29,12,ES_AUTOHSCROLL | ES_NUMBER | 
+                    WS_GROUP
+    CTEXT           "від",IDC_STATIC,217,7,15,11,SS_CENTERIMAGE
+    EDITTEXT        IDC_DATEREG,238,7,93,12,ES_AUTOHSCROLL | WS_GROUP
+    CTEXT           "ДО Зміни",IDC_STATIC,3,22,157,11,SS_CENTERIMAGE,
+                    WS_EX_STATICEDGE
+    CTEXT           "ПІСЛЯ Зміни",IDC_STATIC,173,22,157,11,SS_CENTERIMAGE,
+                    WS_EX_STATICEDGE
+    LTEXT           "Прізвище",IDC_STATIC,7,35,54,9
+    EDITTEXT        IDC_OLD_SURNAME,67,35,93,12,ES_AUTOHSCROLL | WS_GROUP
+    LTEXT           "Прізвище",IDC_STATIC,174,35,54,9
+    EDITTEXT        IDC_NEW_SURNAME,232,35,99,12,ES_AUTOHSCROLL | WS_GROUP
+    LTEXT           "Ім'я",IDC_STATIC,7,49,54,9
+    COMBOBOX        IDC_OLD_NAME,67,49,93,117,CBS_DROPDOWN | CBS_AUTOHSCROLL | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Ім'я",IDC_STATIC,174,49,54,9
+    COMBOBOX        IDC_NEW_NAME,232,49,100,117,CBS_DROPDOWN | 
+                    CBS_AUTOHSCROLL | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "По батькові",IDC_STATIC,7,64,54,9
+    COMBOBOX        IDC_OLD_PATRONYMIC,67,64,93,117,CBS_DROPDOWN | 
+                    CBS_AUTOHSCROLL | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "По батькові",IDC_STATIC,174,64,54,9
+    COMBOBOX        IDC_NEW_PATRONYMIC,232,64,100,117,CBS_DROPDOWN | 
+                    CBS_AUTOHSCROLL | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_FORM_DEATH DIALOGEX 0, 0, 378, 69
+STYLE WS_CHILD
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_SEX,"Button",BS_AUTOCHECKBOX | BS_CENTER | 
+                    BS_VCENTER | BS_PUSHLIKE | WS_GROUP | WS_TABSTOP,79,8,
+                    117,12
+    CTEXT           "№",IDC_STATIC,202,8,13,12,SS_CENTERIMAGE
+    EDITTEXT        IDC_NUMBER,219,8,29,12,ES_AUTOHSCROLL | ES_NUMBER | 
+                    WS_GROUP
+    CTEXT           "від",IDC_STATIC,256,8,16,12,SS_CENTERIMAGE
+    EDITTEXT        IDC_DATEREG,277,8,92,12,ES_AUTOHSCROLL | WS_GROUP
+    LTEXT           "Прізвище",IDC_STATIC,81,29,54,10,SS_CENTERIMAGE,
+                    WS_EX_TRANSPARENT
+    EDITTEXT        IDC_SURNAME,81,43,76,12,ES_AUTOHSCROLL | ES_NOHIDESEL
+    LTEXT           "Ім'я",IDC_STATIC,162,29,56,9,SS_CENTERIMAGE
+    COMBOBOX        IDC_NAME,162,43,85,117,CBS_DROPDOWN | CBS_AUTOHSCROLL | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "По батькові",IDC_STATIC,253,29,42,12,SS_CENTERIMAGE
+    COMBOBOX        IDC_PATRONYMIC,253,43,118,127,CBS_DROPDOWN | 
+                    CBS_AUTOHSCROLL | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    CONTROL         172,IDC_STATIC,"Static",SS_BITMAP,7,7,67,57
+END
+
+IDD_FORM_DIVORCE DIALOGEX 0, 0, 384, 87
+STYLE WS_CHILD
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    CTEXT           "Актовий запис про Розірвання Шлюбу №",IDC_STATIC,4,2,
+                    154,12,SS_CENTERIMAGE
+    EDITTEXT        IDC_NUMBER,172,2,29,12,ES_AUTOHSCROLL | ES_NUMBER | 
+                    WS_GROUP
+    CTEXT           "від",IDC_STATIC,206,2,20,12,SS_CENTERIMAGE
+    EDITTEXT        IDC_DATEREG,234,2,90,12,ES_AUTOHSCROLL | WS_GROUP
+    GROUPBOX        "Громадянин",IDC_STATIC,2,15,191,69
+    GROUPBOX        "Громадяка",IDC_STATIC,192,15,189,69
+    LTEXT           "Прізвище ДО реєстрації",IDC_STATIC,5,23,95,9
+    EDITTEXT        IDC_MOLD_SURNAME,107,23,84,12,ES_AUTOHSCROLL | WS_GROUP
+    LTEXT           "Прізвище ПІСЛЯ реєстрації",IDC_STATIC,5,36,95,9
+    EDITTEXT        IDC_MNEW_SURNAME,107,36,84,12,ES_AUTOHSCROLL | WS_GROUP
+    LTEXT           "Ім'я",IDC_STATIC,53,49,48,9
+    COMBOBOX        IDC_MNAME,107,49,84,117,CBS_DROPDOWN | CBS_AUTOHSCROLL | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "По батькові",IDC_STATIC,53,62,48,9
+    COMBOBOX        IDC_MPATRONYMIC,107,62,84,117,CBS_DROPDOWN | 
+                    CBS_AUTOHSCROLL | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Прізвище ДО реєстрації",IDC_STATIC,197,25,95,9
+    EDITTEXT        IDC_WOLD_SURNAME,296,23,84,12,ES_AUTOHSCROLL | WS_GROUP
+    LTEXT           "Прізвище ПІСЛЯ реєстрації",IDC_STATIC,197,36,95,9
+    EDITTEXT        IDC_WNEW_SURNAME,296,36,84,12,ES_AUTOHSCROLL | WS_GROUP
+    LTEXT           "Ім'я",IDC_STATIC,248,49,43,9
+    COMBOBOX        IDC_WNAME,296,49,84,117,CBS_DROPDOWN | CBS_AUTOHSCROLL | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "По батькові",IDC_STATIC,248,62,43,9
+    COMBOBOX        IDC_WPATRONYMIC,296,62,84,117,CBS_DROPDOWN | 
+                    CBS_AUTOHSCROLL | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    CONTROL         253,IDC_STATIC,"Static",SS_BITMAP | WS_BORDER,7,44,29,36,
+                    WS_EX_CLIENTEDGE
+    CONTROL         254,IDC_STATIC,"Static",SS_BITMAP | WS_BORDER,197,45,39,
+                    36,WS_EX_CLIENTEDGE
+END
+
+IDD_FORM_MARRIAGE DIALOGEX 0, 0, 384, 82
+STYLE WS_CHILD
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    CTEXT           "Актовий запис про Шлюб №",IDC_STATIC,4,2,104,12,
+                    SS_CENTERIMAGE
+    EDITTEXT        IDC_NUMBER,115,2,29,12,ES_AUTOHSCROLL | ES_NUMBER | 
+                    WS_GROUP
+    CTEXT           "від",IDC_STATIC,149,2,20,12,SS_CENTERIMAGE
+    EDITTEXT        IDC_DATEREG,177,2,90,12,ES_AUTOHSCROLL | WS_GROUP
+    GROUPBOX        "Наречений",IDC_STATIC,2,15,191,65
+    GROUPBOX        "Наречена",IDC_STATIC,192,15,189,65
+    LTEXT           "Прізвище ДО реєстрації",IDC_STATIC,5,23,95,9
+    EDITTEXT        IDC_MOLD_SURNAME,107,23,84,12,ES_AUTOHSCROLL | WS_GROUP
+    LTEXT           "Прізвище ПІСЛЯ реєстрації",IDC_STATIC,5,37,95,9
+    EDITTEXT        IDC_MNEW_SURNAME,107,36,84,12,ES_AUTOHSCROLL | WS_GROUP
+    LTEXT           "Ім'я",IDC_STATIC,53,50,48,9
+    COMBOBOX        IDC_MNAME,107,50,84,117,CBS_DROPDOWN | CBS_AUTOHSCROLL | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "По батькові",IDC_STATIC,53,64,48,9
+    COMBOBOX        IDC_MPATRONYMIC,107,64,84,117,CBS_DROPDOWN | 
+                    CBS_AUTOHSCROLL | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Прізвище ДО реєстрації",IDC_STATIC,197,25,95,9
+    EDITTEXT        IDC_WOLD_SURNAME,296,23,84,12,ES_AUTOHSCROLL | WS_GROUP
+    LTEXT           "Прізвище ПІСЛЯ реєстрації",IDC_STATIC,197,37,95,9
+    EDITTEXT        IDC_WNEW_SURNAME,296,36,84,12,ES_AUTOHSCROLL | WS_GROUP
+    LTEXT           "Ім'я",IDC_STATIC,248,50,43,9
+    COMBOBOX        IDC_WNAME,296,50,84,117,CBS_DROPDOWN | CBS_AUTOHSCROLL | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "По батькові",IDC_STATIC,248,64,43,9
+    COMBOBOX        IDC_WPATRONYMIC,296,64,84,117,CBS_DROPDOWN | 
+                    CBS_AUTOHSCROLL | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    CONTROL         257,IDC_STATIC,"Static",SS_BITMAP | WS_BORDER,7,48,29,30,
+                    WS_EX_CLIENTEDGE
+    CONTROL         258,IDC_STATIC,"Static",SS_BITMAP | WS_BORDER,197,47,39,
+                    30,WS_EX_CLIENTEDGE
+END
+
+IDD_YESNO DIALOGEX 0, 0, 329, 95
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Увага!"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    PUSHBUTTON      "Так",IDYES,232,73,43,17
+    PUSHBUTTON      "Ні",IDNO,276,73,43,17,BS_CENTER | BS_VCENTER
+    ICON            IDI_ATTENTION,IDC_STATIC,159,69,20,20,0,
+                    WS_EX_TRANSPARENT
+    CTEXT           "",IDC_YNMESSAGE,9,5,309,39,0,WS_EX_STATICEDGE
+    EDITTEXT        IDC_YNQUESTION,9,50,309,14,ES_AUTOHSCROLL | ES_READONLY | 
+                    ES_WANTRETURN
+END
+
+IDTB_MAIN_TOOLBAR DIALOGEX 0, 0, 634, 18
+STYLE WS_CHILD
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    PUSHBUTTON      "",ID_FOLDER_TREE,1,1,17,15
+    PUSHBUTTON      "",ID_FILE_NEW,19,1,16,15
+    PUSHBUTTON      "",ID_FILE_OPEN,36,1,16,15
+    PUSHBUTTON      "",ID_FILE_RECENT,53,1,11,15
+    PUSHBUTTON      "",ID_RECORD_FIRST,69,1,17,15
+    PUSHBUTTON      "",ID_RECORD_PREV,87,1,17,15
+    PUSHBUTTON      "",ID_RECORD_NEXT,106,1,17,15
+    PUSHBUTTON      "",ID_RECORD_LAST,124,1,17,15
+    PUSHBUTTON      "Новий Запис",ID_RECORD_NEW,147,1,75,15,BS_RIGHT
+    PUSHBUTTON      "Видалити запис(и)",ID_RECORD_DELETE,230,1,84,15,
+                    BS_RIGHT
+    PUSHBUTTON      "",ID_WHAT_IS_IT,320,1,16,15
+    CONTROL         "",-1,"Static",SS_BLACKFRAME | SS_SUNKEN,66,1,1,15,
+                    WS_EX_STATICEDGE
+    CONTROL         "",-1,"Static",SS_BLACKFRAME | SS_SUNKEN,143,1,1,15,
+                    WS_EX_STATICEDGE
+    CONTROL         "",-1,"Static",SS_BLACKFRAME | SS_SUNKEN,316,1,1,15,
+                    WS_EX_STATICEDGE
+    CONTROL         "",-1,"Static",SS_BLACKFRAME | SS_SUNKEN,226,1,1,15,
+                    WS_EX_STATICEDGE
+END
+
+IDD_FILE_NEW DIALOG DISCARDABLE  0, 0, 175, 19
+STYLE WS_CHILD | WS_CLIPSIBLINGS
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "На",IDC_STATIC,5,3,11,11,SS_CENTERIMAGE
+    EDITTEXT        IDC_YEAR,21,3,30,12,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Spin2",IDC_YEAR_SPIN,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_AUTOBUDDY | UDS_ARROWKEYS | UDS_NOTHOUSANDS,52,3,10,
+                    12
+    LTEXT           "рік",IDC_STATIC,65,3,10,11,SS_CENTERIMAGE
+END
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 306, 148
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "Інформація про програму ЕрагсАБВ"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,21,20
+    LTEXT           "EragsABC Version",IDC_ERABC_VERSION,47,23,179,8,
+                    SS_NOPREFIX
+    LTEXT           "Виключне право на розповсюдження та копіювання цієї програми та програмного комплексу ЕРАГС належить Володимирові Кольцову.",
+                    IDC_STATIC,7,46,292,24,SS_SUNKEN,WS_EX_STATICEDGE
+    DEFPUSHBUTTON   "OK",IDOK,249,7,50,14,WS_GROUP
+    CONTROL         "",IDC_STATIC,"Static",SS_WHITEFRAME | SS_SUNKEN,7,71,
+                    292,66,WS_EX_TRANSPARENT
+    LTEXT           "  Увага!\n  Ця компьютерна програма захищена законодавством України та міжнародними угодами про авторське право та інтелектуальну власність. ",
+                    IDC_STATIC,13,76,282,29
+    LTEXT           "  Нелегальне розповсюдження та копіювання цієї програми або будь-яких компонентів програмного комплексу ЕРАГС є кримінальним злочином і буде переслідуватися за законом.",
+                    IDC_STATIC,13,106,282,27
+END
+
+IDD_SETDEFVAL DIALOG DISCARDABLE  0, 0, 343, 102
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Увага!"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "Більше не показувати ці вікно",IDC_DONTSHOW,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,7,79,146,15
+    ICON            IDI_ATTENTION,IDC_STATIC,181,74,20,20
+    DEFPUSHBUTTON   "",IDYES,261,78,35,16,BS_BITMAP
+    PUSHBUTTON      "",IDNO,302,78,34,16,BS_BITMAP
+    LTEXT           "",IDC_MSGTEXT,7,7,329,65,SS_SUNKEN
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_FORM_CHANGE, DIALOG
+    BEGIN
+        LEFTMARGIN, 2
+        RIGHTMARGIN, 330
+        TOPMARGIN, 3
+        BOTTOMMARGIN, 79
+    END
+
+    IDD_FORM_DEATH, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 371
+        TOPMARGIN, 7
+    END
+
+    IDD_FORM_DIVORCE, DIALOG
+    BEGIN
+        LEFTMARGIN, 2
+        RIGHTMARGIN, 381
+        TOPMARGIN, 1
+        BOTTOMMARGIN, 84
+    END
+
+    IDD_FORM_MARRIAGE, DIALOG
+    BEGIN
+        LEFTMARGIN, 2
+        RIGHTMARGIN, 381
+        TOPMARGIN, 1
+        BOTTOMMARGIN, 79
+    END
+
+    IDD_YESNO, DIALOG
+    BEGIN
+        LEFTMARGIN, 9
+        BOTTOMMARGIN, 92
+    END
+
+    IDTB_MAIN_TOOLBAR, DIALOG
+    BEGIN
+        RIGHTMARGIN, 563
+        TOPMARGIN, 1
+        BOTTOMMARGIN, 16
+    END
+
+    IDD_FILE_NEW, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 14
+    END
+
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 299
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 141
+    END
+
+    IDD_SETDEFVAL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 336
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 95
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\idr_main.ico"
+IDI_FILE_NEW            ICON    DISCARDABLE     "res\\FileNew.ico"
+IDI_FILE_OPEN           ICON    DISCARDABLE     "res\\FileOpen.ico"
+IDI_FILE_OPEN_GRAY      ICON    DISCARDABLE     "res\\FileOpenGray.ico"
+IDI_BIRTH               ICON    DISCARDABLE     "res\\Birth.ico"
+IDI_BIRTH_GRAY          ICON    DISCARDABLE     "res\\Birth_Gray.ico"
+IDI_CHANGE              ICON    DISCARDABLE     "res\\Change.ico"
+IDI_CHANGE_GRAY         ICON    DISCARDABLE     "res\\Change_Gray.ico"
+IDI_DEATH               ICON    DISCARDABLE     "res\\Death.ico"
+IDI_DEATH_GRAY          ICON    DISCARDABLE     "res\\Death_Gray.ico"
+IDI_DIVORCE             ICON    DISCARDABLE     "res\\Divorce.ico"
+IDI_DIVORCE_GRAY        ICON    DISCARDABLE     "res\\Divorce_Gray.ico"
+IDR_ERAGSTYPE           ICON    DISCARDABLE     "res\\idr_erag.ico"
+IDI_MARRIAGE_GRAY       ICON    DISCARDABLE     "res\\Marriage_Gray.ico"
+IDI_MARRIAGE            ICON    DISCARDABLE     "res\\Marriage.ico"
+IDI_CLOSE_APP           ICON    DISCARDABLE     "res\\close_app.ico"
+IDI_INFO                ICON    DISCARDABLE     "res\\Information.ico"
+IDI_ATTENTION           ICON    DISCARDABLE     "res\\attention.ico"
+IDI_NO                  ICON    DISCARDABLE     "Res\\No.ico"
+IDI_YES                 ICON    DISCARDABLE     "Res\\Yes.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_FILEDROPDOWN MENU DISCARDABLE 
+BEGIN
+    POPUP "&Файл"
+    BEGIN
+        MENUITEM "Останні файли",               ID_FILE_MRU_FILE1
+    END
+END
+
+IDR_MAINFRAME MENU PRELOAD DISCARDABLE 
+BEGIN
+    POPUP "&Файл"
+    BEGIN
+        MENUITEM "&Новий\tCtrl+N",              ID_FILE_NEW
+        MENUITEM "&Відкрити...\tCtrl+O",        ID_FILE_OPEN
+        MENUITEM "Дерево папок БД ЕРАГС",       ID_FOLDER_TREE
+        MENUITEM SEPARATOR
+        MENUITEM "Останні файли",               ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "&Вихід",                      ID_APP_EXIT
+    END
+    POPUP "&Реєстрація"
+    BEGIN
+        MENUITEM "&Народження\tCtrl+1",         ID_BIRTH
+        MENUITEM "&Шлюби\tCtrl+2",              ID_MARRIAGE
+        MENUITEM "&Розірвання шлюбів\tCtrl+3",  ID_DIVORCE
+        MENUITEM "&Зміни\tCtrl+4",              ID_CHANGE
+        MENUITEM "&Смерті\tCtrl+5",             ID_DEATH
+    END
+    POPUP "&Запис"
+    BEGIN
+        MENUITEM "Пе&рший запис\tAlt+Home",     ID_RECORD_FIRST
+        MENUITEM "&Попередній запис\tAlt+ <--", ID_RECORD_PREV
+        MENUITEM "&Наступний запис\tAlt+ -->",  ID_RECORD_NEXT
+        MENUITEM "&Останній запис\tAlt+End",    ID_RECORD_LAST
+        MENUITEM SEPARATOR
+        MENUITEM "Новий &запис\tAlt+Insert",    ID_RECORD_NEW
+        MENUITEM SEPARATOR
+        MENUITEM "&Видалити запис\tAlt+Delete", ID_RECORD_DELETE
+    END
+    POPUP "&Допомога"
+    BEGIN
+        MENUITEM "Допомога\tF1",                ID_HELP
+        MENUITEM "&Помічник",                   ID_HELPER, CHECKED
+        MENUITEM "Що це?",                      ID_WHAT_IS_IT
+        MENUITEM SEPARATOR
+        MENUITEM "Допомога і підказка українською мовою", ID_HELP_UKR
+        MENUITEM "Помощь и подсказка на русском языке", ID_HELP_RUS
+        MENUITEM SEPARATOR
+        MENUITEM "Про програму ЕрагсАБВ",       ID_APP_ABOUT
+    END
+END
+
+IDR_TREEFILECTRL_POPUP MENU DISCARDABLE 
+BEGIN
+    POPUP "_POPUP_"
+    BEGIN
+        MENUITEM "Нагору",                      ID_TREEFILECTRL_UP
+        MENUITEM SEPARATOR
+        MENUITEM "Відкрити програмою &ЕРАГС",   ID_TREEFILECTRL_OPEN
+        MENUITEM "&Перейменувати",              ID_TREEFILECTRL_RENAME
+        MENUITEM "Ві&ддалити",                  ID_TREEFILECTRL_DELETE
+        MENUITEM "&Властивості",                ID_TREEFILECTRL_PROPERTIES
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR DISCARDABLE  32, 32
+BEGIN
+    BUTTON      ID_FOLDER_TREE
+    BUTTON      ID_FILE_NEW
+    BUTTON      ID_FILE_OPEN
+    BUTTON      ID_FILE_RECENT
+    SEPARATOR
+    BUTTON      ID_RECORD_FIRST
+    BUTTON      ID_RECORD_PREV
+    BUTTON      ID_RECORD_NEXT
+    BUTTON      ID_RECORD_LAST
+    SEPARATOR
+    BUTTON      ID_RECORD_NEW
+    BUTTON      ID_RECORD_DELETE
+    SEPARATOR
+    BUTTON      ID_WHAT_IS_IT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS DISCARDABLE 
+BEGIN
+    VK_DELETE,      ID_RECORD_DELETE,       VIRTKEY, ALT, NOINVERT
+    VK_END,         ID_RECORD_LAST,         VIRTKEY, ALT, NOINVERT
+    VK_HOME,        ID_RECORD_FIRST,        VIRTKEY, ALT, NOINVERT
+    VK_INSERT,      ID_TOGGLE_INSERT,       VIRTKEY, NOINVERT
+    VK_INSERT,      ID_RECORD_NEW,          VIRTKEY, ALT, NOINVERT
+    VK_LEFT,        ID_RECORD_PREV,         VIRTKEY, ALT, NOINVERT
+    VK_RIGHT,       ID_RECORD_NEXT,         VIRTKEY, ALT, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    IDR_MAINFRAME           "EraABC\n\nEraABC\n\n\nEraABC.Document\nEraABC Document"
+END
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "EraABC"
+    AFX_IDS_IDLEMESSAGE     "Натисніть F1 для допомоги"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "ЗАМ"
+    ID_INDICATOR_REC        "REC"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_NEW             "Створити новий файл БД ЕРАГС\nСтворити новий файл БД ЕРАГС"
+    ID_FILE_OPEN            "Відкрити файл БД ЕРАГС\nВідкрити файл БД ЕРАГС"
+    ID_FILE_CLOSE           "Закрити поточний файл\nЗакрити"
+    ID_FILE_SAVE            "Зберегти поточний файл\nЗберегти"
+    ID_FILE_SAVE_AS         "Зберегти поточний файл з новим іменем\nЗберегти &Як"
+    ID_FILE_PAGE_SETUP      "Змінити установи друку\nПараметри Сторінки"
+    ID_FILE_PRINT_SETUP     "Change the printer and printing options\nPrint Setup"
+    ID_FILE_PRINT           "Друкувати\nДрукувати"
+    ID_FILE_PRINT_PREVIEW   "Попередній переглід\nПопередній переглід"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_APP_ABOUT            "Показати інформацію про програму ЕрагсАБВ\nПро програму ЕрагсАБВ"
+    ID_APP_EXIT             "Завершити роботу з програмою ЕрагсАБВ\nВихід"
+    ID_HELP                 "Викликати Допомогу\nВикликати Допомогу"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_MRU_FILE1       "Відкрити цей файл"
+    ID_FILE_MRU_FILE2       "Відкрити цей файл"
+    ID_FILE_MRU_FILE3       "Відкрити цей файл"
+    ID_FILE_MRU_FILE4       "Відкрити цей файл"
+    ID_FILE_MRU_FILE5       "Відкрити цей файл"
+    ID_FILE_MRU_FILE6       "Відкрити цей файл"
+    ID_FILE_MRU_FILE7       "Відкрити цей файл"
+    ID_FILE_MRU_FILE8       "Відкрити цей файл"
+    ID_FILE_MRU_FILE9       "Відкрити цей файл"
+    ID_FILE_MRU_FILE10      "Відкрити цей файл"
+    ID_FILE_MRU_FILE11      "Відкрити цей файл"
+    ID_FILE_MRU_FILE12      "Відкрити цей файл"
+    ID_FILE_MRU_FILE13      "Відкрити цей файл"
+    ID_FILE_MRU_FILE14      "Відкрити цей файл"
+    ID_FILE_MRU_FILE15      "Відкрити цей файл"
+    ID_FILE_MRU_FILE16      "Відкрити цей файл"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_NEXT_PANE            "Наступне вікно\nНаступне Вікно"
+    ID_PREV_PANE            "Попереднє вікно\nПопереднє Вікно"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_WINDOW_SPLIT         "Split the active window into panes\nSplit"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_EDIT_CLEAR           "Erase the selection\nErase"
+    ID_EDIT_CLEAR_ALL       "Erase everything\nErase All"
+    ID_EDIT_COPY            "Copy the selection and put it on the Clipboard\nCopy"
+    ID_EDIT_CUT             "Cut the selection and put it on the Clipboard\nCut"
+    ID_EDIT_FIND            "Find the specified text\nFind"
+    ID_EDIT_PASTE           "Insert Clipboard contents\nPaste"
+    ID_EDIT_REPEAT          "Repeat the last action\nRepeat"
+    ID_EDIT_REPLACE         "Replace specific text with different text\nReplace"
+    ID_EDIT_SELECT_ALL      "Select the entire document\nSelect All"
+    ID_EDIT_UNDO            "Undo the last action\nUndo"
+    ID_EDIT_REDO            "Redo the previously undone action\nRedo"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_VIEW_TOOLBAR         "Show or hide the toolbar\nToggle ToolBar"
+    ID_VIEW_STATUS_BAR      "Show or hide the status bar\nToggle StatusBar"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCSIZE          "Змінити розмір вікна"
+    AFX_IDS_SCMOVE          "Change the window position"
+    AFX_IDS_SCMINIMIZE      "Reduce the window to an icon"
+    AFX_IDS_SCMAXIMIZE      "Enlarge the window to full size"
+    AFX_IDS_SCNEXTWINDOW    "Switch to the next document window"
+    AFX_IDS_SCPREVWINDOW    "Switch to the previous document window"
+    AFX_IDS_SCCLOSE         "Close the active window and prompts to save the documents"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       "Відновити розміри вікна"
+    AFX_IDS_SCTASKLIST      "Activate Task List"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_PREVIEW_CLOSE   "Close print preview mode\nCancel Preview"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_KOLTSOV             "Koltsov"
+    IDS_SOFTWARE            "Software"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_UM01                "Січень"
+    IDS_UM02                "Лютий"
+    IDS_UM03                "Березень"
+    IDS_UM04                "Квітень"
+    IDS_UM05                "Травень"
+    IDS_UM06                "Червень"
+    IDS_UM07                "Липень"
+    IDS_UM08                "Серпень"
+    IDS_UM09                "Вересень"
+    IDS_UM10                "Жовтень"
+    IDS_UM11                "Листопад"
+    IDS_UM12                "Грудень"
+    IDS_M01                 "січня"
+    IDS_M02                 "лютого"
+    IDS_M03                 "березня"
+    IDS_M04                 "квітня"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_M05                 "травня"
+    IDS_M06                 "червня"
+    IDS_M07                 "липня"
+    IDS_M08                 "серпня"
+    IDS_M09                 "вересня"
+    IDS_M10                 "жовтня"
+    IDS_M11                 "листопада"
+    IDS_M12                 "грудня"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_BIRTH                "Реєстрація Народжень\nНародження"
+    ID_MARRIAGE             "Реєстрація Одружень\nОдруження"
+    ID_DIVORCE              "Реєстрація Розірвань Шлібу\nРозірвання Шлібу"
+    ID_CHANGE               "Реєстрація Змін\nЗміну"
+    ID_DEATH                "Реєстрація Смертей\nСмерті"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_RECORD_NEW           "Створити Новий Запис\nСтворити Новий Запис"
+    ID_BUTTON32773          "Видалити Поточний Запис або Позначені Записи\nВидалити Поточний Запис або Позначені Записи"
+    ID_HELP_UKR             "Допомога і підказка українською мовою\nДопомога і підказка українською мовою"
+    ID_AFFILIATION          "Помощь и подсказка на русском языке\nПомощь и подсказка на русском языке"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FOLDER_TREE          "Показати/Сховати дерево папок БД ЕРАГС\nПоказати/Сховати дерево папок БД ЕРАГС"
+    ID_HELPER               "Використовувати Помічник"
+    ID_WHAT_IS_IT           "Що це?\nЩо це?"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_RECENT          "Відкрити файл БД ЕРАГС зі списку файлів, що недавно відкривалися\nВідкрити файл БД ЕРАГС зі списку файлів, що недавно відкривалися"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_RECORD_FIRST         "Перейти на Перший Запис\nПерейти на Перший Запис"
+    ID_RECORD_LAST          "Перейти на Останній Запис\nПерейти на Останній Запис"
+    ID_RECORD_NEXT          "Перейти на Наступний Запис\nПерейти на Наступний Запис"
+    ID_RECORD_PREV          "Перейти на Попередній Запис\nПерейти на Попередній Запис"
+END
+
+#endif    // Russian resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// Unknown language: 0x22, 0x1 resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_UKR)
+#ifdef _WIN32
+LANGUAGE 0x22, 0x1
+#pragma code_page(1251)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\EraABC.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#include ""afxprint.rc""       // printing/print preview resources\r\n"
+    "#endif\r\n"
+    "1 24 ""EraABC.exe.manifest""\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+#endif    // Unknown language: 0x22, 0x1 resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 2011,8,0,9
+ PRODUCTVERSION 2011,8,0,9
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "Comments", "\0"
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "EraABC MFC Application\0"
+            VALUE "FileVersion", "2011, 8, 0, 9\0"
+            VALUE "InternalName", "EraABC\0"
+            VALUE "LegalCopyright", "Copyright (C) 2005-2011 Vladimir Koltsov\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "EraABC.EXE\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "EraABC Application\0"
+            VALUE "ProductVersion", "2011, 8, 0, 9\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (Ireland) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENI)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_EIRE
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+IDR_TREEFILECTRL_DROPCOPY CURSOR  DISCARDABLE     "res\\tfdropcopy.cur"
+IDR_TREEFILECTRL_NO_DROPCOPY CURSOR  DISCARDABLE     "res\\tfnodropcopy.cur"
+IDR_TREEFILECTRL_NO_DROPMOVE CURSOR  DISCARDABLE     "res\\tfnodropmove.cur"
+#endif    // English (Ireland) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\EraABC.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#include "afxprint.rc"       // printing/print preview resources
+#endif
+1 24 "EraABC.exe.manifest"
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

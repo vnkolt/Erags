@@ -1,0 +1,2088 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{d97ad7bc-1f8e-43a3-b3ab-d80d6f95a538}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;rc;def;r;odl;idl;hpj;bat</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{04dda5af-38be-47ce-a23c-17b54cb09944}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{abaf7c27-1f17-4108-af1a-a517fb577384}</UniqueIdentifier>
+      <Extensions>ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe</Extensions>
+    </Filter>
+    <Filter Include="Common">
+      <UniqueIdentifier>{869149a6-88cf-4c40-a1d4-c9ac5d1ec7ee}</UniqueIdentifier>
+      <Extensions>cpp;h</Extensions>
+    </Filter>
+    <Filter Include="Controls">
+      <UniqueIdentifier>{40198ca5-73d8-41c5-9a53-37a4d0325b3a}</UniqueIdentifier>
+      <Extensions>cpp;h</Extensions>
+    </Filter>
+    <Filter Include="Controls\GridCtrl">
+      <UniqueIdentifier>{3f660bb3-a48d-45a6-8717-a62dedeb3f3a}</UniqueIdentifier>
+      <Extensions>cpp;h</Extensions>
+    </Filter>
+    <Filter Include="Controls\GridCtrl\CellTypes">
+      <UniqueIdentifier>{4d447c48-b4c7-40c2-a3b1-4d7085654c0f}</UniqueIdentifier>
+      <Extensions>cpp;h</Extensions>
+    </Filter>
+    <Filter Include="Controls\CPPTooltip">
+      <UniqueIdentifier>{d704affe-747c-455d-878f-a9c9c226c3f6}</UniqueIdentifier>
+      <Extensions>cpp;h</Extensions>
+    </Filter>
+    <Filter Include="Controls\TCToolBar">
+      <UniqueIdentifier>{7c43a092-00be-47b6-a766-5db8469a45e4}</UniqueIdentifier>
+      <Extensions>cpp;h</Extensions>
+    </Filter>
+    <Filter Include="MSO">
+      <UniqueIdentifier>{7faef2b9-9be8-4726-b19b-bd7133969f67}</UniqueIdentifier>
+      <Extensions>cpp;h</Extensions>
+    </Filter>
+    <Filter Include="ZipArchive">
+      <UniqueIdentifier>{13191a2c-a7ef-4467-99fd-0ba2c6fade22}</UniqueIdentifier>
+      <Extensions>cpp;h</Extensions>
+    </Filter>
+    <Filter Include="ZipArchive\ZLib">
+      <UniqueIdentifier>{959470a3-cadd-4ebc-81fc-ae34c8df85f4}</UniqueIdentifier>
+      <Extensions>h;c</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="ABCDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AddGeoDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AddRsnDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BanksDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BirthDlgs.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BirthSurnamesDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BlanksDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Caches.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CantOpenDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CheckDateDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ChildFrm.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Copy2XLDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DataManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DateFunc.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DBCauses.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DBCitizenships.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DBGrid.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DBGridDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DBHospitals.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DBMIAs.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DBStreets.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Defaults.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DepDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DialogEx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Div18.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Div23.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Dlg27.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Dlg29.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Dlg38.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Dlg43.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DownloadChecker.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ElectDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="EmptyTableDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="EnvelopeDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\EraDate.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="EraForm.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Erags.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="EragsDoc.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="EragsView.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ErrDateReg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ExpiredDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ExtBirthDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ExtNotice.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="FormBirth.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="FormChange.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="FormDeath.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="FormDivorce.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="FormMarriage.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Geography.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeoView.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="HelpMan.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="KeyWords.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Led.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="LeftView.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="LoadDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="LocalSearchBar.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="LogThread.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MainDlgBar.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MainFrm.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Menu.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MltDocDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MonthList.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MyPrintDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="NamesDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Navigate.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="NoteChange.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="NoteDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="OODocument.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="OOView.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PassportsDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ProgDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="RegDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="RegFinder.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="RFindDoc.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="RFindFrm.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="RFindView.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="RList.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="RListDoc.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="RNames.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="RSBirthes.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="RSChanges.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="RSChangesDep.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="RSDeathes.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="RSDivorces.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="RSMarriages.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="RTFCnv.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SecReg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SetDefDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SettingsDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="StdAfx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SVDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TemplDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TreeType.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UnzipDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="WordCntrItem.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="WordDocument.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="WordView.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="XCnv.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="xMachine.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="YesNoDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ZipDBDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Crypto.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\CyrString.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\DAO36.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\DaoErr.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\DB.CPP">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Elections.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Export.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\FHelpers.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\MDB.CPP">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Monthes.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Names.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\RDF32.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Sections.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Version.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Controls\GridCtrl\CellTypes\GridCellCheck.cpp">
+      <Filter>Controls\GridCtrl\CellTypes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Controls\GridCtrl\CellTypes\GridCellCombo.cpp">
+      <Filter>Controls\GridCtrl\CellTypes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Controls\GridCtrl\CellTypes\GridCellDate.cpp">
+      <Filter>Controls\GridCtrl\CellTypes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Controls\GridCtrl\CellTypes\GridCellDateTime.cpp">
+      <Filter>Controls\GridCtrl\CellTypes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Controls\GridCtrl\CellTypes\GridURLCell.cpp">
+      <Filter>Controls\GridCtrl\CellTypes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Controls\GridCtrl\GridCell.cpp">
+      <Filter>Controls\GridCtrl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Controls\GridCtrl\GridCellBase.cpp">
+      <Filter>Controls\GridCtrl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Controls\GridCtrl\GridCtrl.cpp">
+      <Filter>Controls\GridCtrl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Controls\GridCtrl\GridDropTarget.cpp">
+      <Filter>Controls\GridCtrl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Controls\GridCtrl\InPlaceDateEdit.cpp">
+      <Filter>Controls\GridCtrl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Controls\GridCtrl\InPlaceEdit.cpp">
+      <Filter>Controls\GridCtrl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Controls\GridCtrl\TitleTip.cpp">
+      <Filter>Controls\GridCtrl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Controls\CPPTooltip\CeXDib.cpp">
+      <Filter>Controls\CPPTooltip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Controls\CPPTooltip\PPDrawManager.cpp">
+      <Filter>Controls\CPPTooltip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Controls\CPPTooltip\PPHtmlDrawer.cpp">
+      <Filter>Controls\CPPTooltip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Controls\CPPTooltip\PPTooltip.cpp">
+      <Filter>Controls\CPPTooltip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Controls\TCToolBar\TCImageList.cpp">
+      <Filter>Controls\TCToolBar</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Controls\TCToolBar\TCToolBar.cpp">
+      <Filter>Controls\TCToolBar</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Controls\AutoRichEditCtrl.cpp">
+      <Filter>Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Controls\BaseTabCtrl.cpp">
+      <Filter>Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Controls\BkgndCtrl.cpp">
+      <Filter>Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Controls\BrowseForFolder.cpp">
+      <Filter>Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Controls\BtnST.cpp">
+      <Filter>Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Controls\ColourPicker.cpp">
+      <Filter>Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Controls\ColourPopup.cpp">
+      <Filter>Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Controls\EnTabCtrl.cpp">
+      <Filter>Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Controls\EraButton.cpp">
+      <Filter>Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Controls\EraComboBox.cpp">
+      <Filter>Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Controls\EraControls.cpp">
+      <Filter>Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Controls\EraEdit.cpp">
+      <Filter>Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Controls\EraLabel.cpp">
+      <Filter>Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Controls\EraMonthCalCtrl.cpp">
+      <Filter>Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Controls\ExtLabel.cpp">
+      <Filter>Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Controls\ExtStatusControlBar.cpp">
+      <Filter>Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Controls\FileTreeCtrl.cpp">
+      <Filter>Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Controls\FolderTreeBar.cpp">
+      <Filter>Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Controls\HyperLink.cpp">
+      <Filter>Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Controls\KMComboBox.cpp">
+      <Filter>Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Controls\Label.cpp">
+      <Filter>Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Controls\ListCtrlStyled.cpp">
+      <Filter>Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Controls\ListViewCtrlEx.cpp">
+      <Filter>Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Controls\MyBtnST.cpp">
+      <Filter>Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Controls\MyFileDialog.cpp">
+      <Filter>Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Controls\NewMenu.cpp">
+      <Filter>Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Controls\NewMenuBar.cpp">
+      <Filter>Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Controls\NewStatusBar.cpp">
+      <Filter>Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Controls\OddButton.cpp">
+      <Filter>Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Controls\ProgressBar.cpp">
+      <Filter>Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Controls\scbarcf.cpp">
+      <Filter>Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Controls\scbarg.cpp">
+      <Filter>Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Controls\ShellType.cpp">
+      <Filter>Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Controls\sizecbar.cpp">
+      <Filter>Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Controls\TabCtrlBG.cpp">
+      <Filter>Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Controls\TextProgressCtrl.cpp">
+      <Filter>Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Controls\ThemeHelperST.cpp">
+      <Filter>Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Controls\TreeListView.cpp">
+      <Filter>Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Controls\VisualStylesXP.cpp">
+      <Filter>Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Controls\XBrowseForFolder.cpp">
+      <Filter>Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Controls\XButtonXP.cpp">
+      <Filter>Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Controls\XFontDialog.cpp">
+      <Filter>Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="..\MSO\excel8.cpp">
+      <Filter>MSO</Filter>
+    </ClCompile>
+    <ClCompile Include="..\MSO\msoEra.cpp">
+      <Filter>MSO</Filter>
+    </ClCompile>
+    <ClCompile Include="..\MSO\msword8.cpp">
+      <Filter>MSO</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ZipArchive\ZLib\adler32.c">
+      <Filter>ZipArchive\ZLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ZipArchive\ZLib\compress.c">
+      <Filter>ZipArchive\ZLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ZipArchive\ZLib\crc32.c">
+      <Filter>ZipArchive\ZLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ZipArchive\ZLib\deflate.c">
+      <Filter>ZipArchive\ZLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ZipArchive\ZLib\gzclose.c">
+      <Filter>ZipArchive\ZLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ZipArchive\ZLib\gzlib.c">
+      <Filter>ZipArchive\ZLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ZipArchive\ZLib\gzread.c">
+      <Filter>ZipArchive\ZLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ZipArchive\ZLib\gzwrite.c">
+      <Filter>ZipArchive\ZLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ZipArchive\ZLib\infback.c">
+      <Filter>ZipArchive\ZLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ZipArchive\ZLib\inffast.c">
+      <Filter>ZipArchive\ZLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ZipArchive\ZLib\inflate.c">
+      <Filter>ZipArchive\ZLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ZipArchive\ZLib\inftrees.c">
+      <Filter>ZipArchive\ZLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ZipArchive\ZLib\minigzip.c">
+      <Filter>ZipArchive\ZLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ZipArchive\ZLib\trees.c">
+      <Filter>ZipArchive\ZLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ZipArchive\ZLib\uncompr.c">
+      <Filter>ZipArchive\ZLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ZipArchive\ZLib\zutil.c">
+      <Filter>ZipArchive\ZLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ZipArchive\Options.cpp">
+      <Filter>ZipArchive</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ZipArchive\RegistrySerialize.cpp">
+      <Filter>ZipArchive</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ZipArchive\ZipArchive.cpp">
+      <Filter>ZipArchive</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ZipArchive\ZipAutoBuffer.cpp">
+      <Filter>ZipArchive</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ZipArchive\ZipBigFile.cpp">
+      <Filter>ZipArchive</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ZipArchive\ZipCentralDir.cpp">
+      <Filter>ZipArchive</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ZipArchive\ZipCompatibility.cpp">
+      <Filter>ZipArchive</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ZipArchive\ZipException.cpp">
+      <Filter>ZipArchive</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ZipArchive\ZipFile.cpp">
+      <Filter>ZipArchive</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ZipArchive\ZipFileHeader.cpp">
+      <Filter>ZipArchive</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ZipArchive\ZipInternalInfo.cpp">
+      <Filter>ZipArchive</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ZipArchive\ZipMemFile.cpp">
+      <Filter>ZipArchive</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ZipArchive\ZipPathComponent.cpp">
+      <Filter>ZipArchive</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ZipArchive\ZipPlatform.cpp">
+      <Filter>ZipArchive</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ZipArchive\ZipPlatformComm.cpp">
+      <Filter>ZipArchive</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ZipArchive\ZipStorage.cpp">
+      <Filter>ZipArchive</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ZipArchive\ZipString.cpp">
+      <Filter>ZipArchive</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Erags.rc">
+      <Filter>Source Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ABCDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AddGeoDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AddRsnDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BanksDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BirthDlgs.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BirthSurnamesDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BlanksDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Caches.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CantOpenDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CheckDateDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ChildFrm.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Copy2XLDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DataManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DateFunc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DBCauses.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DBCitizenships.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DBGrid.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DBGridDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DBHospitals.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DBMIAs.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DBStreets.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Defaults.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DepDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DialogEx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Div18.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Div23.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Dlg27.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Dlg29.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Dlg38.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Dlg43.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DownloadChecker.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ElectDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="EmptyTableDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="EnvelopeDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\EraDate.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="EraForm.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Erags.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="EragsDoc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="EragsView.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ErrDateReg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ExpiredDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ExtBirthDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ExtNotice.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="FormBirth.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="FormChange.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="FormDeath.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="FormDivorce.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="FormMarriage.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Geography.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeoView.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="HelpMan.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="KeyWords.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Led.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="LeftView.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="LoadDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="LocalSearchBar.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="LogThread.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MainDlgBar.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MainFrm.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Menu.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MltDocDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MonthList.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MyPrintDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="NamesDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Navigate.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="NoteChange.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="NoteDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="OODoc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="OODocument.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="OOView.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PassportsDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="picture.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ProgDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="properties.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="property.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="RegDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="RegFinder.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Registrars.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="RFindDoc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="RFindFrm.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="RFindView.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="RList.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="RListDoc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="RNames.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="RSBirthes.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="RSChanges.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="RSChangesDep.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="RSDeathes.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="RSDivorces.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="RSMarriages.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="RTFCnv.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SecReg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SetDefDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SettingsDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="StdAfx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SVDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TemplDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TreeType.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="UnzipDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="WordCntrItem.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="WordDocument.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="WordView.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="XCnv.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="xMachine.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="YesNoDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ZipDBDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Crypto.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\CyrString.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\DAO36.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\DB.H">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Elections.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\EraMessages.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Export.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\FHelpers.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\MDB.H">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Monthes.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Names.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\RDF32.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Sections.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\StdAfx.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Version.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Controls\GridCtrl\CellTypes\GridCellCheck.h">
+      <Filter>Controls\GridCtrl\CellTypes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Controls\GridCtrl\CellTypes\GridCellCombo.h">
+      <Filter>Controls\GridCtrl\CellTypes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Controls\GridCtrl\CellTypes\GridCellDate.h">
+      <Filter>Controls\GridCtrl\CellTypes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Controls\GridCtrl\CellTypes\GridCellDateTime.h">
+      <Filter>Controls\GridCtrl\CellTypes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Controls\GridCtrl\CellTypes\GridURLCell.h">
+      <Filter>Controls\GridCtrl\CellTypes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Controls\GridCtrl\CellTypes\StdAfx.h">
+      <Filter>Controls\GridCtrl\CellTypes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Controls\GridCtrl\CellRange.h">
+      <Filter>Controls\GridCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Controls\GridCtrl\GridCell.h">
+      <Filter>Controls\GridCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Controls\GridCtrl\GridCellBase.h">
+      <Filter>Controls\GridCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Controls\GridCtrl\GridCtrl.h">
+      <Filter>Controls\GridCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Controls\GridCtrl\GridDropTarget.h">
+      <Filter>Controls\GridCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Controls\GridCtrl\InPlaceDateEdit.h">
+      <Filter>Controls\GridCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Controls\GridCtrl\MemDC.h">
+      <Filter>Controls\GridCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Controls\GridCtrl\StdAfx.h">
+      <Filter>Controls\GridCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Controls\GridCtrl\TitleTip.h">
+      <Filter>Controls\GridCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Controls\CPPTooltip\CeXDib.h">
+      <Filter>Controls\CPPTooltip</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Controls\CPPTooltip\PPDrawManager.h">
+      <Filter>Controls\CPPTooltip</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Controls\CPPTooltip\PPHtmlDrawer.h">
+      <Filter>Controls\CPPTooltip</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Controls\CPPTooltip\PPTooltip.h">
+      <Filter>Controls\CPPTooltip</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Controls\CPPTooltip\StdAfx.h">
+      <Filter>Controls\CPPTooltip</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Controls\TCToolBar\TCImageList.h">
+      <Filter>Controls\TCToolBar</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Controls\TCToolBar\TCToolBar.h">
+      <Filter>Controls\TCToolBar</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Controls\AutoRichEditCtrl.h">
+      <Filter>Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Controls\BaseTabCtrl.h">
+      <Filter>Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Controls\BkgndCtrl.h">
+      <Filter>Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Controls\BrowseForFolder.h">
+      <Filter>Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Controls\ColourPicker.h">
+      <Filter>Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Controls\ColourPopup.h">
+      <Filter>Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Controls\EnTabCtrl.h">
+      <Filter>Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Controls\erabutton.h">
+      <Filter>Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Controls\EraComboBox.h">
+      <Filter>Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Controls\EraControls.h">
+      <Filter>Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Controls\EraEdit.h">
+      <Filter>Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Controls\EraLabel.h">
+      <Filter>Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Controls\EraMonthCalCtrl.h">
+      <Filter>Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Controls\ExtLabel.h">
+      <Filter>Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Controls\FileTreeCtrl.h">
+      <Filter>Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Controls\FolderTreeBar.h">
+      <Filter>Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Controls\HyperLink.h">
+      <Filter>Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Controls\KMComboBox.h">
+      <Filter>Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Controls\Label.h">
+      <Filter>Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Controls\ListCtrlStyled.h">
+      <Filter>Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Controls\ListViewCtrlEx.h">
+      <Filter>Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Controls\MyBtnST.h">
+      <Filter>Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Controls\MyFileDialog.h">
+      <Filter>Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Controls\NewMenu.h">
+      <Filter>Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Controls\NewMenuBar.h">
+      <Filter>Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Controls\NewStatusBar.h">
+      <Filter>Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Controls\OddButton.h">
+      <Filter>Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Controls\ProgressBar.h">
+      <Filter>Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Controls\scbarcf.h">
+      <Filter>Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Controls\scbarg.h">
+      <Filter>Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Controls\ShellType.h">
+      <Filter>Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Controls\sizecbar.h">
+      <Filter>Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Controls\StdAfx.h">
+      <Filter>Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Controls\TabCtrlBG.h">
+      <Filter>Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Controls\TextProgressCtrl.h">
+      <Filter>Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Controls\ThemeHelperST.h">
+      <Filter>Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Controls\TreeListView.h">
+      <Filter>Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Controls\VisualStylesXP.h">
+      <Filter>Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Controls\XBrowseForFolder.h">
+      <Filter>Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Controls\XButtonXP.h">
+      <Filter>Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Controls\XFontDialog.h">
+      <Filter>Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="..\MSO\excel8.h">
+      <Filter>MSO</Filter>
+    </ClInclude>
+    <ClInclude Include="..\MSO\msoEra.h">
+      <Filter>MSO</Filter>
+    </ClInclude>
+    <ClInclude Include="..\MSO\msword8.h">
+      <Filter>MSO</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ZipArchive\ZLib\crc32.h">
+      <Filter>ZipArchive\ZLib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ZipArchive\ZLib\deflate.h">
+      <Filter>ZipArchive\ZLib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ZipArchive\ZLib\gzguts.h">
+      <Filter>ZipArchive\ZLib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ZipArchive\ZLib\inffast.h">
+      <Filter>ZipArchive\ZLib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ZipArchive\ZLib\inffixed.h">
+      <Filter>ZipArchive\ZLib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ZipArchive\ZLib\inflate.h">
+      <Filter>ZipArchive\ZLib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ZipArchive\ZLib\inftrees.h">
+      <Filter>ZipArchive\ZLib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ZipArchive\ZLib\trees.h">
+      <Filter>ZipArchive\ZLib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ZipArchive\ZLib\zconf.h">
+      <Filter>ZipArchive\ZLib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ZipArchive\ZLib\zlib.h">
+      <Filter>ZipArchive\ZLib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ZipArchive\ZLib\zutil.h">
+      <Filter>ZipArchive\ZLib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ZipArchive\Options.h">
+      <Filter>ZipArchive</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ZipArchive\RegistrySerialize.h">
+      <Filter>ZipArchive</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ZipArchive\zconf.h">
+      <Filter>ZipArchive</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ZipArchive\ZipAbstractFile.h">
+      <Filter>ZipArchive</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ZipArchive\ZipArchive.h">
+      <Filter>ZipArchive</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ZipArchive\ZipAutoBuffer.h">
+      <Filter>ZipArchive</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ZipArchive\ZipBaseException.h">
+      <Filter>ZipArchive</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ZipArchive\ZipBigFile.h">
+      <Filter>ZipArchive</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ZipArchive\ZipCentralDir.h">
+      <Filter>ZipArchive</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ZipArchive\ZipCollections.h">
+      <Filter>ZipArchive</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ZipArchive\ZipCompatibility.h">
+      <Filter>ZipArchive</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ZipArchive\ZipException.h">
+      <Filter>ZipArchive</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ZipArchive\ZipExport.h">
+      <Filter>ZipArchive</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ZipArchive\ZipFile.h">
+      <Filter>ZipArchive</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ZipArchive\ZipFileHeader.h">
+      <Filter>ZipArchive</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ZipArchive\ZipFileMapping.h">
+      <Filter>ZipArchive</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ZipArchive\ZipInternalInfo.h">
+      <Filter>ZipArchive</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ZipArchive\ZipMemFile.h">
+      <Filter>ZipArchive</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ZipArchive\ZipPathComponent.h">
+      <Filter>ZipArchive</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ZipArchive\ZipPlatform.h">
+      <Filter>ZipArchive</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ZipArchive\ZipStorage.h">
+      <Filter>ZipArchive</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ZipArchive\ZipString.h">
+      <Filter>ZipArchive</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ZipArchive\zlib.h">
+      <Filter>ZipArchive</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Res\abc.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\ActA1.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\ActA2.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\ActB.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\Actions.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\Actions1.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\Actions2.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\Actions256.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\Actions3.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\Actions4.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\Actions5.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\Actions6.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\Actions7.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\acts.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\Attention.ICO">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\Birth.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\Birth.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\Birth256.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\BntChange.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\BntChangeOut.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\Boy256.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\browser.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\BrowserTB.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\btn_deat.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\BtnABC.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\BtnABCOut.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\BtnBirth.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\BtnBirthOut.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\BtnCityHall.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\BtnCityHallOut.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\BtnDeath.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\BtnDeathOut.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\BtnDivorce.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\BtnDivorceOut.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\BtnDown.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\BtnEqu.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\BtnExtNotes.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\BtnExtNotesOut.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\BtnFileNew.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\BtnFindIn.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\BtnFindOut.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\BtnFindOutOut.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\BtnFirst.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\BtnFirstOut.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\BtnFolderTree.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\BtnGeo.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\BtnGeoOut.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\BtnHelp.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\BtnHelpOut.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\BtnLast.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\BtnLastOut.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\BtnLaws.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\BtnLawsOut.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\BtnLeft.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\BtnMarriage.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\btnMarriageOut.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\BtnNext.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\BtnNextOut.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\BtnOpenRecord.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\BtnPartial.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\BtnPrev.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\BtnPrevOut.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\BtnPrint.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\BtnPrintOut.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\BtnRecent.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\BtnRecordDelete.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\BtnRecordDeleteOut.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\BtnRecordNew.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\BtnRecordNewOut.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\BtnRedCross.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\BtnRedCrossOut.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\BtnRight.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\BtnSaveAs.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\BtnSaveAsOut.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\BtnSetColors.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\BtnSWriter.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\BtnSWriterOut.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\BtnTeplates.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\BtnTeplatesOut.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\BtnUAH.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\BtnUAHOut.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\BtnUkraine.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\BtnUkraineOut.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\BtnUp.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\BtnWord.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\BtnWordOut.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\calendar.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\Change.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\Change.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\CheckBoxIL.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\CityType1.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\CityType2.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\close_app.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\cntr_inp.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\coldtool.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\collate1.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\CommonSettings.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\Country.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\datagrid.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\Death.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\Death.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\Death256.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\Divorce.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\Divorce.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="RES\Erags.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="RES\EragsDoc.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\EragsGrp.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\Father.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\Female.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\Fiance256.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\Fiancee256.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\File_Open.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\File_Open_Out.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\first.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\FolderTree.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\FontIL.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\forms.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\FoundList.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\geography.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\Girl256.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\hdrdown.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\hdrup.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\hottoolb.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\idil_abcsex.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\idil_acbsex.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\idil_hdr.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\idil_mes.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\idil_zip.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\idr_data.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\idr_erag.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\idr_form.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\idr_main.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\idr_repo.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\idr_sear.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\idr_tabl.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\idr_word.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\il_zip.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\imlist.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\Information.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\Keys.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\last.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\Leds.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\mainfram.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\maintool.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\maintoolbar.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\MainToolbar1.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\Male.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\Man256.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\MarCitizen.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\Marrige.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\Marrige.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\MCross.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\medics.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\Mlt.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\MltDn.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\MltFocus.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\navigate.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\new.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\NewMenu256.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\newnames.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\next.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\No.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\No.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\No256.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\NoDn.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\NoDn256.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\NoFocus.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\NoFocus256.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\open.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\Plus.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\PlusDn.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\PlusFocus.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\post.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\prev.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\printmenu.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\printmenuDivorce.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\RadioIL.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\record_new.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\RecordDelete.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\RecordEdit.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\RecordNew.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\reportfr.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\req.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\RFind.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\RFind.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\rfolders.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\rfolders_tc.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\SANTAFE.ICO">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\SetBirth.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\SetChange.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\SetColors.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\SetDeath.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\SetDivorce.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\SetMarriage.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\SetOffice.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\SignFeale.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\SignMale.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\Stamp.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="RES\Toolbar.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\Toolbar_Disabled.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\Toolbar_Hot.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\Toolbar_Normal.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\Toolbars.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\ukraine.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\Flags\Ukraine.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\up.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\Users.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\Watch.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\WCross.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\Woman256.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\WomanCitizen.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\word8.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\word9.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\Yes.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\Yes.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\Yes256.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\YesDisable.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\YesDn.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\YesFocus.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\YesFocus256.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\Zip.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\zipsort.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Manifest Include="app.manifest" />
+    <Manifest Include="Erags.exe.manifest" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="Res\cantopen.txt" />
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Media Include="res\Waves\InSnd.wav" />
+    <Media Include="res\Waves\Whoosh.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="..\ImpExp.lib" />
+    <Library Include="..\zlib.lib" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="Res\cur00001.cur">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Res\cur00002.cur">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Res\cur00004.cur">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Res\Dragmove.cur">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Res\drop_mov.cur">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="RES\Erags.rc2">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Res\hand.cur">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Res\idr_tree.cur">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Res\nodrop.cur">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Res\tfdropcopy.cur">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Res\tfnodropcopy.cur">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Res\tfnodropmove.cur">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Res\cantopen.rtf" />
+    <CustomBuild Include="Erags.reg" />
+    <CustomBuild Include="Res\RegText.rtf" />
+    <CustomBuild Include="Res\RegTextCmd.rtf" />
+    <CustomBuild Include="Res\RTFEmpty.rtf" />
+  </ItemGroup>
+</Project>

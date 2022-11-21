@@ -1,0 +1,679 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4556eef8-2165-4a63-9365-4be584d18825}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;rc;def;r;odl;idl;hpj;bat</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{e69d0af1-511f-4fe8-9fcc-1062299136b9}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{7d40224c-003f-4c89-8bd6-b4c77a6d5d2c}</UniqueIdentifier>
+      <Extensions>ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe</Extensions>
+    </Filter>
+    <Filter Include="Common">
+      <UniqueIdentifier>{db21157c-74f8-41e5-a5d0-fdbb77dcc049}</UniqueIdentifier>
+      <Extensions>cpp;h</Extensions>
+    </Filter>
+    <Filter Include="Controls">
+      <UniqueIdentifier>{f214b36d-c8d3-438a-8f09-322bef934b0f}</UniqueIdentifier>
+      <Extensions>cpp;h</Extensions>
+    </Filter>
+    <Filter Include="Controls\TCToolBar">
+      <UniqueIdentifier>{335eb974-babb-4072-a2f2-4cc310d48c52}</UniqueIdentifier>
+      <Extensions>cpp;h</Extensions>
+    </Filter>
+    <Filter Include="Controls\CPPTooltip">
+      <UniqueIdentifier>{eedc58f6-5164-48ba-8288-85952824820e}</UniqueIdentifier>
+      <Extensions>cpp;h</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="ABCList.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DateFunc.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DialogEx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="EraABC.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="EraABCDoc.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="EraABCView.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="FormABC.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="FormBirth.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="FormChange.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="FormDeath.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="FormDivorce.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="FormMarriage.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="HelpMan.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="IniCache.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MainFrm.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="RSBirthes.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="RSChanges.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="RSDeathes.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="RSDivorces.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="RSMarriages.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SetDefDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="StdAfx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TabView.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="YesNoDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\CyrString.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\DAO36.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\DaoErr.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\DB.CPP">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\FHelpers.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\MDB.CPP">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Monthes.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Names.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Version.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Controls\TCToolBar\TCImageList.cpp">
+      <Filter>Controls\TCToolBar</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Controls\TCToolBar\TCToolBar.cpp">
+      <Filter>Controls\TCToolBar</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Controls\CPPTooltip\CeXDib.cpp">
+      <Filter>Controls\CPPTooltip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Controls\CPPTooltip\PPDrawManager.cpp">
+      <Filter>Controls\CPPTooltip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Controls\CPPTooltip\PPHtmlDrawer.cpp">
+      <Filter>Controls\CPPTooltip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Controls\CPPTooltip\PPTooltip.cpp">
+      <Filter>Controls\CPPTooltip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Controls\BaseTabCtrl.cpp">
+      <Filter>Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Controls\BkgndCtrl.cpp">
+      <Filter>Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Controls\BtnST.cpp">
+      <Filter>Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Controls\EnTabCtrl.cpp">
+      <Filter>Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Controls\EraButton.cpp">
+      <Filter>Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Controls\EraComboBox.cpp">
+      <Filter>Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Controls\EraControls.cpp">
+      <Filter>Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Controls\EraDateTime.cpp">
+      <Filter>Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Controls\EraEdit.cpp">
+      <Filter>Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Controls\EraMonthCalCtrl.cpp">
+      <Filter>Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Controls\ExtLabel.cpp">
+      <Filter>Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Controls\ExtStatusBarComboBox.cpp">
+      <Filter>Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Controls\ExtStatusControlBar.cpp">
+      <Filter>Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Controls\FileTreeCtrl.cpp">
+      <Filter>Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Controls\FlatHeaderCtrl.cpp">
+      <Filter>Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Controls\FolderTreeBar.cpp">
+      <Filter>Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Controls\ListViewCtrlEx.cpp">
+      <Filter>Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Controls\MyFileDialog.cpp">
+      <Filter>Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Controls\NewMenu.cpp">
+      <Filter>Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Controls\NewMenuBar.cpp">
+      <Filter>Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Controls\OddButton.cpp">
+      <Filter>Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Controls\scbarcf.cpp">
+      <Filter>Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Controls\scbarg.cpp">
+      <Filter>Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Controls\ShellType.cpp">
+      <Filter>Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Controls\sizecbar.cpp">
+      <Filter>Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Controls\TabCtrlBG.cpp">
+      <Filter>Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Controls\VisualStylesXP.cpp">
+      <Filter>Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Controls\XButtonXP.cpp">
+      <Filter>Controls</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="EraABC.rc">
+      <Filter>Source Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ABCList.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DateFunc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DialogEx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="EraABC.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="EraABCDoc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="EraABCView.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="FormABC.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="FormBirth.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="FormChange.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="FormDeath.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="FormDivorce.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="FormMarriage.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="HelpMan.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IniCache.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MainFrm.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Names.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="RSBirthes.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="RSChanges.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="RSDeathes.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="RSDivorces.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="RSMarriages.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SetDefDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="StdAfx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TabView.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="YesNoDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\CyrString.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\DAO36.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\DaoErr.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\DB.H">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\EraMessages.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\MDB.H">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Monthes.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Names.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Version.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Controls\TCToolBar\TCToolBar.h">
+      <Filter>Controls\TCToolBar</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Controls\BkgndCtrl.h">
+      <Filter>Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Controls\BtnST.h">
+      <Filter>Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Controls\erabutton.h">
+      <Filter>Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Controls\EraComboBox.h">
+      <Filter>Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Controls\EraControls.h">
+      <Filter>Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Controls\EraDateTime.h">
+      <Filter>Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Controls\EraEdit.h">
+      <Filter>Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Controls\ExtLabel.h">
+      <Filter>Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Controls\ExtStatusBarComboBox.h">
+      <Filter>Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Controls\ExtStatusControlBar.h">
+      <Filter>Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Controls\FileTreeCtrl.h">
+      <Filter>Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Controls\FlatHeaderCtrl.h">
+      <Filter>Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Controls\FolderTreeBar.h">
+      <Filter>Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Controls\ListViewCtrlEx.h">
+      <Filter>Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Controls\MemDC.h">
+      <Filter>Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Controls\MyFileDialog.h">
+      <Filter>Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Controls\NewMenu.h">
+      <Filter>Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Controls\NewMenuBar.h">
+      <Filter>Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Controls\scbarcf.h">
+      <Filter>Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Controls\scbarg.h">
+      <Filter>Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Controls\ShellType.h">
+      <Filter>Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Controls\sizecbar.h">
+      <Filter>Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Controls\XButtonXP.h">
+      <Filter>Controls</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\Attention.ICO">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\Birth.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\Birth_Gray.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\BntChange.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\BntChangeOut.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\Boy256.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\btn_deat.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\BtnBirth.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\BtnBirthOut.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\BtnDeathOut.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\BtnDivorce.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\BtnDivorceOut.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\BtnFileNew.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\BtnFirst.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\BtnFirstOut.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\BtnFolderTree.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\BtnHelp.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\BtnHelpOut.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\BtnLast.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\BtnLastOut.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\BtnMarriage.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\btnMarriageOut.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\BtnNext.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\BtnNextOut.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\BtnPrev.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\BtnPrevOut.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\BtnRecent.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\BtnRecordDelete.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\BtnRecordDeleteOut.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\BtnRecordNew.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\BtnRecordNewOut.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\calendar.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\Change.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\Change_Gray.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\close_app.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\Death.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\Death256.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\Death_Gray.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\Divorce.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\Divorce_Gray.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\EraABC.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\EraABCDoc.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\Fiance256.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\Fiancee256.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\File_Open.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\File_Open_Out.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\FileNew.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\FileNewGray.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\FileOpen.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\FileOpenGray.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\FolderTree.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\Girl256.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\hdrdown.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\hdrup.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\idil_abcsex.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\idil_hdr.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\idil_mes.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\idr_erag.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\idr_main.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\Information.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\Man256.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\Marriage.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\Marriage_Gray.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\NewMenu256.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\No.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\No256.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\No256Actived.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\StillbornBoy.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\StillbornGirl.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\TabImList.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\Toolbar.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\Toolbar_Disabled.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\Toolbar_Hot.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\Toolbar_Normal.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\Toolbars.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\Woman256.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\Yes.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\Yes256.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\Yes256Actived.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="res\EraABC.rc2">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\tfdropcopy.cur">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\tfnodropcopy.cur">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\tfnodropmove.cur">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+  </ItemGroup>
+</Project>

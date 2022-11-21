@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Template|Win32">
+      <Configuration>Template</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <SccProjectName />
+    <SccLocalPath />
+    <Keyword>MFCProj</Keyword>
+    <ProjectGuid>{5E6E1721-F513-4FCF-9A8A-E80208F8346D}</ProjectGuid>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Template|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+    <UseOfMfc>Static</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Template|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>.\Release\</OutDir>
+    <IntDir>.\Release\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>.\Debug\</OutDir>
+    <IntDir>.\Debug\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <StringPooling>true</StringPooling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <Optimization>MaxSpeed</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;_MFC_VER=0x0601;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>.\Release\</AssemblerListingLocation>
+      <PrecompiledHeaderOutputFile>.\Release\EraWiz.pch</PrecompiledHeaderOutputFile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <ObjectFileName>.\Release\</ObjectFileName>
+      <ProgramDataBaseFileName>.\Release\</ProgramDataBaseFileName>
+    </ClCompile>
+    <Midl>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <TypeLibraryName>.\Release\EraWiz.tlb</TypeLibraryName>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <TargetEnvironment>Win32</TargetEnvironment>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0422</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Release\EraWiz.bsc</OutputFile>
+    </Bscmake>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <LinkDLL>true</LinkDLL>
+      <SubSystem>Windows</SubSystem>
+      <OutputFile>C:\Erags\EraWiz.dll</OutputFile>
+      <ImportLibrary>.\Release\EraWiz.lib</ImportLibrary>
+      <ModuleDefinitionFile>.\EraWiz.def</ModuleDefinitionFile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <Optimization>Disabled</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <MinimalRebuild>true</MinimalRebuild>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>.\Debug\</AssemblerListingLocation>
+      <BrowseInformation>true</BrowseInformation>
+      <PrecompiledHeaderOutputFile>.\Debug\EraWiz.pch</PrecompiledHeaderOutputFile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <ObjectFileName>.\Debug\</ObjectFileName>
+      <ProgramDataBaseFileName>.\Debug\</ProgramDataBaseFileName>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+    </ClCompile>
+    <Midl>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <TypeLibraryName>.\Debug\EraWiz.tlb</TypeLibraryName>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <TargetEnvironment>Win32</TargetEnvironment>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0422</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Debug\EraWiz.bsc</OutputFile>
+    </Bscmake>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <LinkDLL>true</LinkDLL>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OutputFile>R:\Erags\EraWiz.dll</OutputFile>
+      <ImportLibrary>.\Debug\EraWiz.lib</ImportLibrary>
+      <ModuleDefinitionFile>.\EraWiz.def</ModuleDefinitionFile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\Common\CyrString.cpp" />
+    <ClCompile Include="..\Common\DAO36.cpp" />
+    <ClCompile Include="..\Common\DB.CPP" />
+    <ClCompile Include="..\Common\MDB.CPP" />
+    <ClCompile Include="..\Common\Monthes.cpp" />
+    <ClCompile Include="..\Controls\CPPTooltip\CeXDib.cpp" />
+    <ClCompile Include="..\Controls\CPPTooltip\PPDrawManager.cpp" />
+    <ClCompile Include="..\Controls\CPPTooltip\PPHtmlDrawer.cpp" />
+    <ClCompile Include="..\Controls\CPPTooltip\PPTooltip.cpp" />
+    <ClCompile Include="..\Controls\TCToolBar\TCImageList.cpp" />
+    <ClCompile Include="BirthPage.cpp" />
+    <ClCompile Include="DivorcePage.cpp" />
+    <ClCompile Include="EraWiz.cpp" />
+    <ClCompile Include="LoadDlg.cpp" />
+    <ClCompile Include="MasterDlg.cpp" />
+    <ClCompile Include="MedicsPage.cpp" />
+    <ClCompile Include="NewWizDialog.cpp" />
+    <ClCompile Include="NewWizPage.cpp" />
+    <ClCompile Include="SetGeoPlace.cpp" />
+    <ClCompile Include="SetRagsPage.cpp" />
+    <ClCompile Include="StdAfx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">stdafx.h</PrecompiledHeaderFile>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">stdafx.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="UkraineMap.cpp" />
+    <ClCompile Include="WizButton.cpp" />
+    <ClCompile Include="WizComboBox.cpp" />
+    <ClCompile Include="WizEdit.cpp" />
+    <ClCompile Include="WizTreeCtrl.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="EraWiz.def" />
+    <CustomBuild Include="res\EraWiz.rc2" />
+    <CustomBuild Include="res\hand.cur" />
+    <CustomBuild Include="res\htree.cur" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="EraWiz.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Common\CyrString.h" />
+    <ClInclude Include="..\Common\DAO36.h" />
+    <ClInclude Include="..\Common\DB.H" />
+    <ClInclude Include="..\Common\MDB.H" />
+    <ClInclude Include="..\Common\Monthes.h" />
+    <ClInclude Include="..\Controls\CPPTooltip\CeXDib.h" />
+    <ClInclude Include="..\Controls\CPPTooltip\PPDrawManager.h" />
+    <ClInclude Include="..\Controls\CPPTooltip\PPHtmlDrawer.h" />
+    <ClInclude Include="..\Controls\CPPTooltip\PPTooltip.h" />
+    <ClInclude Include="BirthPage.h" />
+    <ClInclude Include="DivorcePage.h" />
+    <ClInclude Include="EraWiz.h" />
+    <ClInclude Include="LoadDlg.h" />
+    <ClInclude Include="MasterDlg.h" />
+    <ClInclude Include="MedicsPage.h" />
+    <ClInclude Include="NewWizDialog.h" />
+    <ClInclude Include="NewWizPage.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="SetGeoPlace.h" />
+    <ClInclude Include="SetRagsPage.h" />
+    <ClInclude Include="StdAfx.h" />
+    <ClInclude Include="UkraineMap.h" />
+    <ClInclude Include="WizButton.h" />
+    <ClInclude Include="WizComboBox.h" />
+    <ClInclude Include="WizEdit.h" />
+    <ClInclude Include="WizTreeCtrl.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\birth.bmp" />
+    <Image Include="res\Birth.ico" />
+    <Image Include="res\BtnRedCross.bmp" />
+    <Image Include="res\Change.ico" />
+    <Image Include="res\Cherkaska_Oblast.bmp" />
+    <Image Include="res\Cherkasy.bmp" />
+    <Image Include="res\Chernihiv.bmp" />
+    <Image Include="res\Chernihivska_Oblast.bmp" />
+    <Image Include="res\Chernivtska_Oblast.bmp" />
+    <Image Include="res\Chernovtsy.bmp" />
+    <Image Include="res\Crimea.bmp" />
+    <Image Include="res\Death.ico" />
+    <Image Include="res\Divorce.ico" />
+    <Image Include="res\Dnipropetrovsk.bmp" />
+    <Image Include="res\Dnipropetrovska_Oblast.bmp" />
+    <Image Include="res\Donetsk.bmp" />
+    <Image Include="res\Donetska_Oblast.bmp" />
+    <Image Include="res\Frankivsk.bmp" />
+    <Image Include="res\geography.bmp" />
+    <Image Include="res\Ivano-Frankivska_Oblast.bmp" />
+    <Image Include="res\Kharkiv.bmp" />
+    <Image Include="res\Kharkivska_Oblast.bmp" />
+    <Image Include="res\Kherson.bmp" />
+    <Image Include="res\Khersonska_Oblast.bmp" />
+    <Image Include="res\Khmelnitsky.bmp" />
+    <Image Include="res\Khmelnytska_Oblast.bmp" />
+    <Image Include="res\Kiev.bmp" />
+    <Image Include="res\Kirovohrad.bmp" />
+    <Image Include="res\Kirovohradska_Oblast.bmp" />
+    <Image Include="res\Kyivska_oblast.bmp" />
+    <Image Include="res\leftdown.ico" />
+    <Image Include="res\leftup.ico" />
+    <Image Include="res\Luhansk.bmp" />
+    <Image Include="res\Luhanska_Oblast.bmp" />
+    <Image Include="res\Lutsk.bmp" />
+    <Image Include="res\Lviv.bmp" />
+    <Image Include="res\Lvivska_Oblast.bmp" />
+    <Image Include="res\Marriage.ico" />
+    <Image Include="res\Mykolaiv.bmp" />
+    <Image Include="res\Mykolaivska_Oblast.bmp" />
+    <Image Include="res\Odeska_Oblast.bmp" />
+    <Image Include="res\Odessa.bmp" />
+    <Image Include="res\Poltava.bmp" />
+    <Image Include="res\Poltavska_Oblast.bmp" />
+    <Image Include="res\rfolders.bmp" />
+    <Image Include="res\rfolders_tc.bmp" />
+    <Image Include="res\right.ico" />
+    <Image Include="res\rightdown.ico" />
+    <Image Include="res\Rivne.bmp" />
+    <Image Include="res\Rivnenska_Oblast.bmp" />
+    <Image Include="res\Sevastopol.bmp" />
+    <Image Include="res\Simferopol.bmp" />
+    <Image Include="res\Sumska_Oblast.bmp" />
+    <Image Include="res\Sumy.bmp" />
+    <Image Include="res\Ternopil.bmp" />
+    <Image Include="res\Ternopilska_Oblast.bmp" />
+    <Image Include="res\Ukraine.bmp" />
+    <Image Include="res\Ukraine256.bmp" />
+    <Image Include="res\uppoint.ico" />
+    <Image Include="res\Uzhgorod.bmp" />
+    <Image Include="res\Vinnytsia.bmp" />
+    <Image Include="res\Vinnytska_Oblast.bmp" />
+    <Image Include="res\Volynska_Oblast.bmp" />
+    <Image Include="res\Wizard.bmp" />
+    <Image Include="res\Wizard.ico" />
+    <Image Include="res\Zakarpakska_Oblast.bmp" />
+    <Image Include="res\Zaporizha.bmp" />
+    <Image Include="res\Zaporizhzhska_Oblast.bmp" />
+    <Image Include="res\Zhytomyr.bmp" />
+    <Image Include="res\Zhytomyrska_Oblast.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

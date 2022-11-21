@@ -1,0 +1,19 @@
+; Будь ласка, не редагуйте цей файл            Ѓг¤м « бЄ , ­Ґ аҐ¤ Јг©вҐ жҐ© д ©«
+; Пожалуйста, не редактируйте этот файл        Џ®¦ «г©бв , ­Ґ аҐ¤ ЄвЁаг©вҐ нв®в д ©«
+;
+Filename              DateTime       Filesize  MD5                              URL
+Downloader.zip        20120306063416   927042  78E3A0B4CB7F52002544441B4872DE68 http://sites.google.com/site/pkerags/Files/Downloader.zip
+ehelper_r.zip         20111011002033    34265  C3F0D9D5B2C3EAA5B394E7ECC670F354 http://sites.google.com/site/pkerags/Files/ehelper_r.zip
+ehelper_u.zip         20111011002106    32903  68BDE3F5028A024306227163433CBE3D http://sites.google.com/site/pkerags/Files/ehelper_u.zip
+Era2Xml.zip           20120303080910   224772  B2BEB57F5C72108D68A229A914E28319 http://sites.google.com/site/pkerags/Files/Era2Xml.zip
+EraABC.zip            20110809103855   401869  88373E9E1CB7063C140EA3374BDEFB77 http://sites.google.com/site/pkerags/Files/EraABC.zip
+Erags.zip             20120329004858  1004592  2A26FBC8E8AFD46BF13E179149B49838 http://sites.google.com/site/pkerags/Files/Erags.zip
+Erags.rdf             20120329002536     3662  23943CFACA0171DBD9BEC77B68872F45 http://sites.google.com/site/pkerags/Files/Erags.rdf
+EraWiz.zip            20120329003809   808184  643FC5D0D6ABD61915CFB58DFDE01E27 http://sites.google.com/site/pkerags/Files/EraWiz.zip
+Help_r.zip            20111102085934  3982174  53B24045BE9ADB479932B6A09CE5B09F http://sites.google.com/site/pkerags/Files/Help_r.zip
+Help_u.zip            20111102085919  3971402  316A0FEF2AF40B5414E926D4B358FFD4 http://sites.google.com/site/pkerags/Files/Help_u.zip
+Helpers.zip           20120329003744  1139347  E906B9CCDD8FE129B6E3F8B529919762 http://sites.google.com/site/pkerags/Files/Helpers.zip
+ImpExp.zip            20110625091625   264746  01780BC0F17707D7296D3FF33DABA7A0 http://sites.google.com/site/pkerags/Files/ImpExp.zip
+Templates.info.zip    20111102085811     2770  996459D1CD3163D3460D267C4B836826 http://sites.google.com/site/pkerags/Files/Templates.info.zip
+Templates.zip         20120408232709  3984443  B01B15A3C4FA9F5F0F606E6ADB828F02 http://sites.google.com/site/pkerags/Files/Templates.zip
+Updater.zip           20110518235223   641415  DDEFD51F0EC50A8382441685978ACD5B http://sites.google.com/site/pkerags/Files/Updater.zip

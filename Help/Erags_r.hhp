@@ -1,0 +1,18 @@
+[OPTIONS]
+Auto Index=Yes
+Compatibility=1.1 or later
+Compiled file=Erags_r.chm
+Contents file=Erags_r.hhc
+Default Font=MS Sans Serif,10,204
+Default topic=Default_r.htm
+Display compile progress=No
+Index file=Index_r.hhk
+Language=0x419 Русский
+Title=ПК ЭРАГС
+
+
+[FILES]
+Default_r.htm
+
+[INFOTYPES]
+

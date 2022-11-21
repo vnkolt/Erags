@@ -1,0 +1,414 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{01168c4f-a879-469a-8279-efc41b6f40a2}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;rc;def;r;odl;idl;hpj;bat</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{bf1b1d49-543c-407a-8e64-835783efba55}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{778a378b-bb54-49e6-ad95-60f987539fc3}</UniqueIdentifier>
+      <Extensions>ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe</Extensions>
+    </Filter>
+    <Filter Include="Controls">
+      <UniqueIdentifier>{5e531623-9138-4e8f-b30d-65cd28f39791}</UniqueIdentifier>
+      <Extensions>cpp;h</Extensions>
+    </Filter>
+    <Filter Include="ZipArchive">
+      <UniqueIdentifier>{652e19aa-0676-4d0b-bf52-89bf7938aa26}</UniqueIdentifier>
+      <Extensions>cpp;h</Extensions>
+    </Filter>
+    <Filter Include="ZipArchive\ZLib">
+      <UniqueIdentifier>{05570921-ce2a-4266-97ff-9ce9b2b7e8cf}</UniqueIdentifier>
+      <Extensions>c;h</Extensions>
+    </Filter>
+    <Filter Include="Common">
+      <UniqueIdentifier>{cec50fd3-f652-4e23-be3d-45b5006ef979}</UniqueIdentifier>
+      <Extensions>cpp;h</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="AgreementPage.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AutoRichEditCtrl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CDMenu.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="EraPathPage.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="EraSetup.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="EraSetupDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="FinishPage.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MasterDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="NewWizDialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="NewWizPage.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ProgressPage.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Registry.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Shell.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="StdAfx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UnzipDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="WelcomePage.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="WizButton.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="WizComboBox.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="WizEdit.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="WizTreeCtrl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Controls\ShellType.cpp">
+      <Filter>Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ZipArchive\ZLib\adler32.c">
+      <Filter>ZipArchive\ZLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ZipArchive\ZLib\compress.c">
+      <Filter>ZipArchive\ZLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ZipArchive\ZLib\crc32.c">
+      <Filter>ZipArchive\ZLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ZipArchive\ZLib\deflate.c">
+      <Filter>ZipArchive\ZLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ZipArchive\ZLib\gzclose.c">
+      <Filter>ZipArchive\ZLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ZipArchive\ZLib\gzlib.c">
+      <Filter>ZipArchive\ZLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ZipArchive\ZLib\gzread.c">
+      <Filter>ZipArchive\ZLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ZipArchive\ZLib\gzwrite.c">
+      <Filter>ZipArchive\ZLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ZipArchive\ZLib\infback.c">
+      <Filter>ZipArchive\ZLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ZipArchive\ZLib\inffast.c">
+      <Filter>ZipArchive\ZLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ZipArchive\ZLib\inflate.c">
+      <Filter>ZipArchive\ZLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ZipArchive\ZLib\inftrees.c">
+      <Filter>ZipArchive\ZLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ZipArchive\ZLib\trees.c">
+      <Filter>ZipArchive\ZLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ZipArchive\ZLib\uncompr.c">
+      <Filter>ZipArchive\ZLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ZipArchive\ZLib\zutil.c">
+      <Filter>ZipArchive\ZLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ZipArchive\Options.cpp">
+      <Filter>ZipArchive</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ZipArchive\RegistrySerialize.cpp">
+      <Filter>ZipArchive</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ZipArchive\ZipArchive.cpp">
+      <Filter>ZipArchive</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ZipArchive\ZipAutoBuffer.cpp">
+      <Filter>ZipArchive</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ZipArchive\ZipBigFile.cpp">
+      <Filter>ZipArchive</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ZipArchive\ZipCentralDir.cpp">
+      <Filter>ZipArchive</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ZipArchive\ZipCompatibility.cpp">
+      <Filter>ZipArchive</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ZipArchive\ZipException.cpp">
+      <Filter>ZipArchive</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ZipArchive\ZipFile.cpp">
+      <Filter>ZipArchive</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ZipArchive\ZipFileHeader.cpp">
+      <Filter>ZipArchive</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ZipArchive\ZipInternalInfo.cpp">
+      <Filter>ZipArchive</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ZipArchive\ZipMemFile.cpp">
+      <Filter>ZipArchive</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ZipArchive\ZipPathComponent.cpp">
+      <Filter>ZipArchive</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ZipArchive\ZipPlatform.cpp">
+      <Filter>ZipArchive</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ZipArchive\ZipPlatformComm.cpp">
+      <Filter>ZipArchive</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ZipArchive\ZipStorage.cpp">
+      <Filter>ZipArchive</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ZipArchive\ZipString.cpp">
+      <Filter>ZipArchive</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\DAO36.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\FHelpers.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\IsAdmin.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="EraSetup.rc">
+      <Filter>Source Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AgreementPage.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AutoRichEditCtrl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CDMenu.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="EraPathPage.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="EraSetup.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="EraSetupDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="FinishPage.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MasterDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="NewWizDialog.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="NewWizPage.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ProgressPage.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Registry.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Shell.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="StdAfx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="UnzipDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="WelcomePage.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="WizButton.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="WizComboBox.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="WizEdit.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="WizTreeCtrl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ZipArchive\ZLib\crc32.h">
+      <Filter>ZipArchive\ZLib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ZipArchive\ZLib\deflate.h">
+      <Filter>ZipArchive\ZLib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ZipArchive\ZLib\gzguts.h">
+      <Filter>ZipArchive\ZLib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ZipArchive\ZLib\inffast.h">
+      <Filter>ZipArchive\ZLib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ZipArchive\ZLib\inffixed.h">
+      <Filter>ZipArchive\ZLib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ZipArchive\ZLib\inflate.h">
+      <Filter>ZipArchive\ZLib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ZipArchive\ZLib\inftrees.h">
+      <Filter>ZipArchive\ZLib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ZipArchive\ZLib\trees.h">
+      <Filter>ZipArchive\ZLib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ZipArchive\ZLib\zconf.h">
+      <Filter>ZipArchive\ZLib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ZipArchive\ZLib\zlib.h">
+      <Filter>ZipArchive\ZLib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ZipArchive\ZLib\zutil.h">
+      <Filter>ZipArchive\ZLib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ZipArchive\Options.h">
+      <Filter>ZipArchive</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ZipArchive\RegistrySerialize.h">
+      <Filter>ZipArchive</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ZipArchive\zconf.h">
+      <Filter>ZipArchive</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ZipArchive\ZipAbstractFile.h">
+      <Filter>ZipArchive</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ZipArchive\ZipArchive.h">
+      <Filter>ZipArchive</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ZipArchive\ZipAutoBuffer.h">
+      <Filter>ZipArchive</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ZipArchive\ZipBaseException.h">
+      <Filter>ZipArchive</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ZipArchive\ZipBigFile.h">
+      <Filter>ZipArchive</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ZipArchive\ZipCentralDir.h">
+      <Filter>ZipArchive</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ZipArchive\ZipCollections.h">
+      <Filter>ZipArchive</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ZipArchive\ZipCompatibility.h">
+      <Filter>ZipArchive</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ZipArchive\ZipException.h">
+      <Filter>ZipArchive</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ZipArchive\ZipExport.h">
+      <Filter>ZipArchive</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ZipArchive\ZipFile.h">
+      <Filter>ZipArchive</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ZipArchive\ZipFileHeader.h">
+      <Filter>ZipArchive</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ZipArchive\ZipFileMapping.h">
+      <Filter>ZipArchive</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ZipArchive\ZipInternalInfo.h">
+      <Filter>ZipArchive</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ZipArchive\ZipMemFile.h">
+      <Filter>ZipArchive</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ZipArchive\ZipPathComponent.h">
+      <Filter>ZipArchive</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ZipArchive\ZipPlatform.h">
+      <Filter>ZipArchive</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ZipArchive\ZipStorage.h">
+      <Filter>ZipArchive</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ZipArchive\ZipString.h">
+      <Filter>ZipArchive</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ZipArchive\zlib.h">
+      <Filter>ZipArchive</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\DAO36.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\FHelpers.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\IsAdmin.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\Erags.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\EraSetup.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\Russia.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\Ukraine.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\Welcome24.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\write.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="res\EraSetup.rc2">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\EULA.rtf" />
+    <CustomBuild Include="res\finish.rtf" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,426 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{779d0a44-85f0-479b-badb-f26e31404a3e}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;rc;def;r;odl;idl;hpj;bat</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{6c10e24f-2145-4eac-ae91-de1d6943b4cc}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{ba8010a8-0a66-41da-9881-f68bf3e27ba6}</UniqueIdentifier>
+      <Extensions>ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe</Extensions>
+    </Filter>
+    <Filter Include="Common">
+      <UniqueIdentifier>{6c712969-c52f-42d9-8589-a5289dacecd0}</UniqueIdentifier>
+      <Extensions>cpp;h</Extensions>
+    </Filter>
+    <Filter Include="Controls">
+      <UniqueIdentifier>{1c3c48fa-c446-4962-9375-e2570912cfab}</UniqueIdentifier>
+      <Extensions>cpp;h</Extensions>
+    </Filter>
+    <Filter Include="Controls\CPPTooltip">
+      <UniqueIdentifier>{e44c9602-1488-4d68-b0b9-49910ad8e1ce}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Controls\TCToolBar">
+      <UniqueIdentifier>{d7defd98-7adb-4ee6-adec-8aab92dbb162}</UniqueIdentifier>
+      <Extensions>cpp;h</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="BirthPage.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DivorcePage.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="EraWiz.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="LoadDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MasterDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MedicsPage.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="NewWizDialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="NewWizPage.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SetGeoPlace.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SetRagsPage.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="StdAfx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UkraineMap.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="WizButton.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="WizComboBox.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="WizEdit.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="WizTreeCtrl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\CyrString.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\DAO36.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\DB.CPP">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\MDB.CPP">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Monthes.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Controls\CPPTooltip\CeXDib.cpp">
+      <Filter>Controls\CPPTooltip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Controls\CPPTooltip\PPDrawManager.cpp">
+      <Filter>Controls\CPPTooltip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Controls\CPPTooltip\PPHtmlDrawer.cpp">
+      <Filter>Controls\CPPTooltip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Controls\CPPTooltip\PPTooltip.cpp">
+      <Filter>Controls\CPPTooltip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Controls\TCToolBar\TCImageList.cpp">
+      <Filter>Controls\TCToolBar</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="EraWiz.rc">
+      <Filter>Source Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="BirthPage.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DivorcePage.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="EraWiz.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="LoadDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MasterDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MedicsPage.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="NewWizDialog.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="NewWizPage.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SetGeoPlace.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SetRagsPage.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="StdAfx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="UkraineMap.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="WizButton.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="WizComboBox.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="WizEdit.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="WizTreeCtrl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\CyrString.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\DAO36.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\DB.H">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\MDB.H">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Monthes.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Controls\CPPTooltip\CeXDib.h">
+      <Filter>Controls\CPPTooltip</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Controls\CPPTooltip\PPDrawManager.h">
+      <Filter>Controls\CPPTooltip</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Controls\CPPTooltip\PPHtmlDrawer.h">
+      <Filter>Controls\CPPTooltip</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Controls\CPPTooltip\PPTooltip.h">
+      <Filter>Controls\CPPTooltip</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\birth.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\Birth.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\BtnRedCross.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\Change.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\Cherkaska_Oblast.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\Cherkasy.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\Chernihiv.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\Chernihivska_Oblast.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\Chernivtska_Oblast.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\Chernovtsy.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\Crimea.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\Death.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\Divorce.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\Dnipropetrovsk.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\Dnipropetrovska_Oblast.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\Donetsk.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\Donetska_Oblast.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\Frankivsk.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\geography.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\Ivano-Frankivska_Oblast.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\Kharkiv.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\Kharkivska_Oblast.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\Kherson.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\Khersonska_Oblast.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\Khmelnitsky.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\Khmelnytska_Oblast.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\Kiev.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\Kirovohrad.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\Kirovohradska_Oblast.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\Kyivska_oblast.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\leftdown.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\leftup.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\Luhansk.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\Luhanska_Oblast.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\Lutsk.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\Lviv.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\Lvivska_Oblast.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\Marriage.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\Mykolaiv.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\Mykolaivska_Oblast.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\Odeska_Oblast.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\Odessa.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\Poltava.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\Poltavska_Oblast.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\rfolders.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\rfolders_tc.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\right.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\rightdown.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\Rivne.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\Rivnenska_Oblast.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\Sevastopol.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\Simferopol.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\Sumska_Oblast.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\Sumy.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\Ternopil.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\Ternopilska_Oblast.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\Ukraine.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\Ukraine256.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\uppoint.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\Uzhgorod.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\Vinnytsia.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\Vinnytska_Oblast.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\Volynska_Oblast.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\Wizard.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\Wizard.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\Zakarpakska_Oblast.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\Zaporizha.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\Zaporizhzhska_Oblast.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\Zhytomyr.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\Zhytomyrska_Oblast.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="EraWiz.def">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\EraWiz.rc2">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\hand.cur">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\htree.cur">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+  </ItemGroup>
+</Project>

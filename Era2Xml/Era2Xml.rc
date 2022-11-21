@@ -1,0 +1,573 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Russian resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_RUS)
+#ifdef _WIN32
+LANGUAGE LANG_RUSSIAN, SUBLANG_DEFAULT
+#pragma code_page(1251)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE MOVEABLE PURE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE MOVEABLE PURE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE MOVEABLE PURE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\Era2Xml.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\r\n"
+    "1 24 ""Era2Xml.exe.manifest""\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\Era2Xml.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 235, 55
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Про програму Era2Xml"
+FONT 8, "MS Sans Serif"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "Era2Xml, версія 2011.08.09",IDC_STATIC,40,10,119,8,
+                    SS_NOPREFIX
+    LTEXT           "Авторське право належить Володирові Кольцову",
+                    IDC_STATIC,40,30,159,8
+    DEFPUSHBUTTON   "OK",IDOK,178,7,50,14,WS_GROUP
+END
+
+IDD_ERA2XML_DIALOG DIALOGEX 0, 0, 486, 329
+STYLE DS_MODALFRAME | DS_CONTEXTHELP | WS_POPUP | WS_VISIBLE | WS_CAPTION | 
+    WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "Era2Xml"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    LTEXT           "Додайте/видаліть файли бази даних ПК ЕРАГС для конвертування у xml-файли",
+                    IDC_STATIC,8,11,274,9
+    CONTROL         "List1",IDC_FILES,"SysListView32",LVS_REPORT | WS_BORDER | 
+                    WS_TABSTOP,7,23,413,80
+    PUSHBUTTON      "Додати",IDC_ADDFILE,426,23,47,14
+    PUSHBUTTON      "Видалити",IDC_DELFILE,426,42,47,14,WS_DISABLED
+    PUSHBUTTON      "Допомога",IDC_BTNHELP,426,60,47,14
+    GROUPBOX        "Вкажіть параметри конвертування",IDC_STATIC,7,106,472,
+                    180
+    LTEXT           "Папка для вихідних xml-файлів",IDC_STATIC,9,119,135,10
+    CONTROL         "",IDC_OUTFOLDER_SELECT_FRAME,"Static",SS_BLACKFRAME | 
+                    NOT WS_VISIBLE,185,119,277,12
+    CONTROL         "Оброблювати актові записи про народження",IDC_BIRTH,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,8,138,177,9
+    CONTROL         "починаючи з",IDC_BIRTH_FROM_CHECK,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,185,138,63,9
+    EDITTEXT        IDC_BIRTH_FROM,251,137,92,12,ES_AUTOHSCROLL | 
+                    WS_DISABLED
+    CTEXT           "по",IDC_STATIC,347,138,15,11,SS_CENTERIMAGE
+    EDITTEXT        IDC_BIRTH_TILL,370,137,92,12,ES_AUTOHSCROLL | 
+                    WS_DISABLED
+    CONTROL         "Оброблювати актові записи про смерть",IDC_DEATH,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,8,151,177,9
+    CONTROL         "починаючи з",IDC_DEATH_FROM_CHECK,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,185,151,58,9
+    EDITTEXT        IDC_DEATH_FROM,251,153,92,12,ES_AUTOHSCROLL | 
+                    WS_DISABLED
+    CTEXT           "по",IDC_STATIC,347,151,15,11,SS_CENTERIMAGE
+    EDITTEXT        IDC_DEATH_TILL,370,153,92,12,ES_AUTOHSCROLL | 
+                    WS_DISABLED
+    LTEXT           "Максимальна кількість записів у вихідному xml-файлі",
+                    IDC_STATIC,16,175,189,8
+    EDITTEXT        IDC_XMLRECORDS,237,174,45,12,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "Назва відділу ДРАЦС або виконкому",IDC_STATIC,12,192,
+                    131,12,SS_CENTERIMAGE
+    EDITTEXT        IDC_RAGS,155,192,231,12,ES_AUTOHSCROLL
+    CONTROL         "Залишити пустим",IDC_RAGS_EMPTY,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,393,192,74,12
+    LTEXT           "Керівник",IDC_STATIC,12,205,131,12,SS_CENTERIMAGE
+    EDITTEXT        IDC_BOSS,155,205,231,12,ES_AUTOHSCROLL
+    CONTROL         "Залишити пустим",IDC_BOSS_EMPTY,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,393,205,74,12
+    LTEXT           "Посада керівника",IDC_STATIC,12,218,131,12,
+                    SS_CENTERIMAGE
+    EDITTEXT        IDC_BOSS_POS,155,218,231,12,ES_AUTOHSCROLL
+    CONTROL         "Залишити пустим",IDC_BOSS_POS_EMPTY,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,393,218,74,12
+    RTEXT           "Спеціалист, що реєстрував народження",IDC_STATIC,12,231,
+                    170,12,SS_CENTERIMAGE
+    EDITTEXT        IDC_BIRTH_SPEC,185,231,201,12,ES_AUTOHSCROLL
+    CONTROL         "Залишити пустим",IDC_BIRTH_SPEC_EMPTY,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,393,231,74,12
+    RTEXT           "Посада спеціалиста, що реєстрував народження",
+                    IDC_STATIC,12,244,170,12,SS_CENTERIMAGE
+    EDITTEXT        IDC_BIRTH_SPEC_POS,185,244,201,12,ES_AUTOHSCROLL
+    CONTROL         "Залишити пустим",IDC_BIRTH_SPEC_POS_EMPTY,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,393,244,74,12
+    RTEXT           "Спеціалист, що реєстрував смерті",IDC_STATIC,12,257,170,
+                    12,SS_CENTERIMAGE
+    EDITTEXT        IDC_DEATH_SPEC,185,257,201,12,ES_AUTOHSCROLL
+    CONTROL         "Залишити пустим",IDC_DEATH_SPEC_EMPTY,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,393,257,74,12
+    RTEXT           "Посада спеціалиста, що реєстрував смерті",IDC_STATIC,12,
+                    271,170,12,SS_CENTERIMAGE
+    EDITTEXT        IDC_DEATH_SPEC_POS,185,271,201,12,ES_AUTOHSCROLL
+    CONTROL         "Залишити пустим",IDC_DEATH_SPEC_POS_EMPTY,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,393,271,74,12
+    LTEXT           "",IDC_INFO,7,291,401,10,0,WS_EX_STATICEDGE
+    PUSHBUTTON      "Конвертувати",IDC_CONVERT,420,305,59,14,WS_DISABLED
+    CONTROL         "Progress1",IDC_PROGRESS,"msctls_progress32",NOT 
+                    WS_VISIBLE | WS_BORDER,8,305,399,14
+END
+
+IDD_BIRTH_DECLARANT_DLG DIALOGEX 0, 0, 388, 211
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Будь ласка, уточніть дані про заявника"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,331,190,50,14
+    CTEXT           "Актовий запис про народження № ",IDC_TITLE,7,7,373,14,
+                    SS_CENTERIMAGE,WS_EX_STATICEDGE
+    LTEXT           "Прізвище",IDC_STATIC,14,34,41,11,0,WS_EX_STATICEDGE
+    LTEXT           "Ім'я",IDC_STATIC,146,34,23,12,0,WS_EX_STATICEDGE
+    LTEXT           "По батькові",IDC_STATIC,246,35,47,11,0,WS_EX_STATICEDGE
+    EDITTEXT        IDC_SURNAME,60,34,69,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_NAME,173,34,56,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PATRONYMIC,298,34,82,12,ES_AUTOHSCROLL
+    GROUPBOX        "Прізвище, ім'я, по батькові заявника",IDC_STATIC,7,24,
+                    374,31
+    GROUPBOX        "Адреса заявника",IDC_STATIC,7,58,374,62
+    LTEXT           "Держава",IDC_STATIC,14,71,41,11,0,WS_EX_STATICEDGE
+    EDITTEXT        IDC_COUNTRY,60,71,90,12,ES_AUTOHSCROLL
+    LTEXT           "Область",IDC_STATIC,13,87,41,11,0,WS_EX_STATICEDGE
+    EDITTEXT        IDC_REGION,60,87,89,12,ES_AUTOHSCROLL
+    LTEXT           "Район",IDC_STATIC,154,71,41,11,0,WS_EX_STATICEDGE
+    EDITTEXT        IDC_DISTRICT,231,71,102,12,ES_AUTOHSCROLL
+    LTEXT           "Місто (село, селище)",IDC_STATIC,154,88,75,11,0,
+                    WS_EX_STATICEDGE
+    EDITTEXT        IDC_CITY,231,88,102,12,ES_AUTOHSCROLL
+    COMBOBOX        IDC_SETTLEMENT_TYPE,339,88,38,12,CBS_DROPDOWNLIST | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Вулиця",IDC_STATIC,14,103,41,11,0,WS_EX_STATICEDGE
+    EDITTEXT        IDC_STREET,60,103,89,12,ES_AUTOHSCROLL
+    LTEXT           "Будинок",IDC_STATIC,153,103,31,11,0,WS_EX_STATICEDGE
+    EDITTEXT        IDC_BUILD,189,103,39,12,ES_AUTOHSCROLL
+    LTEXT           "Квартира",IDC_STATIC,231,103,36,11,0,WS_EX_STATICEDGE
+    EDITTEXT        IDC_FLAT,281,103,37,12,ES_AUTOHSCROLL
+    GROUPBOX        "Паспортні дані",IDC_STATIC,7,129,374,42
+    COMBOBOX        IDC_DOCTYPE,10,143,118,13,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Серія",IDC_STATIC,132,143,23,11,0,WS_EX_STATICEDGE
+    EDITTEXT        IDC_DOC_SERIA,158,143,35,12,ES_AUTOHSCROLL
+    LTEXT           "Номер",IDC_STATIC,197,143,28,11,0,WS_EX_STATICEDGE
+    EDITTEXT        IDC_DOC_NUMBER,229,143,48,12,ES_AUTOHSCROLL
+    LTEXT           "від",IDC_STATIC,281,143,15,11,0,WS_EX_STATICEDGE
+    EDITTEXT        IDC_DOC_DATE,298,143,82,12,ES_AUTOHSCROLL
+    LTEXT           "видан",IDC_STATIC,10,157,28,11,0,WS_EX_STATICEDGE
+    COMBOBOX        IDC_DOC_ORGAN,41,157,338,183,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_WITNESSES DIALOGEX 0, 0, 446, 367
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Дані про свідків"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    LTEXT           "Графа 10",IDC_STATIC,7,6,38,12,0,WS_EX_STATICEDGE
+    EDITTEXT        IDC_GR10,49,7,390,38,ES_MULTILINE | ES_AUTOVSCROLL | 
+                    ES_READONLY | WS_VSCROLL
+    GROUPBOX        " Документ, що підтверджує факт народження ",IDC_STATIC,
+                    7,48,432,45
+    LTEXT           "Назва",IDC_STATIC,13,61,28,12,0,WS_EX_STATICEDGE
+    EDITTEXT        IDC_MEDDOCNAME,44,61,374,12,ES_AUTOHSCROLL
+    LTEXT           "№",IDC_STATIC,14,77,28,10,0,WS_EX_STATICEDGE
+    EDITTEXT        IDC_MEDDOCNUM,44,76,39,12,ES_AUTOHSCROLL
+    LTEXT           "від",IDC_STATIC,88,77,16,10,0,WS_EX_STATICEDGE
+    EDITTEXT        IDC_MEDDOCDATE,108,76,78,12,ES_AUTOHSCROLL
+    LTEXT           "ким виданий",IDC_STATIC,191,77,48,10,0,WS_EX_STATICEDGE
+    EDITTEXT        IDC_MEDDOCBY,242,76,176,12,ES_AUTOHSCROLL
+    GROUPBOX        "Свідок 1",IDC_STATIC,7,96,432,112
+    LTEXT           "Прізвище",IDC_STATIC,16,108,41,11,0,WS_EX_STATICEDGE
+    EDITTEXT        IDC_SURNAME1,62,108,69,12,ES_AUTOHSCROLL
+    LTEXT           "Ім'я",IDC_STATIC,148,108,23,12,0,WS_EX_STATICEDGE
+    EDITTEXT        IDC_NAME1,175,108,56,12,ES_AUTOHSCROLL
+    LTEXT           "По батькові",IDC_STATIC,248,109,47,11,0,
+                    WS_EX_STATICEDGE
+    EDITTEXT        IDC_PATRONYMIC1,300,108,82,12,ES_AUTOHSCROLL
+    GROUPBOX        "Адреса",IDC_STATIC,8,123,431,41
+    LTEXT           "Держава",IDC_STATIC,13,134,42,11,0,WS_EX_STATICEDGE
+    EDITTEXT        IDC_COUNTRY1,60,134,94,12,ES_AUTOHSCROLL
+    LTEXT           "Область",IDC_STATIC,158,134,32,11,0,WS_EX_STATICEDGE
+    EDITTEXT        IDC_REGION1,193,134,113,12,ES_AUTOHSCROLL
+    LTEXT           "Район",IDC_STATIC,308,134,32,11,0,WS_EX_STATICEDGE
+    EDITTEXT        IDC_DISTRICT1,343,134,94,12,ES_AUTOHSCROLL
+    LTEXT           "Місто (село, с-ще)",IDC_STATIC,13,148,66,11,0,
+                    WS_EX_STATICEDGE
+    EDITTEXT        IDC_CITY1,82,148,72,12,ES_AUTOHSCROLL
+    COMBOBOX        IDC_SETTLEMENT_TYPE1,157,148,37,49,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_STREET_TYPE1,196,148,46,49,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_STREET1,246,149,60,12,ES_AUTOHSCROLL
+    LTEXT           "Будинок",IDC_STATIC,308,149,31,11,0,WS_EX_STATICEDGE
+    EDITTEXT        IDC_BUILD1,343,149,38,12,ES_AUTOHSCROLL
+    LTEXT           "Кв-ра",IDC_STATIC,386,149,21,11,0,WS_EX_STATICEDGE
+    EDITTEXT        IDC_FLAT1,410,149,27,12,ES_AUTOHSCROLL
+    GROUPBOX        "Паспортні дані",IDC_STATIC,7,165,432,43
+    COMBOBOX        IDC_DOCTYPE1,13,177,118,42,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "Серія",IDC_STATIC,135,177,23,11,0,WS_EX_STATICEDGE
+    EDITTEXT        IDC_DOC_SERIA1,161,177,35,12,ES_AUTOHSCROLL
+    LTEXT           "Номер",IDC_STATIC,200,177,28,11,0,WS_EX_STATICEDGE
+    EDITTEXT        IDC_DOC_NUMBER1,232,177,48,12,ES_AUTOHSCROLL
+    LTEXT           "від",IDC_STATIC,281,177,15,11,0,WS_EX_STATICEDGE
+    EDITTEXT        IDC_DOC_DATE1,301,177,82,12,ES_AUTOHSCROLL
+    LTEXT           "видан",IDC_STATIC,13,192,28,11,0,WS_EX_STATICEDGE
+    COMBOBOX        IDC_DOC_ORGAN1,44,191,339,183,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "Свідок 2",IDC_STATIC,7,215,432,127
+    LTEXT           "Прізвище",IDC_STATIC,16,228,41,11,0,WS_EX_STATICEDGE
+    EDITTEXT        IDC_SURNAME2,62,228,69,12,ES_AUTOHSCROLL
+    LTEXT           "Ім'я",IDC_STATIC,148,228,23,12,0,WS_EX_STATICEDGE
+    EDITTEXT        IDC_NAME2,175,228,56,12,ES_AUTOHSCROLL
+    LTEXT           "По батькові",IDC_STATIC,248,229,47,11,0,
+                    WS_EX_STATICEDGE
+    EDITTEXT        IDC_PATRONYMIC2,300,228,82,12,ES_AUTOHSCROLL
+    GROUPBOX        "Адреса",IDC_STATIC,8,242,431,41
+    LTEXT           "Держава",IDC_STATIC,13,254,42,11,0,WS_EX_STATICEDGE
+    EDITTEXT        IDC_COUNTRY2,60,254,94,12,ES_AUTOHSCROLL
+    LTEXT           "Область",IDC_STATIC,158,254,32,11,0,WS_EX_STATICEDGE
+    EDITTEXT        IDC_REGION2,193,254,113,12,ES_AUTOHSCROLL
+    LTEXT           "Район",IDC_STATIC,308,254,32,11,0,WS_EX_STATICEDGE
+    EDITTEXT        IDC_DISTRICT2,343,254,94,12,ES_AUTOHSCROLL
+    LTEXT           "Місто (село, с-ще)",IDC_STATIC,13,268,66,11,0,
+                    WS_EX_STATICEDGE
+    EDITTEXT        IDC_CITY2,82,268,72,12,ES_AUTOHSCROLL
+    COMBOBOX        IDC_SETTLEMENT_TYPE2,157,268,37,49,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_STREET_TYPE2,196,268,46,49,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_STREET2,246,269,60,12,ES_AUTOHSCROLL
+    LTEXT           "Будинок",IDC_STATIC,308,269,31,11,0,WS_EX_STATICEDGE
+    EDITTEXT        IDC_BUILD2,343,269,38,12,ES_AUTOHSCROLL
+    LTEXT           "Кв-ра",IDC_STATIC,386,269,21,11,0,WS_EX_STATICEDGE
+    EDITTEXT        IDC_FLAT2,410,269,27,12,ES_AUTOHSCROLL
+    GROUPBOX        "Паспортні дані",IDC_STATIC,7,285,432,40
+    COMBOBOX        IDC_DOCTYPE2,13,297,118,48,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "Серія",IDC_STATIC,135,297,23,11,0,WS_EX_STATICEDGE
+    EDITTEXT        IDC_DOC_SERIA2,161,297,35,12,ES_AUTOHSCROLL
+    LTEXT           "Номер",IDC_STATIC,200,297,28,11,0,WS_EX_STATICEDGE
+    EDITTEXT        IDC_DOC_NUMBER2,232,297,48,12,ES_AUTOHSCROLL
+    LTEXT           "від",IDC_STATIC,281,297,15,11,0,WS_EX_STATICEDGE
+    EDITTEXT        IDC_DOC_DATE2,301,297,82,12,ES_AUTOHSCROLL
+    LTEXT           "видан",IDC_STATIC,13,312,28,11,0,WS_EX_STATICEDGE
+    COMBOBOX        IDC_DOC_ORGAN2,44,311,339,183,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    DEFPUSHBUTTON   "OK",IDOK,389,346,50,14
+END
+
+IDD_FINISH DIALOG DISCARDABLE  0, 0, 268, 73
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Конвертування завершено"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,211,52,50,14
+    CONTROL         "Відкрити папку",IDC_OPENFOLDER,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,7,15,225,15
+    CONTROL         "Закрити програму Era2Xml",IDC_CLOSEAPP,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,7,33,150,15
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO MOVEABLE PURE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_ERA2XML_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 479
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 322
+    END
+
+    IDD_BIRTH_DECLARANT_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 381
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 204
+    END
+
+    IDD_WITNESSES, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 439
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 360
+    END
+
+    IDD_FINISH, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 261
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 66
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_BIRTH_DECLARANT_DLG DLGINIT
+BEGIN
+    IDC_SETTLEMENT_TYPE, 0x403, 6, 0
+0xb3ec, 0xf2f1, 0x00ee, 
+    IDC_SETTLEMENT_TYPE, 0x403, 5, 0
+0xe5f1, 0xeeeb, "\000" 
+    IDC_SETTLEMENT_TYPE, 0x403, 7, 0
+0xe5f1, 0xe8eb, 0xe5f9, "\000" 
+    IDC_SETTLEMENT_TYPE, 0x403, 4, 0
+0xecf1, 0x00f2, 
+    IDC_DOCTYPE, 0x403, 8, 0
+0xe0ef, 0xeff1, 0xf0ee, 0x00f2, 
+    IDC_DOCTYPE, 0x403, 20, 0
+0xe0e7, 0xeeea, 0xe4f0, 0xedee, 0xe8ed, 0x20e9, 0xe0ef, 0xeff1, 0xf0ee, 
+0x00f2, 
+    IDC_DOCTYPE, 0x403, 25, 0
+0xe2f1, 0xe4b3, 0xf6ee, 0xe2f2, 0x20ee, 0xf0ef, 0x20ee, 0xe0ed, 0xeef0, 
+0xe6e4, 0xede5, 0xffed, "\000" 
+    IDC_DOC_ORGAN, 0x403, 1, 0
+"\000" 
+    0
+END
+
+IDD_WITNESSES DLGINIT
+BEGIN
+    IDC_SETTLEMENT_TYPE1, 0x403, 6, 0
+0xb3ec, 0xf2f1, 0x00ee, 
+    IDC_SETTLEMENT_TYPE1, 0x403, 5, 0
+0xe5f1, 0xeeeb, "\000" 
+    IDC_SETTLEMENT_TYPE1, 0x403, 7, 0
+0xe5f1, 0xe8eb, 0xe5f9, "\000" 
+    IDC_SETTLEMENT_TYPE1, 0x403, 4, 0
+0xecf1, 0x00f2, 
+    IDC_STREET_TYPE1, 0x403, 7, 0
+0xf3e2, 0xe8eb, 0xfff6, "\000" 
+    IDC_STREET_TYPE1, 0x403, 6, 0
+0xebef, 0xf9ee, 0x00e0, 
+    IDC_STREET_TYPE1, 0x403, 8, 0
+0xf3e1, 0xfceb, 0xe0e2, 0x00f0, 
+    IDC_STREET_TYPE1, 0x403, 9, 0
+0xf0ef, 0xf1ee, 0xe5ef, 0xf2ea, "\000" 
+    IDC_STREET_TYPE1, 0x403, 9, 0
+0xf0ef, 0xe2ee, 0xebf3, 0xeaee, "\000" 
+    IDC_DOCTYPE1, 0x403, 8, 0
+0xe0ef, 0xeff1, 0xf0ee, 0x00f2, 
+    IDC_DOCTYPE1, 0x403, 20, 0
+0xe0e7, 0xeeea, 0xe4f0, 0xedee, 0xe8ed, 0x20e9, 0xe0ef, 0xeff1, 0xf0ee, 
+0x00f2, 
+    IDC_DOCTYPE1, 0x403, 25, 0
+0xe2f1, 0xe4b3, 0xf6ee, 0xe2f2, 0x20ee, 0xf0ef, 0x20ee, 0xe0ed, 0xeef0, 
+0xe6e4, 0xede5, 0xffed, "\000" 
+    IDC_DOC_ORGAN1, 0x403, 1, 0
+"\000" 
+    IDC_SETTLEMENT_TYPE2, 0x403, 6, 0
+0xb3ec, 0xf2f1, 0x00ee, 
+    IDC_SETTLEMENT_TYPE2, 0x403, 5, 0
+0xe5f1, 0xeeeb, "\000" 
+    IDC_SETTLEMENT_TYPE2, 0x403, 7, 0
+0xe5f1, 0xe8eb, 0xe5f9, "\000" 
+    IDC_SETTLEMENT_TYPE2, 0x403, 4, 0
+0xecf1, 0x00f2, 
+    IDC_STREET_TYPE2, 0x403, 7, 0
+0xf3e2, 0xe8eb, 0xfff6, "\000" 
+    IDC_STREET_TYPE2, 0x403, 6, 0
+0xebef, 0xf9ee, 0x00e0, 
+    IDC_STREET_TYPE2, 0x403, 8, 0
+0xf3e1, 0xfceb, 0xe0e2, 0x00f0, 
+    IDC_STREET_TYPE2, 0x403, 9, 0
+0xf0ef, 0xf1ee, 0xe5ef, 0xf2ea, "\000" 
+    IDC_STREET_TYPE2, 0x403, 9, 0
+0xf0ef, 0xe2ee, 0xebf3, 0xeaee, "\000" 
+    IDC_DOCTYPE2, 0x403, 8, 0
+0xe0ef, 0xeff1, 0xf0ee, 0x00f2, 
+    IDC_DOCTYPE2, 0x403, 20, 0
+0xe0e7, 0xeeea, 0xe4f0, 0xedee, 0xe8ed, 0x20e9, 0xe0ef, 0xeff1, 0xf0ee, 
+0x00f2, 
+    IDC_DOCTYPE2, 0x403, 25, 0
+0xe2f1, 0xe4b3, 0xf6ee, 0xe2f2, 0x20ee, 0xf0ef, 0x20ee, 0xe0ed, 0xeef0, 
+0xe6e4, 0xede5, 0xffed, "\000" 
+    IDC_DOC_ORGAN2, 0x403, 1, 0
+"\000" 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_NEWMENU256          BITMAP  MOVEABLE PURE   "Res\\NewMenu256.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "Про програму Era2Xml..."
+END
+
+#endif    // Russian resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 2012,5,0,7
+ PRODUCTVERSION 2012,5,0,7
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "Comments", "\0"
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "Era2Xml Application\0"
+            VALUE "FileVersion", "2012, 5, 0, 7\0"
+            VALUE "InternalName", "Era2Xml\0"
+            VALUE "LegalCopyright", "Copyright (C) 2011-2012 Vladimir Koltsov\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "Era2Xml.EXE\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "Era2Xml Application\0"
+            VALUE "ProductVersion", "2012, 5, 0, 7\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\Era2Xml.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+1 24 "Era2Xml.exe.manifest"
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

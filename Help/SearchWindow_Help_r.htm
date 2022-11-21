@@ -1,0 +1,247 @@
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<title>Встроенная система подсказки ЭРАГС.</title>
+</head>
+
+<body>
+<li><a href="#NewSearch">Новый поиск</a></li>
+<li><a href="#SaveSearch">Записать результаты поиска</a></li>
+<li><a href="#SearchPath">Маршрут поиска</a></li>
+<li><a href="#BeginSearch">Начать поиск</a></li>
+<li><a href="#EquMatching">Полное совпадение</a></li>
+<li><a href="#PartialMatching">Частковий збіг</a></li>
+
+<li><a href="#Birthes">Поиск в АЗ о рождении</a></li>
+<li><a href="#Marriages">Поиск в АЗ о браке</a></li>
+<li><a href="#Divorces">Поиск в АЗ о расторжении брака</a></li>
+<li><a href="#Changes">Поиск в АЗ о перемене</a></li>
+<li><a href="#Deathes">Поиск в АЗ о смерти</a></li>
+<li><a href="#GotoFoundRec">Открыть найденную АЗ</a></li>
+<li><a href="#SearchList">Список поиска</a></li>
+<li><a href="#FoundList">Список найденных АЗ</a></li>
+
+</br></br></br>
+<a name="NewSearch"></a><NewSearch>
+<right><a msg="close"><icon idres=208 width=16 height=16 style="l" hotstyle></a></right>
+<table>
+<tr><td>
+<icon idres=209 width=48 height=48></td>
+<td><center><h2><font color=black>Кнопка "Новый поиск"</font></h2></center><br>
+<hr color=blue><br>
+ Нажмите эту кнопку, чтобы очистить
+ список результатов поиска (окно справа)
+ и начать поиск с другими заданиями.<br>
+</td></tr></table></NewSearch>
+<hr color=blue><br>
+
+
+</br></br></br>
+<a name="SaveSearch"></a><SaveSearch>
+<right><a msg="close"><icon idres=208 width=16 height=16 style="l" hotstyle></a></right>
+<table>
+<tr><td>
+<icon idres=209 width=48 height=48></td>
+<td><center><h2><font color=black>Кнопка "Записать результаты поиск"</font></h2></center><br>
+<hr color=blue><br>
+ Нажмите эту кнопку, чтобы записать результат поиска в .csv-файл
+ для дальнейшей работи с ним с помощью программы Exel.<br>
+</td></tr></table></SaveSearch>
+<hr color=blue><br>
+
+</br></br></br>
+<a name="SearchPath"></a><SearchPath>
+<right><a msg="close"><icon idres=208 width=16 height=16 style="l" hotstyle></a></right>
+<table>
+<tr><td>
+<icon idres=209 width=48 height=48></td>
+<td><center><h2><font color=black>Кнопка "Маршрут поиска"</font></h2></center><br>
+<hr color=blue><br>
+ Нажмите эту кнопку, чтобы определить маршрут (файловую папку) поиска.
+ По умолчанию ЭРАГС будет искать в папке, где находится  файл БД ЭРАГС, который открывался в последним.
+</td></tr></table></SearchPath>
+<hr color=blue><br>
+
+</br></br></br>
+<a name="BeginSearch"></a><BeginSearch>
+<right><a msg="close"><icon idres=208 width=16 height=16 style="l" hotstyle></a></right>
+<table>
+<tr><td>
+<icon idres=209 width=48 height=48></td>
+<td><center><h2><font color=black>Кнопка "Начать поиск"</font></h2></center><br>
+<hr color=blue><br>
+ Нажмите эту кнопку, чтобы начать поиск.
+ Список заданий (слева) должен содержать хотя бы
+ одно задание (фамилию, имя, или отчество) для поиска.
+</td></tr></table></BeginSearch>
+<hr color=blue><br>
+
+</br></br></br>
+<a name="EquMatching"></a><EquMatching>
+<right><a msg="close"><icon idres=208 width=16 height=16 style="l" hotstyle></a></right>
+<table>
+<tr><td>
+<icon idres=209 width=48 height=48></td>
+<td><center><h2><font color=black>Кнопка "Полное совпадение"</font></h2></center><br>
+<hr color=blue><br>
+ Нажмите эту кнопку, чтобы установить режим <b>полного</b> совпадения.
+ Если этот режим установлен, в список результатов попадут
+ только актовые записи, которые полностью удовлетворяют какому-либо
+ заданию поиска.
+  Пример: в списке заданий указана фамилия "<b>Ткач</b>".
+ В список результатов попадут (если они существуют в БД)
+ такие записи:
+  <b>Ткач</b> Іван Петрович
+  <b>Ткач</b> Ольга Леонідівна
+  <b>Ткач</b> Оксана Олександрівна
+ </td></tr></table></EquMatching>
+<hr color=blue><br>
+
+</br></br></br>
+<a name="PartialMatching"></a><PartialMatching>
+<right><a msg="close"><icon idres=208 width=16 height=16 style="l" hotstyle></a></right>
+<table>
+<tr><td>
+<icon idres=209 width=48 height=48></td>
+<td><center><h2><font color=black>Кнопка "Частичное совпадение"</font></h2></center><br>
+<hr color=blue><br>
+Нажмите эту кнопку, чтобы установить режим <b>частичного</b> совпадения.
+ Если этот режим установлен, в список результатов попадут
+ только актовые записи, которые частично удовлетворяют какому-либо
+ заданию поиска.
+  Пример: в списке заданий указана фамилия "<b>Ткач</b>".
+ В список результатов попадут (если они существуют в БД)
+ такие записи:
+  <b>Ткач</b> Іван Петрович
+  <b>Ткач</b>енко Ольга Леонідівна
+  <b>Ткач</b>ова</b> Оксана Олександрівна
+  Білогуров-<b>Ткач</b>ук</b> Володимир Павлович
+ </td></tr></table></PartialMatching>
+<hr color=blue><br>
+
+</br></br></br>
+<a name="Birthes"></a><Birthes>
+<right><a msg="close"><icon idres=208 width=16 height=16 style="l" hotstyle></a></right>
+<table>
+<tr><td>
+<icon idres=209 width=48 height=48></td>
+<td><center><h2><font color=black>Кнопка "Поиск в АЗ о рождении"</font></h2></center><br>
+<hr color=blue><br>
+ Нажмите эту кнопку, чтобы включить/выключить поиск
+ актовых записей о рождении.
+</td></tr></table></Birthes>
+<hr color=blue><br>
+
+</br></br></br>
+<a name="Marriages"></a><Marriages>
+<right><a msg="close"><icon idres=208 width=16 height=16 style="l" hotstyle></a></right>
+<table>
+<tr><td>
+<icon idres=209 width=48 height=48></td>
+<td><center><h2><font color=black>Кнопка "Поиск в АЗ о браке"</font></h2></center><br>
+<hr color=blue><br>
+ Нажмите эту кнопку, чтобы включить/выключить поиск
+ актовых записей о браке.
+</td></tr></table></Marriages>
+<hr color=blue><br>
+
+</br></br></br>
+<a name="Divorces"></a><Divorces>
+<right><a msg="close"><icon idres=208 width=16 height=16 style="l" hotstyle></a></right>
+<table>
+<tr><td>
+<icon idres=209 width=48 height=48></td>
+<td><center><h2><font color=black>Кнопка "Поиск в АЗ о расторжении брака"</font></h2></center><br>
+<hr color=blue><br>
+ Нажмите эту кнопку, чтобы включить/выключить поиск
+ актовых записей о расторжении брака.
+</td></tr></table></Divorces>
+<hr color=blue><br>
+
+</br></br></br>
+<a name="Changes"></a><Changes>
+<right><a msg="close"><icon idres=208 width=16 height=16 style="l" hotstyle></a></right>
+<table>
+<tr><td>
+<icon idres=209 width=48 height=48></td>
+<td><center><h2><font color=black>Кнопка "Поиск в АЗ о перемене"</font></h2></center><br>
+<hr color=blue><br>
+ Нажмите эту кнопку, чтобы включить/выключить поиск
+ актовых записей о перемене.
+</td></tr></table></Changes>
+<hr color=blue><br>
+
+</br></br></br>
+<a name="Deathes"></a><Deathes>
+<right><a msg="close"><icon idres=208 width=16 height=16 style="l" hotstyle></a></right>
+<table>
+<tr><td>
+<icon idres=209 width=48 height=48></td>
+<td><center><h2><font color=black>Кнопка "Поиск в АЗ о смерти"</font></h2></center><br>
+<hr color=blue><br>
+ Нажмите эту кнопку, чтобы включить/выключить поиск
+ актовые записи о смерти.
+</td></tr></table></Deathes>
+<hr color=blue><br>
+
+</br></br></br>
+<a name="GotoFoundRec"></a><GotoFoundRec>
+<right><a msg="close"><icon idres=208 width=16 height=16 style="l" hotstyle></a></right>
+<table>
+<tr><td>
+<icon idres=209 width=48 height=48></td>
+<td><center><h2><font color=black>Кнопка "Открыть найденную АЗ"</font></h2></center><br>
+<hr color=blue><br>
+ Нажмите эту кнопку, чтобы открыть найденную
+ актовую запись. В списке результатов (окно справа)
+ необходимо указать запись, которую слудует открыть.
+</td></tr></table></GotoFoundRec>
+<hr color=blue><br>
+
+</br></br></br>
+<a name="SearchList"></a><SearchList>
+<right><a msg="close"><icon idres=208 width=16 height=16 style="l" hotstyle></a></right>
+<table>
+<tr><td>
+<icon idres=209 width=48 height=48></td>
+<td><center><h2><font color=black>Список заданий поиска</font></h2></center><br>
+<hr color=blue><br>
+ Перед поиском слудует определить хотя бы одно (но не более 99) задание.
+ Каждое задание состоит из трёх частей: фамилия, имя, отчество.
+ ЭРАГС будет искать по указанному заданию, если хотя бы одна
+ часть задания определена, т.е. непуста. Если определены две или три части задания,
+ ЭРАГС искать такие АЗ, которые удовлетворяют <u>всем</u> указанным частям условия.
+  Пример:
+ В списке заданий определены три задания:
+ 1 <b>Волков<t><t>Олександр</b>
+ 2 <b><t><t><t>Ольга<t><t><t>Ген</b>
+ 3 <b><t><t><t>олек<t><t><t>трофан</b>
+ 
+ В режиме частичного совпадения в список результатов попадут (если они есть):
+
+ <b>Волков Олександр</b> Віталійович
+ <b>Волков</b>а <b>Олександр</b>а Миколаївна
+ Кузьмук <b>Ольга</b> <b>Ген</b>надіївна
+ Заблоцька <b>Ольга</b> Єв<b>ген</b>івна
+ Біла <b>Олек</b>сандра Ми<b>трофан</b>івна
+ Дядюк <b>Олек</b>сій Ми<b>трофан</b>ович
+ Максименко <b>Олек</b>сандр Ми<b>трофан</b>ович
+ 
+</td></tr></table></SearchList>
+<hr color=blue><br>
+
+</br></br></br>
+<a name="FoundList"></a><FoundList>
+<right><a msg="close"><icon idres=208 width=16 height=16 style="l" hotstyle></a></right>
+<table>
+<tr><td>
+<icon idres=209 width=48 height=48></td>
+<td><center><h2><font color=black>Список найденных АЗ</font></h2></center><br>
+<hr color=blue><br>
+ В этот список попадают АЗ, найденные в результате поиска.<br>
+ Любой найденный АЗ можно сразу же открыть.<br><br>
+</td></tr></table></FoundList>
+<hr color=blue><br>
+
+</body>
+
+</html>

@@ -1,0 +1,940 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Template|Win32">
+      <Configuration>Template</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <SccProjectName />
+    <SccLocalPath />
+    <Keyword>MFCProj</Keyword>
+    <ProjectGuid>{2DB658A1-F7CD-4C2D-B711-B91E936D3C46}</ProjectGuid>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Template|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+    <UseOfMfc>Static</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+    <UseOfMfc>Static</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Template|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>.\Debug\</OutDir>
+    <IntDir>.\Debug\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>.\Release\</OutDir>
+    <IntDir>.\Release\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <Optimization>Disabled</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <MinimalRebuild>true</MinimalRebuild>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <PreprocessorDefinitions>_DEBUG;WIN32;_WINDOWS;OEMRESOURCE;ZLIB_WINAPI;_ERAGS;FREE_LICENCE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>.\Debug\</AssemblerListingLocation>
+      <BrowseInformation>true</BrowseInformation>
+      <PrecompiledHeaderOutputFile>.\Debug\Erags.pch</PrecompiledHeaderOutputFile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <ObjectFileName>.\Debug\</ObjectFileName>
+      <ProgramDataBaseFileName>.\Debug\</ProgramDataBaseFileName>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+    </ClCompile>
+    <Midl>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <TypeLibraryName>.\Debug\Erags.tlb</TypeLibraryName>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <TargetEnvironment>Win32</TargetEnvironment>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0419</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Debug\Erags.bsc</OutputFile>
+    </Bscmake>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <IgnoreSpecificDefaultLibraries>LIBC.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <OutputFile>R:\Erags\Erags.exe</OutputFile>
+      <AdditionalDependencies>Winmm.lib;SHLWAPI.LIB;Version.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <Optimization>Disabled</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <PreprocessorDefinitions>NDEBUG;WIN32;_WINDOWS;OEMRESOURCE;ZLIB_WINAPI;_ERAGS;FREE_LICENCE;_MFC_VER=0x0601;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>.\Release\</AssemblerListingLocation>
+      <BrowseInformation>true</BrowseInformation>
+      <PrecompiledHeaderOutputFile>.\Release\Erags.pch</PrecompiledHeaderOutputFile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <ObjectFileName>.\Release\</ObjectFileName>
+      <ProgramDataBaseFileName>.\Release\</ProgramDataBaseFileName>
+    </ClCompile>
+    <Midl>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <TypeLibraryName>.\Release\Erags.tlb</TypeLibraryName>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <TargetEnvironment>Win32</TargetEnvironment>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0419</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>false</SuppressStartupBanner>
+      <OutputFile>.\Release\Erags.bsc</OutputFile>
+    </Bscmake>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OutputFile>C:\Erags\Erags.exe</OutputFile>
+      <AdditionalDependencies>Winmm.lib;SHLWAPI.LIB;Version.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\Common\Crypto.cpp" />
+    <ClCompile Include="..\Common\CyrString.cpp" />
+    <ClCompile Include="..\Common\DAO36.cpp" />
+    <ClCompile Include="..\Common\DaoErr.cpp" />
+    <ClCompile Include="..\Common\DB.CPP" />
+    <ClCompile Include="..\Common\Elections.cpp" />
+    <ClCompile Include="..\Common\EraDate.cpp" />
+    <ClCompile Include="..\Common\Export.cpp" />
+    <ClCompile Include="..\Common\FHelpers.cpp" />
+    <ClCompile Include="..\Common\MDB.CPP" />
+    <ClCompile Include="..\Common\Monthes.cpp" />
+    <ClCompile Include="..\Common\Names.cpp" />
+    <ClCompile Include="..\Common\RDF32.cpp" />
+    <ClCompile Include="..\Common\Sections.cpp" />
+    <ClCompile Include="..\Common\Version.cpp" />
+    <ClCompile Include="..\Controls\AutoRichEditCtrl.cpp" />
+    <ClCompile Include="..\Controls\BaseTabCtrl.cpp" />
+    <ClCompile Include="..\Controls\BkgndCtrl.cpp" />
+    <ClCompile Include="..\Controls\BrowseForFolder.cpp" />
+    <ClCompile Include="..\Controls\BtnST.cpp" />
+    <ClCompile Include="..\Controls\ColourPicker.cpp" />
+    <ClCompile Include="..\Controls\ColourPopup.cpp" />
+    <ClCompile Include="..\Controls\CPPTooltip\CeXDib.cpp" />
+    <ClCompile Include="..\Controls\CPPTooltip\PPDrawManager.cpp" />
+    <ClCompile Include="..\Controls\CPPTooltip\PPHtmlDrawer.cpp" />
+    <ClCompile Include="..\Controls\CPPTooltip\PPTooltip.cpp" />
+    <ClCompile Include="..\Controls\EnTabCtrl.cpp" />
+    <ClCompile Include="..\Controls\EraButton.cpp" />
+    <ClCompile Include="..\Controls\EraComboBox.cpp" />
+    <ClCompile Include="..\Controls\EraControls.cpp" />
+    <ClCompile Include="..\Controls\EraEdit.cpp">
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <ClCompile Include="..\Controls\EraLabel.cpp" />
+    <ClCompile Include="..\Controls\EraMonthCalCtrl.cpp" />
+    <ClCompile Include="..\Controls\ExtLabel.cpp" />
+    <ClCompile Include="..\Controls\ExtStatusControlBar.cpp" />
+    <ClCompile Include="..\Controls\FileTreeCtrl.cpp" />
+    <ClCompile Include="..\Controls\FolderTreeBar.cpp" />
+    <ClCompile Include="..\Controls\GridCtrl\CellTypes\GridCellCheck.cpp" />
+    <ClCompile Include="..\Controls\GridCtrl\CellTypes\GridCellCombo.cpp" />
+    <ClCompile Include="..\Controls\GridCtrl\CellTypes\GridCellDate.cpp" />
+    <ClCompile Include="..\Controls\GridCtrl\CellTypes\GridCellDateTime.cpp" />
+    <ClCompile Include="..\Controls\GridCtrl\CellTypes\GridURLCell.cpp" />
+    <ClCompile Include="..\Controls\GridCtrl\GridCell.cpp" />
+    <ClCompile Include="..\Controls\GridCtrl\GridCellBase.cpp" />
+    <ClCompile Include="..\Controls\GridCtrl\GridCtrl.cpp" />
+    <ClCompile Include="..\Controls\GridCtrl\GridDropTarget.cpp" />
+    <ClCompile Include="..\Controls\GridCtrl\InPlaceDateEdit.cpp" />
+    <ClCompile Include="..\Controls\GridCtrl\InPlaceEdit.cpp" />
+    <ClCompile Include="..\Controls\GridCtrl\TitleTip.cpp" />
+    <ClCompile Include="..\Controls\HyperLink.cpp" />
+    <ClCompile Include="..\Controls\KMComboBox.cpp" />
+    <ClCompile Include="..\Controls\Label.cpp" />
+    <ClCompile Include="..\Controls\ListCtrlStyled.cpp" />
+    <ClCompile Include="..\Controls\ListViewCtrlEx.cpp" />
+    <ClCompile Include="..\Controls\MyBtnST.cpp" />
+    <ClCompile Include="..\Controls\MyFileDialog.cpp" />
+    <ClCompile Include="..\Controls\NewMenu.cpp" />
+    <ClCompile Include="..\Controls\NewMenuBar.cpp" />
+    <ClCompile Include="..\Controls\NewStatusBar.cpp" />
+    <ClCompile Include="..\Controls\OddButton.cpp" />
+    <ClCompile Include="..\Controls\ProgressBar.cpp" />
+    <ClCompile Include="..\Controls\scbarcf.cpp" />
+    <ClCompile Include="..\Controls\scbarg.cpp" />
+    <ClCompile Include="..\Controls\ShellType.cpp" />
+    <ClCompile Include="..\Controls\sizecbar.cpp" />
+    <ClCompile Include="..\Controls\TabCtrlBG.cpp" />
+    <ClCompile Include="..\Controls\TCToolBar\TCImageList.cpp" />
+    <ClCompile Include="..\Controls\TCToolBar\TCToolBar.cpp" />
+    <ClCompile Include="..\Controls\TextProgressCtrl.cpp" />
+    <ClCompile Include="..\Controls\ThemeHelperST.cpp" />
+    <ClCompile Include="..\Controls\TreeListView.cpp" />
+    <ClCompile Include="..\Controls\VisualStylesXP.cpp" />
+    <ClCompile Include="..\Controls\XBrowseForFolder.cpp" />
+    <ClCompile Include="..\Controls\XButtonXP.cpp" />
+    <ClCompile Include="..\Controls\XFontDialog.cpp" />
+    <ClCompile Include="..\MSO\excel8.cpp" />
+    <ClCompile Include="..\MSO\msoEra.cpp" />
+    <ClCompile Include="..\MSO\msword8.cpp" />
+    <ClCompile Include="..\ZipArchive\Options.cpp" />
+    <ClCompile Include="..\ZipArchive\RegistrySerialize.cpp" />
+    <ClCompile Include="..\ZipArchive\ZipArchive.cpp" />
+    <ClCompile Include="..\ZipArchive\ZipAutoBuffer.cpp" />
+    <ClCompile Include="..\ZipArchive\ZipBigFile.cpp" />
+    <ClCompile Include="..\ZipArchive\ZipCentralDir.cpp" />
+    <ClCompile Include="..\ZipArchive\ZipCompatibility.cpp" />
+    <ClCompile Include="..\ZipArchive\ZipException.cpp" />
+    <ClCompile Include="..\ZipArchive\ZipFile.cpp" />
+    <ClCompile Include="..\ZipArchive\ZipFileHeader.cpp" />
+    <ClCompile Include="..\ZipArchive\ZipInternalInfo.cpp" />
+    <ClCompile Include="..\ZipArchive\ZipMemFile.cpp" />
+    <ClCompile Include="..\ZipArchive\ZipPathComponent.cpp" />
+    <ClCompile Include="..\ZipArchive\ZipPlatform.cpp" />
+    <ClCompile Include="..\ZipArchive\ZipPlatformComm.cpp" />
+    <ClCompile Include="..\ZipArchive\ZipStorage.cpp" />
+    <ClCompile Include="..\ZipArchive\ZipString.cpp" />
+    <ClCompile Include="..\ZipArchive\ZLib\adler32.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\ZipArchive\ZLib\compress.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\ZipArchive\ZLib\crc32.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\ZipArchive\ZLib\deflate.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\ZipArchive\ZLib\gzclose.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\ZipArchive\ZLib\gzlib.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\ZipArchive\ZLib\gzread.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\ZipArchive\ZLib\gzwrite.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\ZipArchive\ZLib\infback.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\ZipArchive\ZLib\inffast.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\ZipArchive\ZLib\inflate.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\ZipArchive\ZLib\inftrees.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\ZipArchive\ZLib\minigzip.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\ZipArchive\ZLib\trees.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\ZipArchive\ZLib\uncompr.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\ZipArchive\ZLib\zutil.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="ABCDlg.cpp" />
+    <ClCompile Include="AddGeoDlg.cpp" />
+    <ClCompile Include="AddRsnDlg.cpp" />
+    <ClCompile Include="BanksDlg.cpp" />
+    <ClCompile Include="BirthDlgs.cpp" />
+    <ClCompile Include="BirthSurnamesDlg.cpp" />
+    <ClCompile Include="BlanksDlg.cpp" />
+    <ClCompile Include="Caches.cpp" />
+    <ClCompile Include="CantOpenDlg.cpp" />
+    <ClCompile Include="CheckDateDlg.cpp" />
+    <ClCompile Include="ChildFrm.cpp" />
+    <ClCompile Include="Copy2XLDlg.cpp" />
+    <ClCompile Include="DataManager.cpp" />
+    <ClCompile Include="DateFunc.cpp" />
+    <ClCompile Include="DBCauses.cpp" />
+    <ClCompile Include="DBCitizenships.cpp" />
+    <ClCompile Include="DBGrid.cpp" />
+    <ClCompile Include="DBGridDlg.cpp" />
+    <ClCompile Include="DBHospitals.cpp" />
+    <ClCompile Include="DBMIAs.cpp" />
+    <ClCompile Include="DBStreets.cpp" />
+    <ClCompile Include="Defaults.cpp" />
+    <ClCompile Include="DepDlg.cpp" />
+    <ClCompile Include="DialogEx.cpp" />
+    <ClCompile Include="Div18.cpp" />
+    <ClCompile Include="Div23.cpp" />
+    <ClCompile Include="Dlg27.cpp" />
+    <ClCompile Include="Dlg29.cpp" />
+    <ClCompile Include="Dlg38.cpp" />
+    <ClCompile Include="Dlg43.cpp" />
+    <ClCompile Include="DownloadChecker.cpp" />
+    <ClCompile Include="ElectDlg.cpp" />
+    <ClCompile Include="EmptyTableDlg.cpp" />
+    <ClCompile Include="EnvelopeDlg.cpp" />
+    <ClCompile Include="EraForm.cpp" />
+    <ClCompile Include="Erags.cpp" />
+    <ClCompile Include="EragsDoc.cpp" />
+    <ClCompile Include="EragsView.cpp" />
+    <ClCompile Include="ErrDateReg.cpp" />
+    <ClCompile Include="ExpiredDlg.cpp" />
+    <ClCompile Include="ExtBirthDlg.cpp" />
+    <ClCompile Include="ExtNotice.cpp" />
+    <ClCompile Include="FormBirth.cpp" />
+    <ClCompile Include="FormChange.cpp" />
+    <ClCompile Include="FormDeath.cpp" />
+    <ClCompile Include="FormDivorce.cpp" />
+    <ClCompile Include="FormMarriage.cpp" />
+    <ClCompile Include="Geography.cpp" />
+    <ClCompile Include="GeoView.cpp" />
+    <ClCompile Include="HelpMan.cpp" />
+    <ClCompile Include="KeyWords.cpp" />
+    <ClCompile Include="Led.cpp" />
+    <ClCompile Include="LeftView.cpp" />
+    <ClCompile Include="LoadDlg.cpp" />
+    <ClCompile Include="LocalSearchBar.cpp" />
+    <ClCompile Include="LogThread.cpp" />
+    <ClCompile Include="MainDlgBar.cpp" />
+    <ClCompile Include="MainFrm.cpp" />
+    <ClCompile Include="Menu.cpp" />
+    <ClCompile Include="MltDocDlg.cpp" />
+    <ClCompile Include="MonthList.cpp" />
+    <ClCompile Include="MyPrintDlg.cpp" />
+    <ClCompile Include="NamesDlg.cpp" />
+    <ClCompile Include="Navigate.cpp" />
+    <ClCompile Include="NoteChange.cpp" />
+    <ClCompile Include="NoteDlg.cpp" />
+    <ClCompile Include="OODocument.cpp" />
+    <ClCompile Include="OOView.cpp" />
+    <ClCompile Include="PassportsDlg.cpp" />
+    <ClCompile Include="ProgDlg.cpp" />
+    <ClCompile Include="RegDlg.cpp" />
+    <ClCompile Include="RegFinder.cpp" />
+    <ClCompile Include="RFindDoc.cpp" />
+    <ClCompile Include="RFindFrm.cpp" />
+    <ClCompile Include="RFindView.cpp" />
+    <ClCompile Include="RList.cpp" />
+    <ClCompile Include="RListDoc.cpp" />
+    <ClCompile Include="RNames.cpp" />
+    <ClCompile Include="RSBirthes.cpp" />
+    <ClCompile Include="RSChanges.cpp" />
+    <ClCompile Include="RSChangesDep.cpp" />
+    <ClCompile Include="RSDeathes.cpp" />
+    <ClCompile Include="RSDivorces.cpp" />
+    <ClCompile Include="RSMarriages.cpp" />
+    <ClCompile Include="RTFCnv.cpp" />
+    <ClCompile Include="SecReg.cpp" />
+    <ClCompile Include="SetDefDlg.cpp" />
+    <ClCompile Include="SettingsDlg.cpp" />
+    <ClCompile Include="StdAfx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">stdafx.h</PrecompiledHeaderFile>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">stdafx.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="SVDlg.cpp" />
+    <ClCompile Include="TemplDlg.cpp" />
+    <ClCompile Include="TreeType.cpp" />
+    <ClCompile Include="UnzipDlg.cpp" />
+    <ClCompile Include="WordCntrItem.cpp" />
+    <ClCompile Include="WordDocument.cpp" />
+    <ClCompile Include="WordView.cpp" />
+    <ClCompile Include="XCnv.cpp" />
+    <ClCompile Include="xMachine.cpp" />
+    <ClCompile Include="YesNoDlg.cpp" />
+    <ClCompile Include="ZipDBDlg.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Erags.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Common\Crypto.h" />
+    <ClInclude Include="..\Common\CyrString.h" />
+    <ClInclude Include="..\Common\DAO36.h" />
+    <ClInclude Include="..\Common\DB.H" />
+    <ClInclude Include="..\Common\Elections.h" />
+    <ClInclude Include="..\Common\EraDate.h" />
+    <ClInclude Include="..\Common\EraMessages.h" />
+    <ClInclude Include="..\Common\Export.h" />
+    <ClInclude Include="..\Common\FHelpers.h" />
+    <ClInclude Include="..\Common\MDB.H" />
+    <ClInclude Include="..\Common\Monthes.h" />
+    <ClInclude Include="..\Common\Names.h" />
+    <ClInclude Include="..\Common\RDF32.h" />
+    <ClInclude Include="..\Common\Sections.h" />
+    <ClInclude Include="..\Common\StdAfx.h" />
+    <ClInclude Include="..\Common\Version.h" />
+    <ClInclude Include="..\Controls\AutoRichEditCtrl.h" />
+    <ClInclude Include="..\Controls\BaseTabCtrl.h" />
+    <ClInclude Include="..\Controls\BkgndCtrl.h" />
+    <ClInclude Include="..\Controls\BrowseForFolder.h" />
+    <ClInclude Include="..\Controls\ColourPicker.h" />
+    <ClInclude Include="..\Controls\ColourPopup.h" />
+    <ClInclude Include="..\Controls\CPPTooltip\CeXDib.h" />
+    <ClInclude Include="..\Controls\CPPTooltip\PPDrawManager.h" />
+    <ClInclude Include="..\Controls\CPPTooltip\PPHtmlDrawer.h" />
+    <ClInclude Include="..\Controls\CPPTooltip\PPTooltip.h" />
+    <ClInclude Include="..\Controls\CPPTooltip\StdAfx.h" />
+    <ClInclude Include="..\Controls\EnTabCtrl.h" />
+    <ClInclude Include="..\Controls\erabutton.h" />
+    <ClInclude Include="..\Controls\EraComboBox.h" />
+    <ClInclude Include="..\Controls\EraControls.h" />
+    <ClInclude Include="..\Controls\EraEdit.h" />
+    <ClInclude Include="..\Controls\EraLabel.h" />
+    <ClInclude Include="..\Controls\EraMonthCalCtrl.h" />
+    <ClInclude Include="..\Controls\ExtLabel.h" />
+    <ClInclude Include="..\Controls\FileTreeCtrl.h" />
+    <ClInclude Include="..\Controls\FolderTreeBar.h" />
+    <ClInclude Include="..\Controls\GridCtrl\CellRange.h" />
+    <ClInclude Include="..\Controls\GridCtrl\CellTypes\GridCellCheck.h" />
+    <ClInclude Include="..\Controls\GridCtrl\CellTypes\GridCellCombo.h" />
+    <ClInclude Include="..\Controls\GridCtrl\CellTypes\GridCellDate.h" />
+    <ClInclude Include="..\Controls\GridCtrl\CellTypes\GridCellDateTime.h" />
+    <ClInclude Include="..\Controls\GridCtrl\CellTypes\GridURLCell.h" />
+    <ClInclude Include="..\Controls\GridCtrl\CellTypes\StdAfx.h" />
+    <ClInclude Include="..\Controls\GridCtrl\GridCell.h" />
+    <ClInclude Include="..\Controls\GridCtrl\GridCellBase.h" />
+    <ClInclude Include="..\Controls\GridCtrl\GridCtrl.h" />
+    <ClInclude Include="..\Controls\GridCtrl\GridDropTarget.h" />
+    <ClInclude Include="..\Controls\GridCtrl\InPlaceDateEdit.h" />
+    <ClInclude Include="..\Controls\GridCtrl\MemDC.h" />
+    <ClInclude Include="..\Controls\GridCtrl\StdAfx.h" />
+    <ClInclude Include="..\Controls\GridCtrl\TitleTip.h" />
+    <ClInclude Include="..\Controls\HyperLink.h" />
+    <ClInclude Include="..\Controls\KMComboBox.h" />
+    <ClInclude Include="..\Controls\Label.h" />
+    <ClInclude Include="..\Controls\ListCtrlStyled.h" />
+    <ClInclude Include="..\Controls\ListViewCtrlEx.h" />
+    <ClInclude Include="..\Controls\MyBtnST.h" />
+    <ClInclude Include="..\Controls\MyFileDialog.h" />
+    <ClInclude Include="..\Controls\NewMenu.h" />
+    <ClInclude Include="..\Controls\NewMenuBar.h" />
+    <ClInclude Include="..\Controls\NewStatusBar.h" />
+    <ClInclude Include="..\Controls\OddButton.h" />
+    <ClInclude Include="..\Controls\ProgressBar.h" />
+    <ClInclude Include="..\Controls\scbarcf.h" />
+    <ClInclude Include="..\Controls\scbarg.h" />
+    <ClInclude Include="..\Controls\ShellType.h" />
+    <ClInclude Include="..\Controls\sizecbar.h" />
+    <ClInclude Include="..\Controls\StdAfx.h" />
+    <ClInclude Include="..\Controls\TabCtrlBG.h" />
+    <ClInclude Include="..\Controls\TCToolBar\TCImageList.h" />
+    <ClInclude Include="..\Controls\TCToolBar\TCToolBar.h" />
+    <ClInclude Include="..\Controls\TextProgressCtrl.h" />
+    <ClInclude Include="..\Controls\ThemeHelperST.h" />
+    <ClInclude Include="..\Controls\TreeListView.h" />
+    <ClInclude Include="..\Controls\VisualStylesXP.h" />
+    <ClInclude Include="..\Controls\XBrowseForFolder.h" />
+    <ClInclude Include="..\Controls\XButtonXP.h" />
+    <ClInclude Include="..\Controls\XFontDialog.h" />
+    <ClInclude Include="..\MSO\excel8.h" />
+    <ClInclude Include="..\MSO\msoEra.h" />
+    <ClInclude Include="..\MSO\msword8.h" />
+    <ClInclude Include="..\ZipArchive\Options.h" />
+    <ClInclude Include="..\ZipArchive\RegistrySerialize.h" />
+    <ClInclude Include="..\ZipArchive\zconf.h" />
+    <ClInclude Include="..\ZipArchive\ZipAbstractFile.h" />
+    <ClInclude Include="..\ZipArchive\ZipArchive.h" />
+    <ClInclude Include="..\ZipArchive\ZipAutoBuffer.h" />
+    <ClInclude Include="..\ZipArchive\ZipBaseException.h" />
+    <ClInclude Include="..\ZipArchive\ZipBigFile.h" />
+    <ClInclude Include="..\ZipArchive\ZipCentralDir.h" />
+    <ClInclude Include="..\ZipArchive\ZipCollections.h" />
+    <ClInclude Include="..\ZipArchive\ZipCompatibility.h" />
+    <ClInclude Include="..\ZipArchive\ZipException.h" />
+    <ClInclude Include="..\ZipArchive\ZipExport.h" />
+    <ClInclude Include="..\ZipArchive\ZipFile.h" />
+    <ClInclude Include="..\ZipArchive\ZipFileHeader.h" />
+    <ClInclude Include="..\ZipArchive\ZipFileMapping.h" />
+    <ClInclude Include="..\ZipArchive\ZipInternalInfo.h" />
+    <ClInclude Include="..\ZipArchive\ZipMemFile.h" />
+    <ClInclude Include="..\ZipArchive\ZipPathComponent.h" />
+    <ClInclude Include="..\ZipArchive\ZipPlatform.h" />
+    <ClInclude Include="..\ZipArchive\ZipStorage.h" />
+    <ClInclude Include="..\ZipArchive\ZipString.h" />
+    <ClInclude Include="..\ZipArchive\zlib.h" />
+    <ClInclude Include="..\ZipArchive\ZLib\crc32.h" />
+    <ClInclude Include="..\ZipArchive\ZLib\deflate.h" />
+    <ClInclude Include="..\ZipArchive\ZLib\gzguts.h" />
+    <ClInclude Include="..\ZipArchive\ZLib\inffast.h" />
+    <ClInclude Include="..\ZipArchive\ZLib\inffixed.h" />
+    <ClInclude Include="..\ZipArchive\ZLib\inflate.h" />
+    <ClInclude Include="..\ZipArchive\ZLib\inftrees.h" />
+    <ClInclude Include="..\ZipArchive\ZLib\trees.h" />
+    <ClInclude Include="..\ZipArchive\ZLib\zconf.h" />
+    <ClInclude Include="..\ZipArchive\ZLib\zlib.h" />
+    <ClInclude Include="..\ZipArchive\ZLib\zutil.h" />
+    <ClInclude Include="ABCDlg.h" />
+    <ClInclude Include="AddGeoDlg.h" />
+    <ClInclude Include="AddRsnDlg.h" />
+    <ClInclude Include="BanksDlg.h" />
+    <ClInclude Include="BirthDlgs.h" />
+    <ClInclude Include="BirthSurnamesDlg.h" />
+    <ClInclude Include="BlanksDlg.h" />
+    <ClInclude Include="Caches.h" />
+    <ClInclude Include="CantOpenDlg.h" />
+    <ClInclude Include="CheckDateDlg.h" />
+    <ClInclude Include="ChildFrm.h" />
+    <ClInclude Include="Copy2XLDlg.h" />
+    <ClInclude Include="DataManager.h" />
+    <ClInclude Include="DateFunc.h" />
+    <ClInclude Include="DBCauses.h" />
+    <ClInclude Include="DBCitizenships.h" />
+    <ClInclude Include="DBGrid.h" />
+    <ClInclude Include="DBGridDlg.h" />
+    <ClInclude Include="DBHospitals.h" />
+    <ClInclude Include="DBMIAs.h" />
+    <ClInclude Include="DBStreets.h" />
+    <ClInclude Include="Defaults.h" />
+    <ClInclude Include="DepDlg.h" />
+    <ClInclude Include="DialogEx.h" />
+    <ClInclude Include="Div18.h" />
+    <ClInclude Include="Div23.h" />
+    <ClInclude Include="Dlg27.h" />
+    <ClInclude Include="Dlg29.h" />
+    <ClInclude Include="Dlg38.h" />
+    <ClInclude Include="Dlg43.h" />
+    <ClInclude Include="DownloadChecker.h" />
+    <ClInclude Include="ElectDlg.h" />
+    <ClInclude Include="EmptyTableDlg.h" />
+    <ClInclude Include="EnvelopeDlg.h" />
+    <ClInclude Include="EraForm.h" />
+    <ClInclude Include="Erags.h" />
+    <ClInclude Include="EragsDoc.h" />
+    <ClInclude Include="EragsView.h" />
+    <ClInclude Include="ErrDateReg.h" />
+    <ClInclude Include="ExpiredDlg.h" />
+    <ClInclude Include="ExtBirthDlg.h" />
+    <ClInclude Include="ExtNotice.h" />
+    <ClInclude Include="FormBirth.h" />
+    <ClInclude Include="FormChange.h" />
+    <ClInclude Include="FormDeath.h" />
+    <ClInclude Include="FormDivorce.h" />
+    <ClInclude Include="FormMarriage.h" />
+    <ClInclude Include="Geography.h" />
+    <ClInclude Include="GeoView.h" />
+    <ClInclude Include="HelpMan.h" />
+    <ClInclude Include="KeyWords.h" />
+    <ClInclude Include="Led.h" />
+    <ClInclude Include="LeftView.h" />
+    <ClInclude Include="LoadDlg.h" />
+    <ClInclude Include="LocalSearchBar.h" />
+    <ClInclude Include="LogThread.h" />
+    <ClInclude Include="MainDlgBar.h" />
+    <ClInclude Include="MainFrm.h" />
+    <ClInclude Include="Menu.h" />
+    <ClInclude Include="MltDocDlg.h" />
+    <ClInclude Include="MonthList.h" />
+    <ClInclude Include="MyPrintDlg.h" />
+    <ClInclude Include="NamesDlg.h" />
+    <ClInclude Include="Navigate.h" />
+    <ClInclude Include="NoteChange.h" />
+    <ClInclude Include="NoteDlg.h" />
+    <ClInclude Include="OODoc.h" />
+    <ClInclude Include="OODocument.h" />
+    <ClInclude Include="OOView.h" />
+    <ClInclude Include="PassportsDlg.h" />
+    <ClInclude Include="picture.h" />
+    <ClInclude Include="ProgDlg.h" />
+    <ClInclude Include="properties.h" />
+    <ClInclude Include="property.h" />
+    <ClInclude Include="RegDlg.h" />
+    <ClInclude Include="RegFinder.h" />
+    <ClInclude Include="Registrars.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="RFindDoc.h" />
+    <ClInclude Include="RFindFrm.h" />
+    <ClInclude Include="RFindView.h" />
+    <ClInclude Include="RList.h" />
+    <ClInclude Include="RListDoc.h" />
+    <ClInclude Include="RNames.h" />
+    <ClInclude Include="RSBirthes.h" />
+    <ClInclude Include="RSChanges.h" />
+    <ClInclude Include="RSChangesDep.h" />
+    <ClInclude Include="RSDeathes.h" />
+    <ClInclude Include="RSDivorces.h" />
+    <ClInclude Include="RSMarriages.h" />
+    <ClInclude Include="RTFCnv.h" />
+    <ClInclude Include="SecReg.h" />
+    <ClInclude Include="SetDefDlg.h" />
+    <ClInclude Include="SettingsDlg.h" />
+    <ClInclude Include="StdAfx.h" />
+    <ClInclude Include="SVDlg.h" />
+    <ClInclude Include="TemplDlg.h" />
+    <ClInclude Include="TreeType.h" />
+    <ClInclude Include="UnzipDlg.h" />
+    <ClInclude Include="WordCntrItem.h" />
+    <ClInclude Include="WordDocument.h" />
+    <ClInclude Include="WordView.h" />
+    <ClInclude Include="XCnv.h" />
+    <ClInclude Include="xMachine.h" />
+    <ClInclude Include="YesNoDlg.h" />
+    <ClInclude Include="ZipDBDlg.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Res\abc.bmp" />
+    <Image Include="Res\ActA1.bmp" />
+    <Image Include="Res\ActA2.bmp" />
+    <Image Include="Res\ActB.bmp" />
+    <Image Include="Res\Actions.bmp" />
+    <Image Include="Res\Actions1.bmp" />
+    <Image Include="Res\Actions2.bmp" />
+    <Image Include="Res\Actions256.bmp" />
+    <Image Include="Res\Actions3.bmp" />
+    <Image Include="Res\Actions4.bmp" />
+    <Image Include="Res\Actions5.bmp" />
+    <Image Include="Res\Actions6.bmp" />
+    <Image Include="Res\Actions7.bmp" />
+    <Image Include="res\acts.bmp" />
+    <Image Include="res\Attention.ICO" />
+    <Image Include="res\Birth.bmp" />
+    <Image Include="res\Birth.ico" />
+    <Image Include="Res\Birth256.bmp" />
+    <Image Include="Res\BntChange.bmp" />
+    <Image Include="Res\BntChangeOut.bmp" />
+    <Image Include="Res\Boy256.bmp" />
+    <Image Include="Res\browser.bmp" />
+    <Image Include="Res\BrowserTB.bmp" />
+    <Image Include="Res\BtnABC.bmp" />
+    <Image Include="Res\BtnABCOut.bmp" />
+    <Image Include="Res\BtnBirth.bmp" />
+    <Image Include="Res\BtnBirthOut.bmp" />
+    <Image Include="Res\BtnCityHall.bmp" />
+    <Image Include="Res\BtnCityHallOut.bmp" />
+    <Image Include="Res\BtnDeath.bmp" />
+    <Image Include="Res\BtnDeathOut.bmp" />
+    <Image Include="Res\BtnDivorce.bmp" />
+    <Image Include="Res\BtnDivorceOut.bmp" />
+    <Image Include="Res\BtnDown.bmp" />
+    <Image Include="Res\BtnEqu.bmp" />
+    <Image Include="Res\BtnExtNotes.bmp" />
+    <Image Include="Res\BtnExtNotesOut.bmp" />
+    <Image Include="Res\BtnFileNew.bmp" />
+    <Image Include="Res\BtnFindIn.bmp" />
+    <Image Include="Res\BtnFindOut.bmp" />
+    <Image Include="Res\BtnFindOutOut.bmp" />
+    <Image Include="Res\BtnFirst.bmp" />
+    <Image Include="Res\BtnFirstOut.bmp" />
+    <Image Include="Res\BtnFolderTree.bmp" />
+    <Image Include="Res\BtnGeo.bmp" />
+    <Image Include="Res\BtnGeoOut.bmp" />
+    <Image Include="Res\BtnHelp.bmp" />
+    <Image Include="Res\BtnHelpOut.bmp" />
+    <Image Include="Res\BtnLast.bmp" />
+    <Image Include="Res\BtnLastOut.bmp" />
+    <Image Include="Res\BtnLaws.bmp" />
+    <Image Include="Res\BtnLawsOut.bmp" />
+    <Image Include="Res\BtnLeft.bmp" />
+    <Image Include="Res\BtnMarriage.bmp" />
+    <Image Include="Res\btnMarriageOut.bmp" />
+    <Image Include="Res\BtnNext.bmp" />
+    <Image Include="Res\BtnNextOut.bmp" />
+    <Image Include="Res\BtnOpenRecord.bmp" />
+    <Image Include="Res\BtnPartial.bmp" />
+    <Image Include="Res\BtnPrev.bmp" />
+    <Image Include="Res\BtnPrevOut.bmp" />
+    <Image Include="Res\BtnPrint.bmp" />
+    <Image Include="Res\BtnPrintOut.bmp" />
+    <Image Include="Res\BtnRecent.bmp" />
+    <Image Include="Res\BtnRecordDelete.bmp" />
+    <Image Include="Res\BtnRecordDeleteOut.bmp" />
+    <Image Include="Res\BtnRecordNew.bmp" />
+    <Image Include="Res\BtnRecordNewOut.bmp" />
+    <Image Include="Res\BtnRedCross.bmp" />
+    <Image Include="Res\BtnRedCrossOut.bmp" />
+    <Image Include="Res\BtnRight.bmp" />
+    <Image Include="Res\BtnSaveAs.bmp" />
+    <Image Include="Res\BtnSaveAsOut.bmp" />
+    <Image Include="Res\BtnSetColors.bmp" />
+    <Image Include="Res\BtnSWriter.bmp" />
+    <Image Include="Res\BtnSWriterOut.bmp" />
+    <Image Include="Res\BtnTeplates.bmp" />
+    <Image Include="Res\BtnTeplatesOut.bmp" />
+    <Image Include="Res\BtnUAH.bmp" />
+    <Image Include="Res\BtnUAHOut.bmp" />
+    <Image Include="Res\BtnUkraine.bmp" />
+    <Image Include="Res\BtnUkraineOut.bmp" />
+    <Image Include="Res\BtnUp.bmp" />
+    <Image Include="Res\BtnWord.bmp" />
+    <Image Include="Res\BtnWordOut.bmp" />
+    <Image Include="Res\btn_deat.bmp" />
+    <Image Include="Res\calendar.bmp" />
+    <Image Include="res\Change.bmp" />
+    <Image Include="res\Change.ico" />
+    <Image Include="Res\CheckBoxIL.bmp" />
+    <Image Include="Res\CityType1.bmp" />
+    <Image Include="Res\CityType2.bmp" />
+    <Image Include="Res\close_app.ico" />
+    <Image Include="Res\cntr_inp.bmp" />
+    <Image Include="Res\coldtool.bmp" />
+    <Image Include="res\collate1.bmp" />
+    <Image Include="Res\CommonSettings.ico" />
+    <Image Include="res\Country.ico" />
+    <Image Include="res\datagrid.bmp" />
+    <Image Include="res\Death.bmp" />
+    <Image Include="res\Death.ico" />
+    <Image Include="Res\Death256.bmp" />
+    <Image Include="res\Divorce.bmp" />
+    <Image Include="res\Divorce.ico" />
+    <Image Include="RES\Erags.ico" />
+    <Image Include="RES\EragsDoc.ico" />
+    <Image Include="res\EragsGrp.ico" />
+    <Image Include="res\Father.ico" />
+    <Image Include="res\Female.bmp" />
+    <Image Include="Res\Fiance256.bmp" />
+    <Image Include="Res\Fiancee256.bmp" />
+    <Image Include="Res\File_Open.bmp" />
+    <Image Include="Res\File_Open_Out.bmp" />
+    <Image Include="res\first.bmp" />
+    <Image Include="res\Flags\Ukraine.ico" />
+    <Image Include="Res\FolderTree.ico" />
+    <Image Include="Res\FontIL.bmp" />
+    <Image Include="res\forms.bmp" />
+    <Image Include="Res\FoundList.bmp" />
+    <Image Include="res\geography.bmp" />
+    <Image Include="Res\Girl256.bmp" />
+    <Image Include="Res\hdrdown.bmp" />
+    <Image Include="Res\hdrup.bmp" />
+    <Image Include="Res\hottoolb.bmp" />
+    <Image Include="Res\idil_abcsex.bmp" />
+    <Image Include="Res\idil_acbsex.bmp" />
+    <Image Include="Res\idil_hdr.bmp" />
+    <Image Include="Res\idil_mes.bmp" />
+    <Image Include="Res\idil_zip.bmp" />
+    <Image Include="res\idr_data.ico" />
+    <Image Include="res\idr_erag.ico" />
+    <Image Include="res\idr_form.ico" />
+    <Image Include="res\idr_main.ico" />
+    <Image Include="res\idr_repo.ico" />
+    <Image Include="Res\idr_sear.ico" />
+    <Image Include="Res\idr_tabl.ico" />
+    <Image Include="Res\idr_word.ico" />
+    <Image Include="Res\il_zip.bmp" />
+    <Image Include="Res\imlist.bmp" />
+    <Image Include="Res\Information.ico" />
+    <Image Include="Res\Keys.ico" />
+    <Image Include="res\last.bmp" />
+    <Image Include="Res\Leds.bmp" />
+    <Image Include="res\mainfram.bmp" />
+    <Image Include="Res\maintool.bmp" />
+    <Image Include="Res\maintoolbar.bmp" />
+    <Image Include="Res\MainToolbar1.bmp" />
+    <Image Include="res\Male.bmp" />
+    <Image Include="Res\Man256.bmp" />
+    <Image Include="Res\MarCitizen.bmp" />
+    <Image Include="res\Marrige.bmp" />
+    <Image Include="res\Marrige.ico" />
+    <Image Include="Res\MCross.ico" />
+    <Image Include="Res\medics.ico" />
+    <Image Include="res\Mlt.bmp" />
+    <Image Include="res\MltDn.bmp" />
+    <Image Include="res\MltFocus.bmp" />
+    <Image Include="res\navigate.bmp" />
+    <Image Include="res\new.bmp" />
+    <Image Include="Res\NewMenu256.bmp" />
+    <Image Include="Res\newnames.ico" />
+    <Image Include="res\next.bmp" />
+    <Image Include="res\No.bmp" />
+    <Image Include="Res\No.ico" />
+    <Image Include="Res\No256.bmp" />
+    <Image Include="res\NoDn.bmp" />
+    <Image Include="Res\NoDn256.bmp" />
+    <Image Include="res\NoFocus.bmp" />
+    <Image Include="Res\NoFocus256.bmp" />
+    <Image Include="res\open.bmp" />
+    <Image Include="res\Plus.bmp" />
+    <Image Include="res\PlusDn.bmp" />
+    <Image Include="res\PlusFocus.bmp" />
+    <Image Include="Res\post.bmp" />
+    <Image Include="res\prev.bmp" />
+    <Image Include="Res\printmenu.bmp" />
+    <Image Include="Res\printmenuDivorce.bmp" />
+    <Image Include="Res\RadioIL.bmp" />
+    <Image Include="Res\RecordDelete.ico" />
+    <Image Include="Res\RecordEdit.ico" />
+    <Image Include="Res\RecordNew.ico" />
+    <Image Include="Res\record_new.ico" />
+    <Image Include="res\reportfr.bmp" />
+    <Image Include="res\req.bmp" />
+    <Image Include="Res\RFind.bmp" />
+    <Image Include="Res\RFind.ico" />
+    <Image Include="Res\rfolders.bmp" />
+    <Image Include="Res\rfolders_tc.bmp" />
+    <Image Include="res\SANTAFE.ICO" />
+    <Image Include="Res\SetBirth.ico" />
+    <Image Include="Res\SetChange.ico" />
+    <Image Include="Res\SetColors.ico" />
+    <Image Include="Res\SetDeath.ico" />
+    <Image Include="Res\SetDivorce.ico" />
+    <Image Include="Res\SetMarriage.ico" />
+    <Image Include="Res\SetOffice.ico" />
+    <Image Include="Res\SignFeale.ico" />
+    <Image Include="Res\SignMale.ico" />
+    <Image Include="Res\Stamp.ico" />
+    <Image Include="RES\Toolbar.bmp" />
+    <Image Include="Res\Toolbars.bmp" />
+    <Image Include="Res\Toolbar_Disabled.bmp" />
+    <Image Include="Res\Toolbar_Hot.bmp" />
+    <Image Include="Res\Toolbar_Normal.bmp" />
+    <Image Include="res\ukraine.bmp" />
+    <Image Include="Res\up.ico" />
+    <Image Include="Res\Users.ico" />
+    <Image Include="Res\Watch.ico" />
+    <Image Include="Res\WCross.ico" />
+    <Image Include="Res\Woman256.bmp" />
+    <Image Include="Res\WomanCitizen.bmp" />
+    <Image Include="Res\word8.ico" />
+    <Image Include="Res\word9.ico" />
+    <Image Include="res\Yes.bmp" />
+    <Image Include="Res\Yes.ico" />
+    <Image Include="Res\Yes256.bmp" />
+    <Image Include="Res\YesDisable.bmp" />
+    <Image Include="res\YesDn.bmp" />
+    <Image Include="res\YesFocus.bmp" />
+    <Image Include="Res\YesFocus256.bmp" />
+    <Image Include="Res\Zip.ico" />
+    <Image Include="Res\zipsort.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="Erags.reg" />
+    <CustomBuild Include="Res\cantopen.rtf" />
+    <CustomBuild Include="Res\cur00001.cur" />
+    <CustomBuild Include="Res\cur00002.cur" />
+    <CustomBuild Include="Res\cur00004.cur" />
+    <CustomBuild Include="Res\Dragmove.cur" />
+    <CustomBuild Include="Res\drop_mov.cur" />
+    <CustomBuild Include="RES\Erags.rc2" />
+    <CustomBuild Include="Res\hand.cur" />
+    <CustomBuild Include="Res\idr_tree.cur" />
+    <CustomBuild Include="Res\nodrop.cur" />
+    <CustomBuild Include="Res\RegText.rtf" />
+    <CustomBuild Include="Res\RegTextCmd.rtf" />
+    <CustomBuild Include="Res\RTFEmpty.rtf" />
+    <CustomBuild Include="Res\tfdropcopy.cur" />
+    <CustomBuild Include="Res\tfnodropcopy.cur" />
+    <CustomBuild Include="Res\tfnodropmove.cur" />
+  </ItemGroup>
+  <ItemGroup>
+    <Manifest Include="app.manifest" />
+    <Manifest Include="Erags.exe.manifest" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+    <Text Include="Res\cantopen.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Media Include="res\Waves\InSnd.wav" />
+    <Media Include="res\Waves\Whoosh.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="..\ImpExp.lib" />
+    <Library Include="..\zlib.lib" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,53 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<title>Программный комплекс ЭРАГС</title>
+
+<body>
+<h1>Работа с ПК ЭРАГС в локальной компьютерной сети.</h1>
+<P>Если в отделе РАГС имеется несколько компьютеров, то для эффективной работы с ПК ЭРАГС их необходимо объединить в общую локальную компьютерную сеть.
+В качестве основного компьютера (т.е. такого, на котором будут расположены файлы БД ЭРАГС) следует выбрать наиболее производительный компьютер из имеющихся
+в отделе.
+</P>
+
+<P> При установки ПК ЭРАГС на клиентский (т.н. не основной) компьютер во время установки следует указать "Другорядний", как показано на рисунке:</P>
+
+<img src="Images\SetupClientPC.jpg"><br><br>
+
+<P> Для открытия файла БД ПК ЭРАГС на клиентском компьютере следует в файловом диалоге выбрать <b>Сетевое Окружение</b>,
+ затем указать имя группы (на рисунке группа называется <b>Rags</b>), потом открыть основной компьютер (на рисунке <b>MainPC</b>), затем раскрыть папку с файлами базы данных и выбрать нужный файл. </P>
+
+<img src="Images\Network_Open.jpg"><br><br>
+
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+  <!--msthemelist--><tr><td valign="baseline" width="42"><img src="Images/Attention.gif" width="24" height="42" hspace="11"></td><td valign="top" width="100%"><!--mstheme--><font face="Arial"><font size="2">
+    Следует помнить, что на основном компьютере должен быть разрешен доступ по чтению и записи к папке,
+    где находится файлы БД ПК ЭРАГС.</font>
+  <!--mstheme--></font><!--msthemelist--></td></tr>
+<!--msthemelist--></table>
+
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+  <!--msthemelist--><tr><td valign="baseline" width="42"><img src="Images/Attention.gif" width="24" height="42" hspace="11"></td><td valign="top" width="100%"><!--mstheme--><font face="Arial"><font size="2">
+    Для нормальной эксплуатации ПК ЭРАГС основной компьютер следует включать первым, а выключать последним.</font>
+  <!--mstheme--></font><!--msthemelist--></td></tr>
+<!--msthemelist--></table>
+
+<P> Основная программа ПК ЭРАГС (<b>Erags</b>) в заголовке главного окна <u>всегда</u> пишет полный путь
+ текущего файла базы данных. Если файл БД открыт с другого компьютера, то имени файлы предшествует имя компьютера,
+ где этот файл находится или имя сетевого диска:</P>
+
+<img src="Images\Network_FileName.jpg"><br><br>
+
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+  <!--msthemelist--><tr><td valign="baseline" width="42"><img src="Images/Attention.gif" width="24" height="42" hspace="11"></td><td valign="top" width="100%"><!--mstheme--><font face="Arial"><font size="2">
+    Программа <b>Erags</b> после первого старта всегда пытается открыть последний файл БД, с которым она работала.
+    Файл не будет открыт, если нарушено сетевое соединение, переименован или удалён файл, переименован или не включен
+    основной компьютер и т. п. </font>
+  <!--mstheme--></font><!--msthemelist--></td></tr>
+<!--msthemelist--></table>
+
+<hr color=blue><br>
+<li><a href="Default_r.htm">Перейти к главному разделу</a></li><br><br>
+
+</body>
+</html>
